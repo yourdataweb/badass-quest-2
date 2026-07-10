@@ -35,6 +35,7 @@ export default function LocationImage({ locationId, name, type, className = '' }
     .toUpperCase();
 
   const color = TYPE_COLORS[type] ?? '#e94560';
+  const imageId = type === 'home' ? 'home' : locationId;
 
   if (error) {
     return (
@@ -62,7 +63,7 @@ export default function LocationImage({ locationId, name, type, className = '' }
         </div>
       )}
       <img
-        src={`${BASE}locations/${locationId}.jpg`}
+        src={`${BASE}locations/${imageId}.jpg`}
         alt={name}
         onLoad={() => setLoaded(true)}
         onError={() => setError(true)}

@@ -26,7 +26,7 @@
     "reset": "Reiniciar",
     "start": "Empezar",
     "choose": "Elige una opción",
-    "chooseActivity": "Elige tus actividades de hoy",
+    "chooseActivity": "El día ha terminado",
     "activitiesRemaining": "actividades restantes",
     "timeRemaining": "tiempo restante hoy",
     "locationsAvailable": "Lugares disponibles",
@@ -38,8 +38,8 @@
     "title": "Tu Piso",
     "shower": "Ducharse",
     "showerDesc": "Empezar el día fresco",
-    "breakfast": "Desayunar",
-    "breakfastDesc": "Un buen desayuno te da energía",
+    "breakfast": "Comer Algo",
+    "breakfastDesc": "Una buena comida te da energía",
     "workRemotely": "Teletrabajar",
     "workRemotelyDesc": "Ganar dinero desde casa",
     "phone": "Mirar el móvil",
@@ -90,7 +90,7 @@
     "melquisedec": "Melquisedec",
     "merce": "Mercè",
     "englishman": "El Inglés",
-    "alchemist": "La Alquimista",
+    "alchemist": "El Alquimista",
     "narrator": "Narrador"
   },
   "stats": {

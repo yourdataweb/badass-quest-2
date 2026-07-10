@@ -31,6 +31,7 @@ interface GameStore extends GameState {
   setStats: (stats: Stats) => void;
   advanceTime: (hours: number, minutes?: number) => void;
   setTime: (time: GameTime) => void;
+  startNewDay: () => void;
   addFlag: (flag: string) => void;
   removeFlag: (flag: string) => void;
   setCity: (cityId: string) => void;
@@ -91,8 +92,8 @@ export const useGameStore = create<GameStore>((set) => ({
   advanceTime: (hours, minutes = 0) =>
     set((state) => {
       const t = { ...state.time };
-      let newHour = t.hour + hours;
-      let newMinute = t.minute + minutes;
+      let newHour = t.hour;
+      let newMinute = t.minute + Math.round(hours * 60) + minutes;
       let newDay = t.day;
       let newMonth = t.month;
       let newYear = t.year;
@@ -136,6 +137,25 @@ export const useGameStore = create<GameStore>((set) => ({
     }),
 
   setTime: (time) => set({ time }),
+
+  startNewDay: () =>
+    set((state) => {
+      const next = new Date(state.time.year, state.time.month - 1, state.time.day + 1);
+      const day = next.getDate();
+      const month = next.getMonth() + 1;
+      const year = next.getFullYear();
+      return {
+        time: {
+          day,
+          month,
+          year,
+          hour: 8,
+          minute: 0,
+          dayOfWeek: next.getDay(),
+          timeLabel: `${String(day).padStart(2, '0')}/${String(month).padStart(2, '0')}/${year} 08:00`,
+        },
+      };
+    }),
 
   addFlag: (flag) =>
     set((state) => ({ flags: { ...state.flags, [flag]: true } })),

@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { useGameStore } from '../store/gameStore';
 import GameLayout from '../components/GameLayout';
 import LocationImage from '../components/LocationImage';
+import HomeActivities from '../components/HomeActivities';
+import ActivityCard from '../components/ActivityCard';
 import MiniGameModal from '../components/minigames/MiniGameModal';
 import ResultSummary from '../components/minigames/ResultSummary';
 import QuickQuiz from '../components/minigames/QuickQuiz';
@@ -59,16 +61,6 @@ const MG_BACKGROUND: Record<string, string> = {
   tap_challenge: `${BASE}minigames/bg-tap.png`,
 };
 
-/** Stat labels (short) for display. */
-const STAT_LABELS: Record<string, string> = {
-  vitality: '💪',
-  resources: '💰',
-  knowledge: '🧠',
-  social: '👥',
-  career: '💼',
-  fulfillment: '❤️',
-};
-
 export default function LocationScreen({
   location,
   isCorrect,
@@ -113,7 +105,7 @@ export default function LocationScreen({
     });
   };
 
-  const activities = getActivitiesForType(location.type);
+  const activities = location.type === 'home' ? [] : getActivitiesForType(location.type);
 
   return (
     <GameLayout>
@@ -200,38 +192,25 @@ export default function LocationScreen({
               </button>
             )}
 
+            {/* Home actions — between Investigate and Back */}
+            {location.type === 'home' && <HomeActivities />}
+
             {/* Activity buttons — between Investigate and Back */}
             {activities.length > 0 && (
               <div className="grid grid-cols-2 gap-2">
                 {activities.map((act) => {
                   const done = completedActivities.includes(act.id);
                   return (
-                    <button
+                    <ActivityCard
                       key={act.id}
-                      onClick={() => { if (!done) setView({ kind: 'game', act }); }}
+                      icon={MG_ICON[act.miniGame] ?? '🎮'}
+                      title={t(`activitiesSide.${act.i18nKey}` as any)}
+                      durationHours={act.durationHours}
+                      effects={act.effects}
+                      selected={done}
                       disabled={done}
-                      className={`p-3 rounded-xl text-left transition-all active:scale-[0.97] ${
-                        done
-                          ? 'bg-[#252525] border border-gray-700 opacity-75 cursor-not-allowed'
-                          : 'bg-[#0c3a38] border border-[#0d9488]/60 hover:bg-[#0f4a47] hover:border-[#0d9488] cursor-pointer shadow-md shadow-black/20'
-                      }`}
-                    >
-                      <div className="flex items-center gap-1.5 mb-1">
-                        <span className="text-base">{MG_ICON[act.miniGame] ?? '🎮'}</span>
-                        <span className="text-white font-semibold text-sm truncate">
-                          {t(`activitiesSide.${act.i18nKey}` as any)}
-                        </span>
-                        {done && <span className="ml-auto text-green-400 text-xs">✓</span>}
-                      </div>
-                      <div className="flex flex-wrap gap-x-2 text-xs text-teal-200/70">
-                        <span>⏳ {act.durationHours}h</span>
-                        {Object.entries(act.effects).map(([k, v]) => (
-                          <span key={k} className={v && v > 0 ? 'text-green-400' : 'text-red-500'}>
-                            {STAT_LABELS[k] ?? k}{v && v > 0 ? '+' : ''}{v}
-                          </span>
-                        ))}
-                      </div>
-                    </button>
+                      onClick={() => setView({ kind: 'game', act })}
+                    />
                   );
                 })}
               </div>

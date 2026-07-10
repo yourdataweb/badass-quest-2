@@ -23,7 +23,10 @@ export function formatTime(t: GameTime, lang: string = 'en'): string {
   const dayNames = lang === 'ca' ? DAY_NAMES_CA : lang === 'es' ? DAY_NAMES_ES : DAY_NAMES;
   const monthNames = lang === 'ca' ? MONTH_NAMES_CA : lang === 'es' ? MONTH_NAMES_ES : MONTH_NAMES;
   const dayName = dayNames[t.dayOfWeek];
-  return `${dayName}, ${t.day} ${monthNames[t.month - 1]} ${t.year} — ${String(t.hour).padStart(2, '0')}:${String(t.minute).padStart(2, '0')}`;
+  const period = t.hour >= 12 ? 'PM' : 'AM';
+  const hour12 = t.hour % 12 === 0 ? 12 : t.hour % 12;
+  const minuteStr = String(t.minute).padStart(2, '0');
+  return `${dayName}, ${t.day} ${monthNames[t.month - 1]} ${t.year} — ${hour12}:${minuteStr}${period}`;
 }
 
 export function getHoursUntilNight(hour: number): number {
@@ -36,8 +39,8 @@ export function isNightTime(hour: number): boolean {
 
 export function advanceTime(time: GameTime, hours: number): GameTime {
   const t = { ...time };
-  let newHour = t.hour + hours;
-  let newMinute = t.minute;
+  let newHour = t.hour;
+  let newMinute = t.minute + Math.round(hours * 60);
   let newDay = t.day;
   let newMonth = t.month;
   let newYear = t.year;

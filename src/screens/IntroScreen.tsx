@@ -36,8 +36,6 @@ export default function IntroScreen({ onContinue }: IntroScreenProps) {
             <div className="fade-in text-center">
               <div className="text-5xl mb-4">📖</div>
               <h2 className="pixel-text text-lg text-[#e94560] mb-2">{bookTitle}</h2>
-              <p className="text-gray-400 text-sm mb-4">{city?.name} · {new Date().getFullYear()}</p>
-              <div className="w-16 h-0.5 bg-[#e94560]/50 mx-auto mb-6" />
             </div>
 
             <div className="dialogue-box p-4 sm:p-6 fade-in">

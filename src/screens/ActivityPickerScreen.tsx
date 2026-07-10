@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '../store/gameStore';
 import GameLayout from '../components/GameLayout';
+import ActivityCard from '../components/ActivityCard';
 import { DAILY_ACTIVITIES } from '../engine/economyEngine';
 import type { DailyActivity } from '../store/types';
 
@@ -10,10 +11,16 @@ interface ActivityPickerScreenProps {
   maxActivities?: number;
 }
 
+/** The day ends at 11PM. */
+const DAY_END_HOUR = 23;
+
 export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: ActivityPickerScreenProps) {
   const { t, i18n } = useTranslation();
   const updateStats = useGameStore((s) => s.updateStats);
   const advanceTime = useGameStore((s) => s.advanceTime);
+  const time = useGameStore((s) => s.time);
+
+  const availableHours = Math.max(0, DAY_END_HOUR - (time.hour + time.minute / 60));
 
   const [selected, setSelected] = useState<DailyActivity[]>([]);
   const [confirmed, setConfirmed] = useState(false);
@@ -35,14 +42,14 @@ export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: 
   };
 
   const totalHours = selected.reduce((sum, a) => sum + a.durationHours, 0);
-  const hoursLeft = Math.max(0, 14 - totalHours); // 14 hours in a day max
+  const hoursLeft = Math.max(0, Math.round((availableHours - totalHours) * 4) / 4);
 
   const toggleActivity = (act: DailyActivity) => {
     if (confirmed) return;
     if (isSelected(act)) {
       setSelected((prev) => prev.filter((s) => s.id !== act.id));
     } else {
-      if (selected.length < maxActivities && totalHours + act.durationHours <= 14) {
+      if (selected.length < maxActivities && totalHours + act.durationHours <= availableHours) {
         setSelected((prev) => [...prev, act]);
       }
     }
@@ -57,11 +64,6 @@ export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: 
     setTimeout(onComplete, 500);
   };
 
-  const formatEffect = (val: number | undefined, icon: string): string | null => {
-    if (val === undefined || val === 0) return null;
-    return val > 0 ? `${icon}+${val}` : `${icon}${val}`;
-  };
-
   return (
     <GameLayout>
       <div className="flex flex-col h-full">
@@ -70,47 +72,13 @@ export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: 
         <div className="flex-1 overflow-y-auto min-h-0">
           <div className="p-4 max-w-2xl mx-auto fade-in">
             <h2 className="text-white font-bold text-lg mb-1">{t('ui.chooseActivity')}</h2>
-            <p className="text-gray-500 text-sm mb-3">
-              ⏳ {t('ui.timeRemaining')}: {hoursLeft}h · 📋 {selected.length}/{maxActivities} {t('ui.activitiesRemaining')}
-            </p>
-
-            {/* Activity grid */}
-            <div className="grid grid-cols-2 gap-2 mb-4">
-              {DAILY_ACTIVITIES.map((act) => {
-                const sel = isSelected(act);
-                const tooMany = selected.length >= maxActivities && !sel;
-                const tooLong = totalHours + act.durationHours > 14;
-                const disabled = tooMany || tooLong;
-                return (
-                  <button
-                    key={act.id}
-                    onClick={() => toggleActivity(act)}
-                    disabled={disabled && !sel}
-                    className={`p-3 rounded-xl text-left transition-all active:scale-[0.97] ${
-                      sel
-                        ? 'bg-[#1e293b] border border-gray-500 opacity-75 cursor-not-allowed'
-                        : disabled
-                        ? 'bg-gray-800 border border-gray-700 opacity-75 cursor-not-allowed'
-                        : 'bg-[#252525] border border-gray-700 hover:border-[#e94560]/60 hover:bg-[#2e2e2e] cursor-pointer'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-white font-semibold text-sm">{getTitle(act)}</span>
-                      {sel && <span className="text-gray-400 text-base">✓</span>}
-                    </div>
-                    <p className="text-xs text-gray-400 mb-1.5">{getDesc(act)}</p>
-                    <div className="flex flex-wrap gap-x-2 gap-y-0.5 text-xs">
-                      <span className="text-gray-500">⏳ {act.durationHours}h</span>
-                      {formatEffect(act.effects.vitality, '💪') && <span className="text-green-400">{formatEffect(act.effects.vitality, '💪')}</span>}
-                      {formatEffect(act.effects.resources, '💰') && <span className={act.effects.resources && act.effects.resources > 0 ? 'text-green-400' : 'text-red-500'}>{formatEffect(act.effects.resources, '💰')}</span>}
-                      {formatEffect(act.effects.knowledge, '🧠') && <span className="text-green-400">{formatEffect(act.effects.knowledge, '🧠')}</span>}
-                      {formatEffect(act.effects.social, '👥') && <span className="text-green-400">{formatEffect(act.effects.social, '👥')}</span>}
-                      {formatEffect(act.effects.career, '💼') && <span className="text-green-400">{formatEffect(act.effects.career, '💼')}</span>}
-                      {formatEffect(act.effects.fulfillment, '❤️') && <span className="text-green-400">{formatEffect(act.effects.fulfillment, '❤️')}</span>}
-                    </div>
-                  </button>
-                );
-              })}
+            <div className="flex flex-wrap items-center gap-2 mb-3">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#252525] border border-gray-700 text-gray-200 text-xs font-semibold">
+                ⏳ {hoursLeft}h {t('ui.timeRemaining')}
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#252525] border border-gray-700 text-gray-200 text-xs font-semibold">
+                📋 {selected.length}/{maxActivities} {t('ui.activitiesRemaining')}
+              </span>
             </div>
 
             {/* Selected summary */}
@@ -132,9 +100,29 @@ export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: 
           </div>
         </div>
 
-        {/* ── Sticky confirm button ── */}
+        {/* ── Sticky activity grid + confirm button ── */}
         <div className="shrink-0 px-4 py-3 bg-[#191919] border-t border-gray-700">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto flex flex-col gap-2">
+            <div className="grid grid-cols-2 gap-2">
+              {DAILY_ACTIVITIES.map((act) => {
+                const sel = isSelected(act);
+                const tooMany = selected.length >= maxActivities && !sel;
+                const tooLong = totalHours + act.durationHours > availableHours;
+                const disabled = (tooMany || tooLong) && !sel;
+                return (
+                  <ActivityCard
+                    key={act.id}
+                    title={getTitle(act)}
+                    description={getDesc(act)}
+                    durationHours={act.durationHours}
+                    effects={act.effects}
+                    selected={sel}
+                    disabled={disabled}
+                    onClick={() => toggleActivity(act)}
+                  />
+                );
+              })}
+            </div>
             <button
               onClick={handleConfirm}
               disabled={selected.length === 0 || confirmed}
@@ -146,7 +134,7 @@ export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: 
             >
               {confirmed
                 ? (i18n.language === 'ca' ? '✅ Dia completat!' : i18n.language === 'es' ? '✅ ¡Día completado!' : '✅ Day completed!')
-                : (i18n.language === 'ca' ? 'Confirmar dia' : i18n.language === 'es' ? 'Confirmar día' : 'Confirm day')}
+                : (i18n.language === 'ca' ? 'Acabar el dia' : i18n.language === 'es' ? 'Terminar el día' : 'Finish day')}
             </button>
           </div>
         </div>

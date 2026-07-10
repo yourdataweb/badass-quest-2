@@ -197,7 +197,7 @@ export default function MapBackground({ onLocationSelect }: MapBackgroundProps) 
         <div style="width:200px;background:#1a1a1a;border-radius:12px;overflow:hidden;font-family:system-ui;border:1px solid #e0dbd3;">
           <div style="position:relative;height:120px;overflow:hidden;background:${accentColor}22;">
             <img
-              src="${BASE}locations/${loc.id}.jpg"
+              src="${BASE}locations/${loc.type === 'home' ? 'home' : loc.id}.jpg"
               style="width:100%;height:100%;object-fit:cover;display:block;"
               onerror="this.style.display='none'"
             />

@@ -44,10 +44,11 @@ export function getLocationsForChapter(
   const required = resolveRequiredLocations(chapter.requiredLocationTypes ?? [], allLocations);
   const showTypes = new Set<LocationType>(chapter.locationsToShow ?? []);
   const byType = allLocations.filter((l) => showTypes.has(l.type));
+  const home = allLocations.filter((l) => l.type === 'home');
 
   const seen = new Set<string>();
   const result: LocationPOI[] = [];
-  for (const loc of [...required, ...byType]) {
+  for (const loc of [...required, ...byType, ...home]) {
     if (!seen.has(loc.id)) {
       seen.add(loc.id);
       result.push(loc);
@@ -97,17 +98,17 @@ export function checkAutoAdvance(
   if (!chapter) return null;
   if (completedChapterIds.includes(chapter.id)) return null;
 
-  if (chapter.role === 'story') return null;
-
+  // Story chapters have no completionCriteria — they only finish via their dialogue.
   if (!isCriteriaMet(chapter.completionCriteria, visitedLocationIds, allLocations)) return null;
 
-  return advanceChapter(currentChapterIndex, allChapters);
+  // Every chapter gets a recap before the day ends; the real advance happens
+  // when the player leaves the recap screen (see handleRecapNext).
+  return { phase: 'recap', newChapterIndex: currentChapterIndex };
 }
 
 /**
  * Determines what happens after a dialogue completes.
- * Story chapters → recap.
- * Sandbox chapters → checks completion, advances if done, else back to map.
+ * Every chapter (story or sandbox) shows a recap once its goal is met.
  */
 export function handleDialogueComplete(
   chapter: StoryChapter | undefined,
@@ -121,12 +122,8 @@ export function handleDialogueComplete(
 } {
   if (!chapter) return { phase: 'map' };
 
-  if (chapter.role === 'story') {
+  if (chapter.role === 'story' || isCriteriaMet(chapter.completionCriteria, visitedLocationIds, allLocations)) {
     return { phase: 'recap' };
-  }
-
-  if (isCriteriaMet(chapter.completionCriteria, visitedLocationIds, allLocations)) {
-    return advanceChapter(currentChapterIndex, allChapters);
   }
 
   return { phase: 'map' };
@@ -155,11 +152,10 @@ function advanceChapter(
   }
 
   const nextIndex = currentChapterIndex + 1;
-  const nextCh = allChapters[nextIndex];
-  const phase: GamePhase =
-    nextCh?.role === 'sandbox' ? 'activity_picker' : 'home';
 
-  return { phase, newChapterIndex: nextIndex };
+  // Completing a chapter's required location always ends the day: the player
+  // picks their remaining activities, then wakes up at home the next morning.
+  return { phase: 'activity_picker', newChapterIndex: nextIndex };
 }
 
 /**

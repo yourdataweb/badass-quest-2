@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
 import { useGameStore } from './store/gameStore';
-import { getCityById, getAllCities, getHomeLocationId, getLocationById } from './data/cities/index';
+import { getCityById, getAllCities, getHomeLocation, getHomeLocationId, getLocationById } from './data/cities/index';
 import { getStoryById, getAllStories } from './data/story/index';
 import { flyToMap } from './components/MapBackground';
 import {
@@ -12,6 +12,15 @@ import {
   checkAutoAdvance,
 } from './engine/storyEngine';
 import type { LocationPOI, Position } from './store/types';
+
+const WALK_SPEED_KMH = 4;
+
+/** Travel time for a trip of this distance: quantized to 15‑min steps, clamped 15min–3h. */
+function travelHoursForDistance(km: number): number {
+  const rawHours = km / WALK_SPEED_KMH;
+  const quarterHours = Math.round(rawHours * 4) / 4;
+  return Math.min(3, Math.max(0.25, quarterHours));
+}
 
 function distKm(a: Position, b: Position): number {
   const dlat = (b.lat - a.lat) * 111.32;
@@ -72,11 +81,13 @@ export default function App() {
   const currentLocationId = useGameStore((s) => s.currentLocationId);
   const setCurrentLocation = useGameStore((s) => s.setCurrentLocation);
   const advanceTime = useGameStore((s) => s.advanceTime);
+  const startNewDay = useGameStore((s) => s.startNewDay);
   const markChapterComplete = useGameStore((s) => s.markChapterComplete);
   const time = useGameStore((s) => s.time);
   const chosenCity = useGameStore((s) => s.chosenCity);
   const chosenBook = useGameStore((s) => s.chosenBook);
   const [travelSecs, setTravelSecs] = useState(25);
+  const [travelHours, setTravelHours] = useState(0.25);
   const { i18n } = useTranslation();
 
   const city = chosenCity ? getCityById(chosenCity) : null;
@@ -112,10 +123,17 @@ export default function App() {
     }
   }, [visitedLocationIds]);
 
+  // Past 5PM, the day is over — send the player to pick their remaining activities.
+  useEffect(() => {
+    if (phase !== 'map') return;
+    if (time.hour >= 17) setPhase('activity_picker');
+  }, [phase, time.hour]);
+
   const handleLocationSelect = useCallback((loc: LocationPOI) => {
     const fromLoc = (currentLocationId && city) ? getLocationById(city, currentLocationId) : null;
     const km = fromLoc ? distKm(fromLoc.position, loc.position) : 5;
     setTravelSecs(Math.round(Math.max(2, Math.min(13, 2 + km))));
+    setTravelHours(travelHoursForDistance(km));
     flyToMap(loc.position.lat, loc.position.lng, 16);
     setCurrentLocation(loc.id);
     setPhase('walking');
@@ -155,8 +173,14 @@ export default function App() {
   }, [setPhase]);
 
   const handleActivityDone = useCallback(() => {
-    setPhase('map');
-  }, [setPhase]);
+    if (city) {
+      const home = getHomeLocation(city);
+      setCurrentLocation(home.id);
+      flyToMap(home.position.lat, home.position.lng, 16);
+    }
+    startNewDay();
+    setPhase('home');
+  }, [setPhase, setCurrentLocation, city, startNewDay]);
 
   const handleHomeGoToMap = useCallback(() => {
     advanceTime(0.5);
@@ -187,6 +211,7 @@ export default function App() {
                 travelSecs={travelSecs}
                 onComplete={(deltas) => {
                   updateStats(deltas);
+                  advanceTime(travelHours);
                   setPhase('location');
                 }}
               />

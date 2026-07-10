@@ -349,14 +349,14 @@ const chapter5: StoryChapter = {
     {
       id: 'ch5-arrive',
       speaker: 'Narrator',
-      text: 'The fountain in the square is silent. Daytime. A figure stands at its edge — a woman, young, watching you approach with knowing eyes.',
-      textEs: 'La fuente de la plaza está en silencio. De día. Una figura está en su borde — una mujer, joven, mirándote acercarse con ojos que lo saben todo.',
-      textCa: 'La font de la plaça està en silenci. De dia. Una figura està a la seva vora — una dona, jove, mirant-te apropar amb ulls que ho saben tot.',
+      text: 'The fountain in the square is silent. Daytime. A figure stands at its edge — a man, young, watching you approach with knowing eyes.',
+      textEs: 'La fuente de la plaza está en silencio. De día. Una figura está en su borde — un hombre, joven, mirándote acercarse con ojos que lo saben todo.',
+      textCa: 'La font de la plaça està en silenci. De dia. Una figura està a la seva vora — un home, jove, mirant-te apropar amb ulls que ho saben tot.',
       sprite: 'narrator',
       options: [
         {
           id: 'ch5-approach',
-          text: 'Approach her. "You\'ve been following me, haven\'t you?"',
+          text: 'Approach him. "You\'ve been following me, haven\'t you?"',
           textEs: 'Acercarme. "Me has estado siguiendo, ¿verdad?"',
           textCa: 'Apropar-me. "M\'has estat seguint, oi?"',
           effects: { social: 2 },
@@ -376,8 +376,8 @@ const chapter5: StoryChapter = {
       id: 'ch5-alchemist',
       speaker: 'Alchemist',
       text: '"I am the one who sets the trials. Not to stop you — to test you. You\'ve come far. Merce, the Englishman, the symbols... but the real question isn\'t whether you can find the treasure. It\'s what you\'re willing to give up for it."',
-      textEs: '"Soy la que pone las pruebas. No para detenerte — para ponerte a prueba. Has llegado lejos. Mercè, el inglés, los símbolos... pero la verdadera pregunta no es si puedes encontrar el tesoro. Es qué estás dispuesto a sacrificar por él."',
-      textCa: '"Sóc la que posa les proves. No per aturar-te — per posar-te a prova. Has arribat lluny. Mercè, l\'anglès, els símbols... però la veritable pregunta no és si pots trobar el tresor. És què estàs disposat a sacrificar per ell."',
+      textEs: '"Soy el que pone las pruebas. No para detenerte — para ponerte a prueba. Has llegado lejos. Mercè, el inglés, los símbolos... pero la verdadera pregunta no es si puedes encontrar el tesoro. Es qué estás dispuesto a sacrificar por él."',
+      textCa: '"Sóc el que posa les proves. No per aturar-te — per posar-te a prova. Has arribat lluny. Mercè, l\'anglès, els símbols... però la veritable pregunta no és si pots trobar el tresor. És què estàs disposat a sacrificar per ell."',
       sprite: 'alchemist',
       options: [
         {
@@ -418,7 +418,7 @@ const chapter5: StoryChapter = {
     {
       id: 'ch5-verdict',
       speaker: 'Alchemist',
-      text: '"You have answered. The fountain holds many secrets, but the greatest one is this: the treasure was never beyond the sea. It was in your own city, waiting for you to make the journey so you would be worthy of it. Look at the coordinates." She hands you a piece of paper with a single location written on it.',
+      text: '"You have answered. The fountain holds many secrets, but the greatest one is this: the treasure was never beyond the sea. It was in your own city, waiting for you to make the journey so you would be worthy of it. Look at the coordinates." He hands you a piece of paper with a single location written on it.',
       textEs: '"Has respondido. La fuente guarda muchos secretos, pero el mayor es este: el tesoro nunca estuvo al otro lado del mar. Estaba en tu propia ciudad, esperando a que hicieras el viaje para ser digno de él. Mira las coordenadas." Te entrega un papel con una sola ubicación escrita.',
       textCa: '"Has respost. La font guarda molts secrets, però el major és aquest: el tresor mai va ser a l\'altra banda del mar. Era a la teva pròpia ciutat, esperant que fessis el viatge per ser digne d\'ell. Mira les coordenades." Et dona un paper amb una sola ubicació escrita.',
       sprite: 'alchemist',

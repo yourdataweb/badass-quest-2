@@ -23,7 +23,7 @@ export default function CitySelectScreen() {
 
   return (
     <GameLayout>
-      <div className="relative flex flex-col items-center justify-center h-full w-full overflow-hidden overflow-y-auto">
+      <div className="relative flex flex-col items-center h-full w-full overflow-hidden overflow-y-auto">
         {/* Background image */}
         <img
           src={`${BASE}cities/selector-background.jpg`}
@@ -33,7 +33,7 @@ export default function CitySelectScreen() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-black/55" />
 
         {/* Content */}
-        <div className="relative z-10 fade-in text-center max-w-5xl w-full px-6 py-8">
+        <div className="relative z-10 fade-in text-center max-w-5xl w-full px-6 py-8 my-auto">
           <h2 className="pixel-text text-xl text-white mb-2 drop-shadow-lg" style={{ textShadow: '0 2px 16px rgba(0,0,0,0.8)' }}>
             {t('app.selectCity')}
           </h2>

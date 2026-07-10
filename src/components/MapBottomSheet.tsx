@@ -13,19 +13,14 @@ export default function MapBottomSheet({ onPlay }: MapBottomSheetProps) {
   const chapter = story?.chapters[currentChapter];
 
   return (
-    <div className="pointer-events-auto h-full flex flex-col justify-end">
-      {/* Tap-to-continue area */}
-      <div className="flex-1" onClick={onPlay} />
-
-      {/* Bottom sheet — just chapter info, locations are clicked via map markers */}
-      <div className="bg-gradient-to-t from-[#1a1a1a]/95 via-[#1a1a1a]/90 to-transparent pt-10 pb-4 px-3">
-        <div className="flex items-center justify-between">
-          <div>
-            <span className="text-xs text-gray-300 font-semibold uppercase tracking-wider">
-              {chapter?.title ?? 'Explore'}
-            </span>
-            <p className="text-gray-400 text-xs mt-0.5">{chapter?.description}</p>
-          </div>
+    <div className="pointer-events-auto h-full" onClick={onPlay}>
+      {/* Chapter info — pinned below the header/date bars, above the map */}
+      <div className="fixed top-[76px] left-0 right-0 z-40 px-3 pointer-events-none">
+        <div className="bg-black/60 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/10 max-w-xs">
+          <span className="text-xs text-white font-semibold uppercase tracking-wider">
+            {chapter?.title ?? 'Explore'}
+          </span>
+          <p className="text-gray-200 text-xs mt-0.5">{chapter?.description}</p>
         </div>
       </div>
     </div>
