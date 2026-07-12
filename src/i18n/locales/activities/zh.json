@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "read": {
+      "title": "阅读 / 学习",
+      "description": "埋头苦读吧。知识就是力量。"
+    },
+    "sport": {
+      "title": "锻炼身体",
+      "description": "去运动一下,保持健康。"
+    },
+    "socialize": {
+      "title": "和朋友聚聚",
+      "description": "咖啡、小酌、欢笑。保持联系。"
+    },
+    "sleep": {
+      "title": "睡个懒觉",
+      "description": "多睡一会儿。有时候这就是你需要的一切。"
+    }
+  }
+}

@@ -1,0 +1,906 @@
+{
+  "barcelona": {
+    "name": "巴塞罗那",
+    "country": "西班牙",
+    "locations": {
+      "bcn-home": {
+        "name": "你的公寓(格拉西亚)",
+        "description": "格拉西亚区中心一间温馨的公寓,你的旅程从这里出发。"
+      },
+      "bcn-plaza-catalunya": {
+        "name": "加泰罗尼亚广场",
+        "description": "巴塞罗那熙攘繁忙的中央广场。行人四处穿行,鸽群四散飞起。喷泉与雕像环绕四周。"
+      },
+      "bcn-plaza-real": {
+        "name": "皇家广场",
+        "description": "一座优雅的广场,棕榈树与拱廊环绕。夜晚这里灯红酒绿,清晨则一片宁静。"
+      },
+      "bcn-plaza-espanya": {
+        "name": "西班牙广场",
+        "description": "一座宏伟的环形广场,两座威尼斯风格的塔楼与巴塞罗那会展中心矗立其间。魔法喷泉就在不远处。"
+      },
+      "bcn-library-central": {
+        "name": "La Central del Raval",
+        "description": "拉瓦尔区一家传奇书店。顶天立地的书架,旧纸张的气味,还有一处安静的阅读角落。"
+      },
+      "bcn-library-catalunya": {
+        "name": "加泰罗尼亚国家图书馆",
+        "description": "加泰罗尼亚的国家图书馆,坐落在一栋美丽的历史建筑中,珍藏着数个世纪的知识。"
+      },
+      "bcn-park-ciutadella": {
+        "name": "城堡公园",
+        "description": "巴塞罗那的绿肺。一片静谧的湖泊、宏伟的喷泉,还有绿荫小径——人们在这里读书、小憩,逃离城市的喧嚣。"
+      },
+      "bcn-park-guell": {
+        "name": "奎尔公园",
+        "description": "高迪在山丘上打造的奇幻公园。色彩斑斓的马赛克、姜饼屋般的建筑,以及俯瞰全城的绝佳视野。"
+      },
+      "bcn-park-montjuic": {
+        "name": "蒙锥克公园",
+        "description": "一座绵延的山顶公园,拥有花园、博物馆与奥林匹克体育场。安静的小径蜿蜒穿过松林。"
+      },
+      "bcn-market-boqueria": {
+        "name": "波盖利亚市场",
+        "description": "巴塞罗那最著名的市场。色彩、气味与声音交织成一片繁华。新鲜水果、腌肉、海鲜,还有供应小吃的迷你酒吧。"
+      },
+      "bcn-market-sant-antoni": {
+        "name": "圣安东尼市场",
+        "description": "一座修复一新的现代主义市场。市场外,周日的旧书与钱币市集吸引着藏家与好奇的路人。"
+      },
+      "bcn-church-santa-maria": {
+        "name": "海洋圣母教堂",
+        "description": "博恩区一座令人惊叹的加泰罗尼亚哥特式教堂。高耸的内部空间与彩绘玻璃营造出一种深沉的静谧氛围。"
+      },
+      "bcn-church-sagrada": {
+        "name": "圣家堂",
+        "description": "高迪未完成的杰作。塔楼如石头长成的树木般直指天空。历经一个多世纪,至今仍在建造之中。"
+      },
+      "bcn-monument-casa-batllo": {
+        "name": "巴特罗之家",
+        "description": "高迪的现代主义杰作。整栋建筑仿佛来自海底世界——曲线、瓷砖,仿佛有生命一般。"
+      },
+      "bcn-monument-pedrera": {
+        "name": "米拉之家",
+        "description": "高迪的石头采石场。整栋建筑如波浪般流动,屋顶上矗立着超现实的烟囱雕塑。巴塞罗那的标志之一。"
+      },
+      "bcn-monument-arc-triomf": {
+        "name": "凯旋门",
+        "description": "一座为1888年世界博览会建造的红砖凯旋门,标志着城堡公园的入口。"
+      },
+      "bcn-cafe-federal": {
+        "name": "Federal Café",
+        "description": "一家明亮通透、咖啡出色的咖啡馆。年轻的上班族在这里对着笔记本电脑忙碌,情侣们共享早餐。"
+      },
+      "bcn-cafe-satan": {
+        "name": "Satan's Coffee Corner",
+        "description": "一家个性十足的精品咖啡小店。城中最好的澳白咖啡,还带着一丝坏笑端上桌。"
+      },
+      "bcn-cafe-nomad": {
+        "name": "Nomad Coffee",
+        "description": "一间隐秘的咖啡实验室。咖啡师们把冲煮当作炼金术,单一产地的咖啡豆来自世界各地。"
+      },
+      "bcn-office-22": {
+        "name": "22@创新区",
+        "description": "这座城市的创新产业区。玻璃高塔与创业公司办公室林立。这座城市在这里工作——或者假装在工作。"
+      },
+      "bcn-theatre-lliure": {
+        "name": "自由剧院",
+        "description": "蒙锥克山上的一家当代剧院。前卫的演出与深刻的对话,在这些墙内不断上演。"
+      },
+      "bcn-plaza-sant-jaume": {
+        "name": "圣哈梅广场",
+        "description": "巴塞罗那的政治中心。市政厅与加泰罗尼亚自治政府大楼,在哥特区这座古老的广场上遥遥相对。"
+      },
+      "bcn-plaza-gracia": {
+        "name": "格拉西亚村广场",
+        "description": "格拉西亚区跳动的心脏。当地人在露台上争论不休,孩子们踢着足球,钟楼静静注视着这一切。"
+      },
+      "bcn-plaza-lesseps": {
+        "name": "莱塞普斯广场",
+        "description": "格拉西亚边缘与山坡交界处一个繁忙的路口。通往城市上方森林公园的入口就从这里开始。"
+      },
+      "bcn-library-born": {
+        "name": "阿古斯蒂·森特列斯图书馆",
+        "description": "位于博恩区的一家社区图书馆。明亮的阅览室直接面向街道,书架的纵深令人惊讶。"
+      },
+      "bcn-park-laberint": {
+        "name": "奥尔塔迷宫公园",
+        "description": "巴塞罗那最古老的花园,藏身于群山之中。中心是一座柏树迷宫——入口很好找,但很容易迷失其中。"
+      },
+      "bcn-park-diagonal-mar": {
+        "name": "对角线海滨公园",
+        "description": "城市边缘靠近海边的一座未来感公园。巨大的钢铁结构框住天空;喷泉为夏日的空气带来凉意。"
+      },
+      "bcn-market-santa-caterina": {
+        "name": "圣卡特琳娜市场",
+        "description": "一座本地市场,顶部是一片色彩斑斓的陶瓷马赛克屋顶,壮观夺目。比波盖利亚市场少了些游客气息——也因此更有生活气息。"
+      },
+      "bcn-market-galvany": {
+        "name": "加尔瓦尼市场",
+        "description": "埃桑普勒区一个安静的社区市场。摊主们对熟客如数家珍,这里的肉贩堪称传奇。"
+      },
+      "bcn-church-pi": {
+        "name": "圣玛丽亚德尔皮教堂",
+        "description": "一座哥特式教堂,拥有世界上最宽的单殿之一。玫瑰花窗为室内洒满彩色光影。"
+      },
+      "bcn-monument-palau-musica": {
+        "name": "加泰罗尼亚音乐宫",
+        "description": "多梅内克-伊-蒙塔内尔设计的联合国教科文组织世界遗产音乐厅。彩绘玻璃、陶瓷花饰,还有一个仿佛在呼吸的天窗。"
+      },
+      "bcn-monument-colom": {
+        "name": "哥伦布纪念碑",
+        "description": "兰布拉大道尽头一座60米高的石柱。哥伦布伫立顶端,手指——据说是——指向大海。城市的标志之一。"
+      },
+      "bcn-monument-palau-nacional": {
+        "name": "国家宫(加泰罗尼亚国家艺术博物馆)",
+        "description": "蒙锥克山上一座宏伟的新古典主义宫殿,国家艺术博物馆的所在地——从露台望去可以俯瞰整座城市。"
+      },
+      "bcn-monument-tibidabo": {
+        "name": "蒂比达博山",
+        "description": "俯瞰整个巴塞罗那的山峰。游乐园与圣心堂共享山顶,与风相伴。"
+      },
+      "bcn-monument-barceloneta": {
+        "name": "巴塞罗内塔",
+        "description": "这座城市的海滩社区。防晒霜与炸鱼的气味弥漫。小贩在沙滩上巡走叫卖,大海永远近在咫尺。"
+      },
+      "bcn-cafe-el-nacional": {
+        "name": "El Nacional",
+        "description": "格拉西亚大道上一栋修复过的现代主义建筑内,一处宏大的美食空间。四家餐厅、四个酒吧,共享一个华丽的大厅。"
+      },
+      "bcn-cafe-bar-marsella": {
+        "name": "Bar Marsella",
+        "description": "巴塞罗那最古老的酒吧,自1820年营业至今。一瓶瓶苦艾酒在架子上积着灰尘。时间仿佛停在了1950年前后。"
+      },
+      "bcn-office-poblenou": {
+        "name": "波布诺大道",
+        "description": "波布诺区的本地大道。初创公司与工作室占据了旧工厂建筑。这个街区正在蜕变成全新的模样。"
+      },
+      "bcn-theatre-liceu": {
+        "name": "利塞奥大剧院",
+        "description": "巴塞罗那位于兰布拉大道上的歌剧院。历经火灾与轰炸后重建,一切都挺过来了。天鹅绒座椅记录着数个世纪的情感。"
+      },
+      "bcn-theatre-nacional": {
+        "name": "加泰罗尼亚国家剧院",
+        "description": "格洛列斯区一座宏伟的玻璃与钢铁结构剧院。经典的加泰罗尼亚剧目与国际作品同台上演。"
+      },
+      "bcn-airport": {
+        "name": "普拉特机场",
+        "description": "通往巴塞罗那的门户。飞机以不间断的节奏起降。每一段旅程都从这里开始、结束——也许,这一段也不例外。"
+      }
+    }
+  },
+  "beijing": {
+    "name": "北京",
+    "country": "中国",
+    "locations": {
+      "bjg-home": {
+        "name": "你的公寓",
+        "description": "你在这座城市的公寓。一个舒适、让你倍感归属的家。"
+      },
+      "bjg-airport-beijing-capital-internationa": {
+        "name": "北京首都国际机场",
+        "description": "北京首都国际机场。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "bjg-airport-beijing-daxing-international": {
+        "name": "北京大兴国际机场",
+        "description": "北京大兴国际机场。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "bjg-airport-nanyuan-air-base": {
+        "name": "南苑机场",
+        "description": "南苑机场。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "bjg-airport-beijing-shahezhen-air-base": {
+        "name": "北京沙河机场",
+        "description": "北京沙河机场。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "bjg-market-donghuamen-complex": {
+        "name": "东华门商业区",
+        "description": "东华门商业区。一个熙攘喧闹的市场,色彩、声音与买卖交织。"
+      },
+      "bjg-plaza-tian-anmen-square": {
+        "name": "天安门广场",
+        "description": "天安门广场。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "bjg-plaza-alishan-square": {
+        "name": "阿里山广场",
+        "description": "阿里山广场。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "bjg-plaza-model-worker-square": {
+        "name": "劳模广场",
+        "description": "劳模广场。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "bjg-plaza-enjoying-snow-yard": {
+        "name": "赏雪院",
+        "description": "赏雪院。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "bjg-library-national-library-of-china-an": {
+        "name": "国家图书馆古籍馆",
+        "description": "国家图书馆古籍馆。一处安静的书籍与思想的栖息地。"
+      },
+      "bjg-library-high-school-library": {
+        "name": "中学图书馆",
+        "description": "中学图书馆。一处安静的书籍与思想的栖息地。"
+      },
+      "bjg-library-chinese-academy-of-social-sc": {
+        "name": "中国社会科学院图书馆",
+        "description": "中国社会科学院图书馆。一处安静的书籍与思想的栖息地。"
+      },
+      "bjg-monument-former-french-legation": {
+        "name": "原法国使馆",
+        "description": "原法国使馆。一座承载着城市记忆的地标。"
+      },
+      "bjg-monument-beijing-ancient-observatory": {
+        "name": "北京古观象台",
+        "description": "北京古观象台。一座承载着城市记忆的地标。"
+      },
+      "bjg-monument-well-of-concubine-zhen": {
+        "name": "珍妃井",
+        "description": "珍妃井。一座承载着城市记忆的地标。"
+      },
+      "bjg-monument-national-centre-for-the-perf": {
+        "name": "国家大剧院",
+        "description": "国家大剧院。一座承载着城市记忆的地标。"
+      },
+      "bjg-park-ritan-park": {
+        "name": "日坛公园",
+        "description": "日坛公园。城市中心的一片绿肺。"
+      },
+      "bjg-park-temple-of-heaven": {
+        "name": "天坛",
+        "description": "天坛。城市中心的一片绿肺。"
+      },
+      "bjg-park-beihai-park": {
+        "name": "北海公园",
+        "description": "北海公园。城市中心的一片绿肺。"
+      },
+      "bjg-park-yongdingmen-park": {
+        "name": "永定门公园",
+        "description": "永定门公园。城市中心的一片绿肺。"
+      },
+      "bjg-church-dongyue-temple": {
+        "name": "东岳庙",
+        "description": "东岳庙。一个充满历史、静谧与仪式感的地方。"
+      },
+      "bjg-church-temple-of-wisdom-attained-zh": {
+        "name": "智化寺",
+        "description": "智化寺。一个充满历史、静谧与仪式感的地方。"
+      },
+      "bjg-church-church-of-zhushikou": {
+        "name": "珠市口教堂",
+        "description": "珠市口教堂。一个充满历史、静谧与仪式感的地方。"
+      },
+      "bjg-church-altar-of-earth-and-harvests": {
+        "name": "社稷坛",
+        "description": "社稷坛。一个充满历史、静谧与仪式感的地方。"
+      },
+      "bjg-theatre-deyunshe": {
+        "name": "德云社",
+        "description": "德云社。每晚灯光下,故事在此上演。"
+      },
+      "bjg-theatre-sanqingyuan-theatre": {
+        "name": "三庆园",
+        "description": "三庆园。每晚灯光下,故事在此上演。"
+      },
+      "bjg-theatre-changan-grand-theatre": {
+        "name": "长安大戏院",
+        "description": "长安大戏院。每晚灯光下,故事在此上演。"
+      },
+      "bjg-theatre-zhongshan-park-concert-hall": {
+        "name": "中山公园音乐堂",
+        "description": "中山公园音乐堂。每晚灯光下,故事在此上演。"
+      },
+      "bjg-office-organization-department-of-t": {
+        "name": "中共中央组织部",
+        "description": "中共中央组织部。城市工作区里一片繁忙的产业蜂巢。"
+      },
+      "bjg-office-the-tower-apartments-at-orie": {
+        "name": "东方广场公寓塔楼",
+        "description": "东方广场公寓塔楼。城市工作区里一片繁忙的产业蜂巢。"
+      },
+      "bjg-office-sinopec-tower": {
+        "name": "中石化大厦",
+        "description": "中石化大厦。城市工作区里一片繁忙的产业蜂巢。"
+      },
+      "bjg-office-huasheng-international": {
+        "name": "华盛国际",
+        "description": "华盛国际。城市工作区里一片繁忙的产业蜂巢。"
+      },
+      "bjg-cafe-sculpting-in-time": {
+        "name": "雕刻时光咖啡馆",
+        "description": "雕刻时光咖啡馆。浓缩咖啡、闲谈,以及流逝的一天。"
+      },
+      "bjg-cafe-the-bookworm": {
+        "name": "老书虫",
+        "description": "老书虫。浓缩咖啡、闲谈,以及流逝的一天。"
+      },
+      "bjg-cafe-metal-hands-coffee": {
+        "name": "Metal Hands Coffee",
+        "description": "Metal Hands Coffee。浓缩咖啡、闲谈,以及流逝的一天。"
+      }
+    }
+  },
+  "new-york": {
+    "name": "纽约",
+    "country": "美国",
+    "locations": {
+      "nyc-home": {
+        "name": "你的公寓",
+        "description": "你在这座城市的公寓。一个舒适、让你倍感归属的家。"
+      },
+      "nyc-plaza-albee-square": {
+        "name": "艾尔比广场",
+        "description": "艾尔比广场。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "nyc-plaza-beastie-boys-square": {
+        "name": "野兽男孩广场",
+        "description": "野兽男孩广场。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "nyc-plaza-urban-plaza": {
+        "name": "城市广场",
+        "description": "城市广场。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "nyc-airport-john-f-kennedy-international": {
+        "name": "肯尼迪国际机场",
+        "description": "肯尼迪国际机场。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "nyc-airport-westchester-county-airport": {
+        "name": "韦斯特切斯特县机场",
+        "description": "韦斯特切斯特县机场。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "nyc-airport-somerset-airport": {
+        "name": "萨默塞特机场",
+        "description": "萨默塞特机场。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "nyc-airport-newark-liberty-international": {
+        "name": "纽瓦克自由国际机场",
+        "description": "纽瓦克自由国际机场。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "nyc-market-union-square-green-market": {
+        "name": "联合广场绿色市场",
+        "description": "联合广场绿色市场。一个熙攘喧闹的市场,色彩、声音与买卖交织。"
+      },
+      "nyc-market-the-market-line": {
+        "name": "The Market Line",
+        "description": "The Market Line。一个熙攘喧闹的市场,色彩、声音与买卖交织。"
+      },
+      "nyc-market-ludlow-flea-market": {
+        "name": "拉德洛跳蚤市场",
+        "description": "拉德洛跳蚤市场。一个熙攘喧闹的市场,色彩、声音与买卖交织。"
+      },
+      "nyc-market-canal-street-market": {
+        "name": "运河街市场",
+        "description": "运河街市场。一个熙攘喧闹的市场,色彩、声音与买卖交织。"
+      },
+      "nyc-library-ottendorfer-library": {
+        "name": "奥腾多弗图书馆",
+        "description": "奥腾多弗图书馆。一处安静的书籍与思想的栖息地。"
+      },
+      "nyc-library-elmer-holmes-bobst-library": {
+        "name": "埃尔默·霍姆斯·博布斯特图书馆",
+        "description": "埃尔默·霍姆斯·博布斯特图书馆。一处安静的书籍与思想的栖息地。"
+      },
+      "nyc-library-jefferson-market-library": {
+        "name": "杰斐逊市场图书馆",
+        "description": "杰斐逊市场图书馆。一处安静的书籍与思想的栖息地。"
+      },
+      "nyc-library-chatham-square-library": {
+        "name": "查塔姆广场图书馆",
+        "description": "查塔姆广场图书馆。一处安静的书籍与思想的栖息地。"
+      },
+      "nyc-monument-stonewall-inn": {
+        "name": "石墙酒吧",
+        "description": "石墙酒吧。一座承载着城市记忆的地标。"
+      },
+      "nyc-monument-brooklyn-bridge": {
+        "name": "布鲁克林大桥",
+        "description": "布鲁克林大桥是纽约市一座斜拉与悬索混合结构的大桥,横跨东河,连接曼哈顿与布鲁克林两区。它于1883年5月24日开通,是东河上第一座固定跨河桥梁。"
+      },
+      "nyc-monument-one-world-trade-center": {
+        "name": "世贸中心一号大楼",
+        "description": "世贸中心一号大楼。一座承载着城市记忆的地标。"
+      },
+      "nyc-monument-manhattan-bridge": {
+        "name": "曼哈顿大桥",
+        "description": "曼哈顿大桥是纽约市一座横跨东河的悬索桥,连接下曼哈顿运河街与布鲁克林市中心。全长6,855英尺,由列昂·莫伊塞夫设计。"
+      },
+      "nyc-church-brooklyn-friends-meetinghous": {
+        "name": "布鲁克林公谊会聚会所",
+        "description": "布鲁克林公谊会聚会所。一个充满历史、静谧与仪式感的地方。"
+      },
+      "nyc-church-hare-krishna-temple": {
+        "name": "哈瑞奎师那神庙",
+        "description": "哈瑞奎师那神庙。一个充满历史、静谧与仪式感的地方。"
+      },
+      "nyc-church-grace-church": {
+        "name": "恩典堂",
+        "description": "恩典堂。一个充满历史、静谧与仪式感的地方。"
+      },
+      "nyc-church-saint-mark-s-in-the-bowery": {
+        "name": "包厘区圣马可教堂",
+        "description": "包厘区圣马可教堂。一个充满历史、静谧与仪式感的地方。"
+      },
+      "nyc-park-union-square-park": {
+        "name": "联合广场公园",
+        "description": "1"
+      },
+      "nyc-park-brooklyn-bridge-park": {
+        "name": "布鲁克林大桥公园",
+        "description": "布鲁克林大桥公园。城市中心的一片绿肺。"
+      },
+      "nyc-park-john-v-lindsay-east-river-pa": {
+        "name": "约翰·V·林赛东河公园",
+        "description": "约翰·V·林赛东河公园。城市中心的一片绿肺。"
+      },
+      "nyc-park-the-queen-elizabeth-ii-septe": {
+        "name": "伊丽莎白二世911纪念花园",
+        "description": "伊丽莎白二世911纪念花园。城市中心的一片绿肺。"
+      },
+      "nyc-theatre-anthology-film-archives": {
+        "name": "Anthology电影资料馆",
+        "description": "Anthology电影资料馆。每晚灯光下,故事在此上演。"
+      },
+      "nyc-theatre-classic-stage-company": {
+        "name": "经典舞台剧团",
+        "description": "经典舞台剧团。每晚灯光下,故事在此上演。"
+      },
+      "nyc-theatre-performance-space-122": {
+        "name": "Performance Space 122",
+        "description": "Performance Space 122。每晚灯光下,故事在此上演。"
+      },
+      "nyc-theatre-public-theater": {
+        "name": "公共剧院",
+        "description": "公共剧院。每晚灯光下,故事在此上演。"
+      },
+      "nyc-cafe-yonah-shimmel-knish-bakery": {
+        "name": "Yonah Shimmel Knish烘焙店",
+        "description": "Yonah Shimmel Knish烘焙店。浓缩咖啡、闲谈,以及流逝的一天。"
+      },
+      "nyc-cafe-the-uncommons": {
+        "name": "The Uncommons",
+        "description": "The Uncommons。浓缩咖啡、闲谈,以及流逝的一天。"
+      },
+      "nyc-cafe-caffe-reggio": {
+        "name": "Caffe Reggio",
+        "description": "Caffe Reggio。浓缩咖啡、闲谈,以及流逝的一天。"
+      },
+      "nyc-cafe-ferrara": {
+        "name": "Ferrara甜品店",
+        "description": "Ferrara甜品店。浓缩咖啡、闲谈,以及流逝的一天。"
+      },
+      "nyc-office-ocme-dna-forensic-biology-la": {
+        "name": "法医办公室DNA法医生物实验楼",
+        "description": "法医办公室DNA法医生物实验楼。城市工作区里一片繁忙的产业蜂巢。"
+      },
+      "nyc-office-28-liberty": {
+        "name": "自由街28号",
+        "description": "自由街28号。城市工作区里一片繁忙的产业蜂巢。"
+      },
+      "nyc-office-one-new-york-plaza": {
+        "name": "纽约广场一号",
+        "description": "纽约广场一号。城市工作区里一片繁忙的产业蜂巢。"
+      },
+      "nyc-office-51-astor-place": {
+        "name": "阿斯特广场51号",
+        "description": "阿斯特广场51号。城市工作区里一片繁忙的产业蜂巢。"
+      }
+    }
+  },
+  "paris": {
+    "name": "巴黎",
+    "country": "法国",
+    "locations": {
+      "paris-home": {
+        "name": "你的公寓(玛黑区)",
+        "description": "玛黑区中心一间小巧的公寓。晨光洒落在拼花地板上。楼下的街道已经苏醒。"
+      },
+      "paris-plaza-republique": {
+        "name": "共和国广场",
+        "description": "多个街区交汇处的一片开阔广场。青铜玛丽安娜雕像伫立中央。每当巴黎需要发声,人们便聚集于此。"
+      },
+      "paris-plaza-vosges": {
+        "name": "孚日广场",
+        "description": "巴黎最古老的规划广场,建于1612年。整齐划一的红砖立面环绕着一座私家花园。维克多·雨果曾在此居住。拱廊下藏着画廊与安静的咖啡馆。"
+      },
+      "paris-plaza-bastille": {
+        "name": "巴士底广场",
+        "description": "曾经堡垒矗立之地,如今是一座环岛,顶端立着七月柱。革命的余音仍萦绕在鹅卵石路面之间。"
+      },
+      "paris-plaza-pigalle": {
+        "name": "皮加勒广场",
+        "description": "蒙马特山脚下。白天是一个满是咖啡馆与唱片店的社区广场,入夜后霓虹灯亮起。这里有这座城市的许多面孔。"
+      },
+      "paris-library-bnf-richelieu": {
+        "name": "黎塞留图书馆",
+        "description": "法国国家图书馆的历史核心。一座椭圆形阅览室,笼罩在巨大的铁与玻璃穹顶之下。学者低声交谈,手稿静静躺在书库中。"
+      },
+      "paris-library-shakespeare": {
+        "name": "莎士比亚书店",
+        "description": "左岸那家传奇的英语书店。狭窄的楼梯通向藏满二手小说的隐秘房间。作家们曾在这里留宿,条件是每天写下一千字。"
+      },
+      "paris-library-forney": {
+        "name": "福尔奈图书馆",
+        "description": "一座专注于工艺美术的图书馆,坐落在中世纪的桑斯府邸内——巴黎仅存的哥特式府邸之一。建筑本身就是这里的藏品。"
+      },
+      "paris-park-luxembourg": {
+        "name": "卢森堡公园",
+        "description": "巴黎人最钟爱的花园。碎石小径,铁椅围绕着中央喷泉排开,秋天空气中弥漫着栗子树的气息。学生在这里读书,老人在这里打法式滚球。"
+      },
+      "paris-park-tuileries": {
+        "name": "杜乐丽花园",
+        "description": "一座在卢浮宫与协和广场之间延展开的规整花园。罗丹与贾科梅蒂的雕塑立于修剪整齐的树木之间。巴黎的中轴线正从此穿过。"
+      },
+      "paris-park-buttes-chaumont": {
+        "name": "肖蒙山丘公园",
+        "description": "第十九区一座起伏浪漫的公园。湖泊、悬崖、吊桥,还有孤岛上的一座希腊神庙。巴黎最富戏剧性的公园。"
+      },
+      "paris-park-bois-boulogne": {
+        "name": "布洛涅森林",
+        "description": "城市西侧边缘一片广袤的森林公园。湖泊、骑马小径,还有隐秘的花园。拿破仑三世以海德公园为蓝本打造了它。这里的呼吸节奏与巴黎其他地方截然不同。"
+      },
+      "paris-market-aligre": {
+        "name": "阿利格尔市场",
+        "description": "巴黎东部最热闹的市场。露天摊位售卖蔬菜、橄榄与香料;室内大厅里则是肉贩与酒商。价格实在,叫卖声此起彼伏。"
+      },
+      "paris-market-enfants-rouges": {
+        "name": "红孩儿市场",
+        "description": "巴黎最古老的有顶市场,可追溯至1615年。一座汇集各大洲美食摊位的迷宫——摩洛哥、日本、黎巴嫩、加勒比风味应有尽有。狭窄的巷道中弥漫着万千气味。"
+      },
+      "paris-market-bastille": {
+        "name": "巴士底市场",
+        "description": "沿运河延伸的露天市场,每周开放两次。奶酪、面包、鲜花、二手书——巴黎生活的全貌。周四清晨,整个街区都会涌向这里。"
+      },
+      "paris-church-notre-dame": {
+        "name": "巴黎圣母院",
+        "description": "巴黎的哥特式心脏,矗立在西岱岛上。八个世纪的石头历史。玫瑰花窗在地面投下缤纷的光影。这座城市的一切,都以此为原点丈量。"
+      },
+      "paris-church-sacre-coeur": {
+        "name": "圣心堂",
+        "description": "一座白色的拜占庭风格教堂,矗立在巴黎最高的山丘上。台阶下总是坐满了俯瞰城市的人们。堂内自1885年起,永续的朝拜从未间断。"
+      },
+      "paris-church-sainte-chapelle": {
+        "name": "圣礼拜堂",
+        "description": "一座几乎全部由彩绘玻璃构成的哥特式礼拜堂。十五扇巨大的花窗高达15米。晴朗的清晨,洒满上层礼拜堂的光线,是这座城市独一无二的景象。"
+      },
+      "paris-monument-eiffel": {
+        "name": "埃菲尔铁塔",
+        "description": "一座建于1889年的铁架塔,曾遭评论家唾弃,却被所有人深爱。夜晚它会闪烁生辉。站上第一层平台,你才第一次真正理解巴黎究竟是什么。"
+      },
+      "paris-monument-arc-triomphe": {
+        "name": "凯旋门",
+        "description": "一座宏伟的新古典主义拱门,矗立在十二条放射状大道的中心。拿破仑下令建造它,却从未见到它完工。无名战士就安息在拱顶之下。"
+      },
+      "paris-monument-louvre": {
+        "name": "卢浮宫",
+        "description": "世界上最大的艺术博物馆,坐落在一座昔日的王宫之内。玻璃金字塔标记着入口。馆内,来自九千年文明的三万五千件藏品,静候在无尽的展厅中。"
+      },
+      "paris-monument-pompidou": {
+        "name": "蓬皮杜中心",
+        "description": "一座内外翻转的建筑——管道、通风井与自动扶梯全都暴露在外。1977年开馆时,巴黎人为此大为光火。如今他们爱上了它。顶层露台的景观真实而奇特。"
+      },
+      "paris-monument-moulin-rouge": {
+        "name": "红磨坊",
+        "description": "蒙马特的红色风车。康康舞的发源地。图卢兹-罗特列克曾在此畅饮,并画下所见的一切。演出至今每晚仍在上演。"
+      },
+      "paris-monument-pont-neuf": {
+        "name": "新桥",
+        "description": "巴黎现存最古老的桥梁,建于1607年。尽管名字叫“新桥”,它却比周围的一切都更长久。恋人们倚在护墙上。塞纳河在桥下缓缓流淌。"
+      },
+      "paris-cafe-flore": {
+        "name": "花神咖啡馆",
+        "description": "存在主义者的咖啡馆。萨特与波伏娃曾在这些桌旁盘踞数十年。咖啡价格不菲,服务生一丝不苟。你可以在这里安坐很久很久。"
+      },
+      "paris-cafe-deux-magots": {
+        "name": "双叟咖啡馆",
+        "description": "海明威、毕加索、西蒙娜·德·波伏娃——他们都曾来过这里。露台正对着古老的修道院。两尊中国木雕挂在天花板上,见证了整个20世纪的流逝。"
+      },
+      "paris-cafe-procope": {
+        "name": "普罗科普咖啡馆",
+        "description": "巴黎最古老的咖啡馆,开业于1686年。伏尔泰、卢梭与罗伯斯庇尔都曾在此有自己的专属座位。咖啡初到这座城市时,曾被视为一场启示。它至今仍带着比自身更古老的味道。"
+      },
+      "paris-office-defense": {
+        "name": "拉德芳斯",
+        "description": "巴黎的商务区,刻意建在历史中心之外。玻璃高塔沿着历史轴线排列。大拱门框住了天空。这里的一切都非常新,也非常庞大。"
+      },
+      "paris-theatre-garnier": {
+        "name": "加尼叶歌剧院",
+        "description": "歌剧魅影的歌剧院。满目黄金、大理石与恢弘的楼梯。吊灯重达六吨,夏加尔绘制了天顶画。这栋建筑本身,比其中上演的任何一出戏都更加戏剧化。"
+      },
+      "paris-theatre-chatelet": {
+        "name": "夏特雷剧院",
+        "description": "塞纳河右岸一座宏伟的19世纪剧院。两千五百个座位,曲目涵盖歌剧、舞蹈与当代表演。佳吉列夫曾在此首演俄罗斯芭蕾舞团的作品。"
+      },
+      "paris-airport-cdg": {
+        "name": "戴高乐机场",
+        "description": "通往法国的门户。2F航站楼那弯曲的屋顶,驶往市区的RER B线,还有喷气燃油与期待交织的独特气味。每一次抵达,都从这条长长的走廊开始。"
+      }
+    }
+  },
+  "seville": {
+    "name": "塞维利亚",
+    "country": "西班牙",
+    "locations": {
+      "seville-home": {
+        "name": "你的公寓(特里亚纳)",
+        "description": "河对岸特里亚纳一侧的一间公寓。透过窗户能看到古桥与大教堂的塔楼。楼下某处,收音机播放着弗拉门戈。"
+      },
+      "seville-plaza-espana": {
+        "name": "西班牙广场",
+        "description": "一座为1929年伊比利亚-美洲博览会建造的半圆形砖瓦宫殿。护城河环绕基座,陶瓷壁龛描绘着西班牙的每一个省份。美得有些不真实。"
+      },
+      "seville-plaza-nueva": {
+        "name": "新广场",
+        "description": "现代塞维利亚的市民中心。市政厅正对着费尔南多三世的骑马雕像。橙树环绕四周,冬天落果满地。"
+      },
+      "seville-plaza-salvador": {
+        "name": "萨尔瓦多广场",
+        "description": "老城中一座热闹的广场,巴洛克风格的萨尔瓦多教堂矗立其中。黄昏时分,台阶上坐满了喝着曼萨尼亚雪利酒的人们。真正的塞维利亚,就在这里上演。"
+      },
+      "seville-plaza-setas": {
+        "name": "恩卡纳西翁广场",
+        "description": "一座旧市场曾矗立数百年的地方,如今被“都市阳伞”——一片起伏的木质天篷,当地人称之为“蘑菇”——所取代。古罗马遗迹就埋藏在这座现代结构的下方。"
+      },
+      "seville-library-archivo-indias": {
+        "name": "西印度群岛综合档案馆",
+        "description": "西班牙殖民时代最伟大的档案馆,坐落在大教堂旁一座16世纪文艺复兴风格的建筑中。四万三千份档案,记录着新大陆的每一次航行、条约与征服。"
+      },
+      "seville-library-universidad": {
+        "name": "塞维利亚大学图书馆",
+        "description": "坐落在昔日的皇家烟草工厂内——据比才的歌剧所述,那正是卡门工作的地方。高耸的拱顶天花板,清凉的石廊,还有吸纳了数个世纪苦读时光的阅览室。"
+      },
+      "seville-park-maria-luisa": {
+        "name": "玛丽亚·路易莎公园",
+        "description": "塞维利亚最重要的公共公园,橙树、玉兰与棕榈树遮蔽其间。喷泉为空气带来凉意;孔雀不紧不慢地穿过小径。西班牙广场就矗立在公园一端。"
+      },
+      "seville-park-alameda": {
+        "name": "赫拉克勒斯林荫道",
+        "description": "欧洲最古老的公共林荫道之一,白杨树与罗马石柱夹道而立。白天是狗与孩子的天下,傍晚露台坐满了人。周围的街区向来带着一丝波希米亚气质。"
+      },
+      "seville-park-jardines-alcazar": {
+        "name": "皇宫花园",
+        "description": "塞维利亚王宫内的封闭花园。喷泉、橙树、玫瑰篱笆,以及跨越数个世纪、融合伊斯兰与文艺复兴风格的亭台。走进围墙之内,外面的酷热便消失无踪。"
+      },
+      "seville-market-triana": {
+        "name": "特里亚纳市场",
+        "description": "特里亚纳区的社区市场,建在圣豪尔赫城堡的废墟之上。陶艺匠、鱼贩与小吃酒吧共享着这座有顶大厅。墙上的瓷砖出自本地工匠之手。"
+      },
+      "seville-market-arenal": {
+        "name": "阿雷纳尔市场",
+        "description": "阿雷纳尔区一座19世纪的铁架市场大厅。摊位售卖火腿、橄榄、鲜鱼与香料。厅内几家小酒吧,清晨咖啡与冰啤酒都供应得同样认真。"
+      },
+      "seville-market-feria": {
+        "name": "菲利亚市场",
+        "description": "塞维利亚最古老的市场街,穿过马卡雷纳区。每逢周四,一场名为“Jueves”的跳蚤市场便占据整条街道,古董商、钱币贩子与被遗忘之物的收藏者云集于此。"
+      },
+      "seville-church-catedral": {
+        "name": "塞维利亚大教堂",
+        "description": "世界上最大的哥特式教堂,建在一座宏伟清真寺的旧址之上。克里斯托弗·哥伦布长眠于此。内部规模令人难以置信——中殿仿佛吞没了所有光线。"
+      },
+      "seville-church-salvador": {
+        "name": "萨尔瓦多教堂",
+        "description": "塞维利亚第二大教堂,一座建于10世纪清真寺遗址之上的巴洛克杰作。橙树环绕的庭院正是清真寺留下的痕迹。堂内,镀金祭坛直抵天花板。"
+      },
+      "seville-church-macarena": {
+        "name": "马卡雷纳圣殿",
+        "description": "供奉着希望圣母马卡雷纳像——塞维利亚最受崇敬的圣像。圣周期间,壮汉们见她经过也会落泪。承载她的金色圣轿就存放在这里的一间侧室中。"
+      },
+      "seville-monument-alcazar": {
+        "name": "塞维利亚王宫",
+        "description": "一座自10世纪起持续使用至今的皇家宫殿。穆德哈尔式拱门、瓷砖装饰与耗时数年雕琢而成的灰泥天花板。至今仍是西班牙王室在塞维利亚的官方住所。"
+      },
+      "seville-monument-giralda": {
+        "name": "希拉尔达塔",
+        "description": "大教堂的钟楼,最初是阿尔摩哈德清真寺的宣礼塔。塔内的坡道原是为骑马者所建。登上塔顶,整个塞维利亚与河流尽收眼底。"
+      },
+      "seville-monument-torre-oro": {
+        "name": "黄金塔",
+        "description": "瓜达尔基维尔河畔一座13世纪的十二边形瞭望塔,由阿尔摩哈德人建造,用以控制河道通行。“黄金塔”之名,或许源自它曾经覆盖的金色瓷砖。如今这里是一座小型海事博物馆。"
+      },
+      "seville-monument-metropol-parasol": {
+        "name": "都市阳伞",
+        "description": "由于尔根·迈耶设计的世界最大木结构建筑。六片起伏如蘑菇的天篷高高矗立在老城区上空。顶部步道提供了独一无二的城市天际线景观。"
+      },
+      "seville-monument-plaza-toros": {
+        "name": "皇家骑士斗牛场",
+        "description": "西班牙最古老、最著名的斗牛场之一,建于1761年。无论你是否观看斗牛表演,这座巴洛克式立面与赭色内部空间,都是一种别具一格、严肃的建筑艺术。"
+      },
+      "seville-cafe-rinconcillo": {
+        "name": "El Rinconcillo酒馆",
+        "description": "塞维利亚最古老的酒馆,自1670年营业至今。酒保用粉笔把账单写在木质柜台上。火腿悬挂在天花板下,酒从木桶中舀出。很久很久没有改变过,而这正是它的魅力所在。"
+      },
+      "seville-cafe-la-campana": {
+        "name": "La Campana甜品店",
+        "description": "塞维利亚主要步行街谢尔佩斯街尽头一家历史悠久的甜品店兼咖啡馆。橱窗里的杏仁酥饼随季节更换。大理石桌面见证过无数场对话。"
+      },
+      "seville-cafe-casa-morales": {
+        "name": "Casa Morales酒馆",
+        "description": "大教堂附近一家自1850年营业至今的酒馆兼酒窖。葡萄酒从嵌在墙内的巨大陶罐中舀出。石地板,低矮的天花板,光线永远以一种恒定的角度斜射进来。"
+      },
+      "seville-office-cartuja": {
+        "name": "卡尔图哈岛",
+        "description": "曾举办1992年世博会的岛屿,如今是一座科技与科学园区。哥伦布曾在此规划航程的老修道院,依旧矗立在玻璃办公楼之间。两段历史在此不安地共存。"
+      },
+      "seville-theatre-maestranza": {
+        "name": "马埃斯特兰萨剧院",
+        "description": "塞维利亚河畔主要的歌剧院。这座启发了《卡门》《唐璜》与《塞维利亚理发师》的城市,如今拥有一座配得上这些杰作的舞台。夏季演出总在暑热终于消退后,于夜幕降临时开场。"
+      },
+      "seville-theatre-central": {
+        "name": "中央剧院",
+        "description": "卡尔图哈岛上一座当代表演艺术剧院。舞蹈、戏剧与实验作品在此上演。是塞维利亚少数几个总能带来惊喜的场馆之一。"
+      },
+      "seville-airport-svq": {
+        "name": "塞维利亚机场",
+        "description": "对于这样一座独具性格的城市来说,这是一座朴实的机场。到达大厅直接敞向安达卢西亚的阳光。从这里,乘出租车或巴士二十分钟即可进城,随后,暑热与橙花的香气便会将你彻底包围。"
+      }
+    }
+  },
+  "tokyo": {
+    "name": "东京",
+    "country": "日本",
+    "locations": {
+      "tky-home": {
+        "name": "你的公寓",
+        "description": "你在这座城市的公寓。一个舒适、让你倍感归属的家。"
+      },
+      "tky-airport-narita-international-airport": {
+        "name": "成田国际机场",
+        "description": "成田国际机场。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "tky-airport-tokyo-international-airport": {
+        "name": "东京国际机场(羽田)",
+        "description": "东京国际机场(羽田)。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "tky-airport-yokota-air-base": {
+        "name": "横田基地",
+        "description": "横田基地。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "tky-airport-iruma-air-base": {
+        "name": "入间基地",
+        "description": "入间基地。这座城市通往世界的门户——也是通往这段旅程的起点。"
+      },
+      "tky-market-tsukiji-outer-market": {
+        "name": "筑地场外市场",
+        "description": "筑地场外市场。一个熙攘喧闹的市场,色彩、声音与买卖交织。"
+      },
+      "tky-market-ameya-yokocho": {
+        "name": "阿美横町",
+        "description": "阿美横町。一个熙攘喧闹的市场,色彩、声音与买卖交织。"
+      },
+      "tky-market-tsukishima-second-children-s": {
+        "name": "月岛第二儿童公园农夫市集",
+        "description": "月岛第二儿童公园农夫市集。一个熙攘喧闹的市场,色彩、声音与买卖交织。"
+      },
+      "tky-market-aomori-antenna-shop": {
+        "name": "青森特产店",
+        "description": "青森特产店。一个熙攘喧闹的市场,色彩、声音与买卖交织。"
+      },
+      "tky-plaza-silver-bell-square-b1": {
+        "name": "Silver Bell广场B1",
+        "description": "Silver Bell广场B1。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "tky-plaza-iidabashi-3-chrome-square": {
+        "name": "饭田桥三丁目广场",
+        "description": "饭田桥三丁目广场。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "tky-plaza-dorin-square-b1-c62-steam-lo": {
+        "name": "道林广场B1(C62蒸汽机车)",
+        "description": "道林广场B1(C62蒸汽机车)。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "tky-plaza-group-meeting-point-for-stud": {
+        "name": "学生集合广场",
+        "description": "学生集合广场。一个热闹的公共广场,整座城市在此汇聚。"
+      },
+      "tky-library-national-archives-of-japan": {
+        "name": "日本国立公文书馆",
+        "description": "日本国立公文书馆。一处安静的书籍与思想的栖息地。"
+      },
+      "tky-library-national-diet-library-tokyo": {
+        "name": "国立国会图书馆东京本馆",
+        "description": "国立国会图书馆东京本馆。一处安静的书籍与思想的栖息地。"
+      },
+      "tky-library-university-of-tokyo-general": {
+        "name": "东京大学总图书馆",
+        "description": "东京大学总图书馆。一处安静的书籍与思想的栖息地。"
+      },
+      "tky-library-yoshihiro-yonezawa-memorial": {
+        "name": "米泽嘉博纪念图书馆(漫画与亚文化)",
+        "description": "米泽嘉博纪念图书馆(漫画与亚文化)。一处安静的书籍与思想的栖息地。"
+      },
+      "tky-church-ichigaya-kamegaoka-hachiman": {
+        "name": "市谷龟冈八幡宫",
+        "description": "市谷龟冈八幡宫。一个充满历史、静谧与仪式感的地方。"
+      },
+      "tky-church-fukagawa-shimmei-shrine": {
+        "name": "深川神明宫",
+        "description": "深川神明宫。一个充满历史、静谧与仪式感的地方。"
+      },
+      "tky-church-shofukuin": {
+        "name": "祥福院",
+        "description": "祥福院。一个充满历史、静谧与仪式感的地方。"
+      },
+      "tky-church-genkakuji-temple": {
+        "name": "幻覚寺",
+        "description": "幻覚寺。一个充满历史、静谧与仪式感的地方。"
+      },
+      "tky-monument-tokyo-ramen-street": {
+        "name": "东京拉面街",
+        "description": "东京拉面街。一座承载着城市记忆的地标。"
+      },
+      "tky-monument-akasaka-sacas": {
+        "name": "赤坂Sacas",
+        "description": "赤坂Sacas。一座承载着城市记忆的地标。"
+      },
+      "tky-monument-kaminarimon": {
+        "name": "雷门",
+        "description": "雷门。一座承载着城市记忆的地标。"
+      },
+      "tky-monument-kanda-book-town": {
+        "name": "神田书街",
+        "description": "神田书街。一座承载着城市记忆的地标。"
+      },
+      "tky-park-hongo-water-station-park": {
+        "name": "本乡给水场公园",
+        "description": "本乡给水场公园。城市中心的一片绿肺。"
+      },
+      "tky-park-hama-rikyu-gardens": {
+        "name": "滨离宫恩赐庭园",
+        "description": "滨离宫恩赐庭园。城市中心的一片绿肺。"
+      },
+      "tky-park-koishikawa-korakuen-gardens": {
+        "name": "小石川后乐园",
+        "description": "小石川后乐园。城市中心的一片绿肺。"
+      },
+      "tky-park-kiyosumi-gardens": {
+        "name": "清澄庭园",
+        "description": "清澄庭园。城市中心的一片绿肺。"
+      },
+      "tky-theatre-tokyo-takarazuka-theater": {
+        "name": "东京宝冢剧场",
+        "description": "东京宝冢剧场。每晚灯光下,故事在此上演。"
+      },
+      "tky-theatre-suzumoto-entertainment-hall": {
+        "name": "铃本演艺场",
+        "description": "铃本演艺场。每晚灯光下,故事在此上演。"
+      },
+      "tky-theatre-meijiza": {
+        "name": "明治座",
+        "description": "明治座。每晚灯光下,故事在此上演。"
+      },
+      "tky-theatre-mitsukoshi-theater": {
+        "name": "三越剧场",
+        "description": "三越剧场。每晚灯光下,故事在此上演。"
+      },
+      "tky-cafe-tully-s-coffee": {
+        "name": "Tully's Coffee",
+        "description": "Tully's Coffee。浓缩咖啡、闲谈,以及流逝的一天。"
+      },
+      "tky-cafe-ryogoku-terrace": {
+        "name": "两国露台",
+        "description": "两国露台。浓缩咖啡、闲谈,以及流逝的一天。"
+      },
+      "tky-cafe-home-cafe": {
+        "name": "@home cafe",
+        "description": "@home cafe。浓缩咖啡、闲谈,以及流逝的一天。"
+      },
+      "tky-cafe-r25-cafe": {
+        "name": "R25 café",
+        "description": "R25 café。浓缩咖啡、闲谈,以及流逝的一天。"
+      },
+      "tky-office-new-otani-garden-court": {
+        "name": "新大谷花园庭院",
+        "description": "新大谷花园庭院。城市工作区里一片繁忙的产业蜂巢。"
+      },
+      "tky-office-grantokyo-south-tower": {
+        "name": "GranTokyo南塔",
+        "description": "GranTokyo南塔。城市工作区里一片繁忙的产业蜂巢。"
+      },
+      "tky-office-midtown-tower": {
+        "name": "中城大厦",
+        "description": "中城大厦。城市工作区里一片繁忙的产业蜂巢。"
+      },
+      "tky-office-sanno-park-tower": {
+        "name": "山王公园塔",
+        "description": "山王公园塔。城市工作区里一片繁忙的产业蜂巢。"
+      }
+    }
+  }
+}

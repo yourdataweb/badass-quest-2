@@ -1,0 +1,219 @@
+{
+  "app": {
+    "title": "叛逆之旅 2",
+    "subtitle": "每座城市,都是一段新的天命之旅",
+    "startGame": "开始新游戏",
+    "continueGame": "继续游戏",
+    "selectCity": "选择你的城市",
+    "selectBook": "选择你的故事",
+    "language": "语言"
+  },
+  "ui": {
+    "time": "时间",
+    "day": "天",
+    "hour": "时",
+    "resources": "资源",
+    "vitality": "活力",
+    "knowledge": "知识",
+    "social": "社交",
+    "career": "事业",
+    "fulfillment": "满足感",
+    "goToMap": "打开地图",
+    "back": "返回",
+    "continue": "继续",
+    "save": "保存",
+    "load": "读取",
+    "reset": "重置",
+    "start": "开始",
+    "choose": "选择一个选项",
+    "chooseActivity": "一天结束了",
+    "activitiesRemaining": "个活动剩余",
+    "timeRemaining": "今日剩余时间",
+    "locationsAvailable": "可前往的地点",
+    "currentLocation": "你在",
+    "distance": "距离",
+    "chapter": "章节",
+    "close": "关闭"
+  },
+  "home": {
+    "title": "你的公寓",
+    "shower": "洗个澡",
+    "showerDesc": "以清爽的状态开始新的一天",
+    "breakfast": "吃点东西",
+    "breakfastDesc": "一顿好饭能给你带来能量",
+    "workRemotely": "远程工作",
+    "workRemotelyDesc": "在家赚钱",
+    "phone": "看看手机",
+    "phoneDesc": "看看这个世界正在发生什么",
+    "goOut": "出门去",
+    "goOutDesc": "打开地图,选择一个目的地",
+    "mailbox": "查看邮件",
+    "mailboxDesc": "说不定有一封信",
+    "morningText": "阳光透过窗户洒进来。吊扇缓缓转动。昨晚的梦还清晰地留在脑海里。你要做什么?"
+  },
+  "activitiesSide": {
+    "libraryRead": "研读古卷",
+    "libraryResearch": "做研究",
+    "parkExercise": "锻炼",
+    "parkMeditate": "冥想",
+    "cafeDiscussion": "争论",
+    "cafeWrite": "写作",
+    "marketHaggle": "讨价还价",
+    "marketTaste": "试吃",
+    "plazaStreet": "扒窃",
+    "plazaPeople": "观察路人",
+    "churchContemplate": "沉思",
+    "churchInspect": "细细察看",
+    "theatreWatch": "看戏",
+    "officeNetwork": "拓展人脉",
+    "officeUpskill": "提升技能",
+    "monumentPhoto": "拍照",
+    "monumentStudy": "研究历史"
+  },
+  "characters": {
+    "melquisedec": "Melquisedec",
+    "merce": "Mercè",
+    "englishman": "英国人",
+    "alchemist": "炼金术士",
+    "narrator": "旁白"
+  },
+  "stats": {
+    "fulfillmentDesc": "你与自己天命之旅的连结",
+    "vitalityDesc": "面对新一天所需的体力",
+    "resourcesDesc": "可用资金",
+    "knowledgeDesc": "文化素养、街头智慧、人生阅历",
+    "socialDesc": "友谊、人脉、信任",
+    "careerDesc": "工作状况"
+  },
+  "location": {
+    "resonates": "这个地方让你心有所感。有什么在告诉你,这里就是对的地方。",
+    "investigate": "调查",
+    "investigateBackToMap": "调查 → 返回地图",
+    "backToMap": "← 返回地图"
+  },
+  "activityPicker": {
+    "todaysPlan": "今日计划:",
+    "dayCompleted": "今日已完成!",
+    "finishDay": "结束这一天"
+  },
+  "map": {
+    "explore": "探索",
+    "investigate": "调查 →",
+    "visit": "前往 →",
+    "storyBadge": "剧情",
+    "youAreHere": "你在这里"
+  },
+  "recap": {
+    "yourProgress": "你的进度",
+    "yourJourney": "你的旅程",
+    "placesVisited": "到访地点",
+    "totalScore": "总分",
+    "viewEpilogue": "查看尾声",
+    "nextChapter": "下一章"
+  },
+  "epilogue": {
+    "theEnd": "结局",
+    "journeyText": "旅程从未真正结束。总有另一个人,正要开始属于他们自己的旅程。",
+    "returnToTitle": "返回标题界面"
+  },
+  "citySelect": {
+    "tagline": "你的故事将从哪里开始?",
+    "moreCitiesSoon": "更多城市即将上线……",
+    "story": "个故事",
+    "stories": "个故事",
+    "locations": "个地点"
+  },
+  "title": {
+    "chooseCharacter": "选择你的角色",
+    "businessman": "商人",
+    "sportsman": "运动员",
+    "builtWith": "用 ❤️ 为巴塞罗那打造"
+  },
+  "result": {
+    "success": "成功!",
+    "failed": "失败",
+    "wonDesc": "你完成了这项活动,获得了属性点数。",
+    "lostDesc": "这次没能成功。没有获得属性点数。",
+    "statsEarned": "获得的属性",
+    "tryAgainHint": "换一个活动试试,或者稍后再来。"
+  },
+  "minigames": {
+    "sideScroller": {
+      "arrived": "到达终点!",
+      "winReward": "+5 活力   +3 知识",
+      "knockedOut": "被击倒",
+      "loseReward": "-10 活力",
+      "jump": "↑ 跳跃",
+      "shoot": "🔫 射击"
+    },
+    "quickQuiz": {
+      "questionProgress": "第 {{current}} / {{total}} 题"
+    },
+    "brawl": {
+      "attackProgress": "攻击 {{current}} / {{total}}",
+      "health": "生命值:",
+      "brace": "做好准备……",
+      "incomingAttack": "攻击来袭!",
+      "parried": "格挡成功!",
+      "knockedOut": "被击倒!",
+      "tookHit": "被击中了!",
+      "youWin": "你赢了!",
+      "startFight": "开始战斗",
+      "instruction": "点击对应方向进行格挡 · 撑过 {{count}} 次攻击"
+    },
+    "chase": {
+      "clearedCount": "已通过 {{cleared}}/{{total}}",
+      "lives": "生命:",
+      "dodge": "躲避障碍物!",
+      "escaped": "🏆 逃脱成功!",
+      "caught": "💥 被抓住了!",
+      "run": "快跑!",
+      "instruction": "切换车道躲避障碍物 · 撑过 {{count}} 个障碍即可获胜"
+    },
+    "lockpick": {
+      "pins": "锁芯:",
+      "pickTheLock": "撬锁",
+      "readyInstruction": "指针进入绿色区域时点击 · 允许失误 {{count}} 次",
+      "pinOf": "第 {{current}} / {{total}} 个锁芯",
+      "tapNow": "👆 就是现在!点击开锁!",
+      "tapOrSpace": "点击或按空格键……",
+      "click": "✓ 成功!",
+      "miss": "✗ 失误!",
+      "opened": "🔓 打开了!",
+      "jammed": "🔒 卡住了!"
+    },
+    "photograph": {
+      "shotOf": "第 {{current}} / {{total}} 张",
+      "frameShot": "构好完美的一张照片",
+      "readyInstruction": "拍摄对象居中时点击 · 拍到 {{count}}/{{total}} 张好照片即可获胜",
+      "waitMoment": "等待最佳时机……",
+      "tapNow": "📸 就是现在!点击拍照!",
+      "click": "📸 咔嚓!",
+      "tooEarly": "❌ 太早了!",
+      "greatShots": "🌟 拍得真棒!",
+      "tryAgain": "🎞️ 再试一次!"
+    },
+    "pickpocket": {
+      "roundOf": "第 {{current}} / {{total}} 轮",
+      "alert": "警觉",
+      "stealInstruction": "趁目标分心时下手",
+      "readyInstruction": "他们看向别处时点击 · 得手 {{count}}/{{total}} 次即可获胜",
+      "waitMoment": "等待最佳时机……",
+      "tapNow": "👆 就是现在——点击下手!",
+      "snatched": "💰 得手!",
+      "caughtFeedback": "🚨 被发现了!",
+      "cleanEscape": "🥷 完美脱身!",
+      "busted": "🚔 被抓了!"
+    },
+    "tapChallenge": {
+      "roundOf": "第 {{current}} / {{total}} 轮",
+      "stopMarker": "让指针停在绿色区域内",
+      "readyInstruction": "点击或按空格键 · 命中 {{count}}/{{total}} 次即可成功",
+      "tapToStop": "点击停止!",
+      "hit": "✓ 命中!",
+      "miss": "✗ 没中",
+      "niceTiming": "时机把握得很好",
+      "justOutside": "差一点就在区域内了"
+    }
+  }
+}
