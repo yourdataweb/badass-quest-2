@@ -112,13 +112,10 @@ export function checkAutoAdvance(
  */
 export function handleDialogueComplete(
   chapter: StoryChapter | undefined,
-  currentChapterIndex: number,
   visitedLocationIds: string[],
-  allChapters: StoryChapter[],
   allLocations: LocationPOI[]
 ): {
   phase: GamePhase;
-  newChapterIndex?: number;
 } {
   if (!chapter) return { phase: 'map' };
 

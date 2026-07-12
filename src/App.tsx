@@ -148,13 +148,9 @@ export default function App() {
   }, [setPhase]);
 
   const handleDialogueComplete = useCallback(() => {
-    const result = engineDialogueComplete(chapter, currentChapter, visitedLocationIds, allChapters, city?.locations ?? []);
-    if (result.newChapterIndex !== undefined && chapter) {
-      doAdvance(result as any, chapter.id);
-    } else {
-      setPhase(result.phase as any);
-    }
-  }, [chapter, currentChapter, visitedLocationIds, allChapters, city, setPhase, doAdvance]);
+    const result = engineDialogueComplete(chapter, visitedLocationIds, city?.locations ?? []);
+    setPhase(result.phase as any);
+  }, [chapter, visitedLocationIds, city, setPhase]);
 
   const handleRecapNext = useCallback(() => {
     if (isLastChapter) {

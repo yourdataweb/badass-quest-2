@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import GameLayout from '../components/GameLayout';
 import { useGameStore } from '../store/gameStore';
-import { getCityById } from '../data/cities/index';
 import { getStoryById } from '../data/story/index';
 
 const BASE = import.meta.env.BASE_URL;
@@ -12,10 +11,8 @@ interface IntroScreenProps {
 
 export default function IntroScreen({ onContinue }: IntroScreenProps) {
   const { t, i18n } = useTranslation();
-  const chosenCity = useGameStore((s) => s.chosenCity);
   const chosenBook = useGameStore((s) => s.chosenBook);
 
-  const city = chosenCity ? getCityById(chosenCity) : null;
   const story = chosenBook ? getStoryById(chosenBook) : null;
 
   const bookTitle = story

@@ -16,7 +16,7 @@ export default function HomeScreen({ onGoToMap }: HomeScreenProps) {
   const city = chosenCity ? getCityById(chosenCity) : null;
   const home = city ? getHomeLocation(city) : null;
   const homeName = home
-    ? (i18n.language === 'ca' ? home.nameCa : i18n.language === 'es' ? home.nameEs : home.name)
+    ? (i18n.language === 'ca' ? home.nameCa ?? home.name : i18n.language === 'es' ? home.nameEs ?? home.name : home.name)
     : '';
   const homeDesc = home
     ? (i18n.language === 'ca' ? home.descriptionCa : i18n.language === 'es' ? home.descriptionEs : home.description)
