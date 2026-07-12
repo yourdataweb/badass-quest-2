@@ -2,7 +2,7 @@ import type { GameTime } from '../store/types';
 
 export const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 export const DAY_NAMES_ES = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
-export const DAY_NAMES_CA = ['diumenge', 'dilluns', 'dimarts', 'dimecres', 'dijous', 'divendres', 'dissabte'];
+export const DAY_NAMES_ZH = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
 
 export const MONTH_NAMES = [
   'January', 'February', 'March', 'April', 'May', 'June',
@@ -14,14 +14,14 @@ export const MONTH_NAMES_ES = [
   'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre',
 ];
 
-export const MONTH_NAMES_CA = [
-  'gener', 'febrer', 'març', 'abril', 'maig', 'juny',
-  'juliol', 'agost', 'setembre', 'octubre', 'novembre', 'desembre',
+export const MONTH_NAMES_ZH = [
+  '一月', '二月', '三月', '四月', '五月', '六月',
+  '七月', '八月', '九月', '十月', '十一月', '十二月',
 ];
 
 export function formatTime(t: GameTime, lang: string = 'en'): string {
-  const dayNames = lang === 'ca' ? DAY_NAMES_CA : lang === 'es' ? DAY_NAMES_ES : DAY_NAMES;
-  const monthNames = lang === 'ca' ? MONTH_NAMES_CA : lang === 'es' ? MONTH_NAMES_ES : MONTH_NAMES;
+  const dayNames = lang === 'zh' ? DAY_NAMES_ZH : lang === 'es' ? DAY_NAMES_ES : DAY_NAMES;
+  const monthNames = lang === 'zh' ? MONTH_NAMES_ZH : lang === 'es' ? MONTH_NAMES_ES : MONTH_NAMES;
   const dayName = dayNames[t.dayOfWeek];
   const period = t.hour >= 12 ? 'PM' : 'AM';
   const hour12 = t.hour % 12 === 0 ? 12 : t.hour % 12;

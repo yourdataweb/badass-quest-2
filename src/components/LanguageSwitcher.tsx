@@ -7,8 +7,8 @@ export default function LanguageSwitcher() {
 
   const languages = [
     { code: 'en', label: `${BASE}flags/en.svg`, title: 'English' },
+    { code: 'zh', label: `${BASE}flags/zh.svg`, title: '中文' },
     { code: 'es', label: `${BASE}flags/es.svg`, title: 'Español' },
-    { code: 'ca', label: `${BASE}flags/ca.svg`, title: 'Català' },
   ];
 
   return (
