@@ -1,4 +1,5 @@
 import { barcelona } from './barcelona';
+import { beijing } from './beijing';
 import { newYork } from './new-york';
 import { paris } from './paris';
 import { seville } from './seville';
@@ -7,6 +8,7 @@ import type { City, LocationPOI } from '../../store/types';
 
 const registry = new Map<string, City>([
   ['barcelona', barcelona],
+  ['beijing', beijing],
   ['new-york', newYork],
   ['paris', paris],
   ['seville', seville],

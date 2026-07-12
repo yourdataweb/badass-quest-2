@@ -1,0 +1,182 @@
+[
+  {
+    "id": "bjg-home",
+    "name": "Your apartment",
+    "type": "home"
+  },
+  {
+    "id": "bjg-airport-beijing-capital-internationa",
+    "name": "Beijing Capital International Airport",
+    "type": "airport"
+  },
+  {
+    "id": "bjg-airport-beijing-daxing-international",
+    "name": "Beijing Daxing International Airport",
+    "type": "airport"
+  },
+  {
+    "id": "bjg-airport-nanyuan-air-base",
+    "name": "Nanyuan Air Base",
+    "type": "airport"
+  },
+  {
+    "id": "bjg-airport-beijing-shahezhen-air-base",
+    "name": "Beijing Shahezhen Air Base",
+    "type": "airport"
+  },
+  {
+    "id": "bjg-market-donghuamen-complex",
+    "name": "Donghuamen Complex",
+    "type": "market"
+  },
+  {
+    "id": "bjg-plaza-tian-anmen-square",
+    "name": "Tian'anmen Square",
+    "type": "plaza"
+  },
+  {
+    "id": "bjg-plaza-alishan-square",
+    "name": "Alishan Square",
+    "type": "plaza"
+  },
+  {
+    "id": "bjg-plaza-model-worker-square",
+    "name": "Model Worker Square",
+    "type": "plaza"
+  },
+  {
+    "id": "bjg-plaza-enjoying-snow-yard",
+    "name": "Enjoying Snow Yard",
+    "type": "plaza"
+  },
+  {
+    "id": "bjg-library-national-library-of-china-an",
+    "name": "National Library of China Ancient Books Library",
+    "type": "library"
+  },
+  {
+    "id": "bjg-library-high-school-library",
+    "name": "High school library",
+    "type": "library"
+  },
+  {
+    "id": "bjg-library-chinese-academy-of-social-sc",
+    "name": "Chinese Academy of Social Sciences Library",
+    "type": "library"
+  },
+  {
+    "id": "bjg-monument-former-french-legation",
+    "name": "Former French Legation",
+    "type": "monument"
+  },
+  {
+    "id": "bjg-monument-beijing-ancient-observatory",
+    "name": "Beijing Ancient Observatory",
+    "type": "monument"
+  },
+  {
+    "id": "bjg-monument-well-of-concubine-zhen",
+    "name": "Well of Concubine Zhen",
+    "type": "monument"
+  },
+  {
+    "id": "bjg-monument-national-centre-for-the-perf",
+    "name": "National Centre for the Performing Arts",
+    "type": "monument"
+  },
+  {
+    "id": "bjg-park-ritan-park",
+    "name": "Ritan Park",
+    "type": "park"
+  },
+  {
+    "id": "bjg-park-temple-of-heaven",
+    "name": "Temple of Heaven",
+    "type": "park"
+  },
+  {
+    "id": "bjg-park-beihai-park",
+    "name": "Beihai Park",
+    "type": "park"
+  },
+  {
+    "id": "bjg-park-yongdingmen-park",
+    "name": "Yongdingmen Park",
+    "type": "park"
+  },
+  {
+    "id": "bjg-church-dongyue-temple",
+    "name": "Dongyue Temple",
+    "type": "church"
+  },
+  {
+    "id": "bjg-church-temple-of-wisdom-attained-zh",
+    "name": "Temple of Wisdom Attained (Zhìhuà sì)",
+    "type": "church"
+  },
+  {
+    "id": "bjg-church-church-of-zhushikou",
+    "name": "Church of Zhushikou",
+    "type": "church"
+  },
+  {
+    "id": "bjg-church-altar-of-earth-and-harvests",
+    "name": "Altar of Earth and Harvests",
+    "type": "church"
+  },
+  {
+    "id": "bjg-theatre-deyunshe",
+    "name": "Deyunshe",
+    "type": "theatre"
+  },
+  {
+    "id": "bjg-theatre-sanqingyuan-theatre",
+    "name": "Sanqingyuan Theatre",
+    "type": "theatre"
+  },
+  {
+    "id": "bjg-theatre-changan-grand-theatre",
+    "name": "Chang'an Grand Theatre",
+    "type": "theatre"
+  },
+  {
+    "id": "bjg-theatre-zhongshan-park-concert-hall",
+    "name": "Zhongshan Park Concert Hall",
+    "type": "theatre"
+  },
+  {
+    "id": "bjg-office-organization-department-of-t",
+    "name": "Organization Department of the CPC Central Committee",
+    "type": "office"
+  },
+  {
+    "id": "bjg-office-the-tower-apartments-at-orie",
+    "name": "The Tower Apartments at Oriental Plaza",
+    "type": "office"
+  },
+  {
+    "id": "bjg-office-sinopec-tower",
+    "name": "Sinopec Tower",
+    "type": "office"
+  },
+  {
+    "id": "bjg-office-huasheng-international",
+    "name": "Huasheng International",
+    "type": "office"
+  },
+  {
+    "id": "bjg-cafe-sculpting-in-time",
+    "name": "Sculpting in Time Café",
+    "type": "cafe"
+  },
+  {
+    "id": "bjg-cafe-the-bookworm",
+    "name": "The Bookworm",
+    "type": "cafe"
+  },
+  {
+    "id": "bjg-cafe-metal-hands-coffee",
+    "name": "Metal Hands Coffee",
+    "type": "cafe"
+  }
+]
