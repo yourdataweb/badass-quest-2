@@ -32,7 +32,8 @@
     "locationsAvailable": "Llocs disponibles",
     "currentLocation": "Ets a",
     "distance": "distància",
-    "chapter": "Capítol"
+    "chapter": "Capítol",
+    "close": "Tancar"
   },
   "home": {
     "title": "El Teu Pis",
@@ -47,25 +48,8 @@
     "goOut": "Sortir al carrer",
     "goOutDesc": "Obrir el mapa i triar un destí",
     "mailbox": "Mirar el correu",
-    "mailboxDesc": "Potser tens carta"
-  },
-  "activities": {
-    "work": "Treballar",
-    "workDesc": "Jornada completa de 8 hores",
-    "halfWork": "Mitja jornada",
-    "halfWorkDesc": "4 hores de feina",
-    "explore": "Explorar la ciutat",
-    "exploreDesc": "Descobrir nous llocs i pistes ocultes",
-    "read": "Llegir / Estudiar",
-    "readDesc": "Augmentar el teu coneixement",
-    "sport": "Fer esport",
-    "sportDesc": "Millorar la teva vitalitat",
-    "socialize": "Sortir amb amics",
-    "socializeDesc": "Connectar amb la teva xarxa social",
-    "meditate": "Meditar / Reflexionar",
-    "meditateDesc": "Connectar amb la teva Llegenda Personal",
-    "sleep": "Dormir més",
-    "sleepDesc": "Recuperar energia"
+    "mailboxDesc": "Potser tens carta",
+    "morningText": "El sol entra per la finestra. El ventilador de sostre gira. El somni d'aquesta nit encara és fresc a la teva ment. Què fas?"
   },
   "activitiesSide": {
     "libraryRead": "Llegir Rotlles",
@@ -100,5 +84,136 @@
     "knowledgeDesc": "Cultura, carrer, saviesa",
     "socialDesc": "Amistats, contactes, confiança",
     "careerDesc": "Situació laboral"
+  },
+  "location": {
+    "resonates": "Aquest lloc et ressona. Alguna cosa et diu que has vingut al lloc correcte.",
+    "investigate": "Investigar",
+    "investigateBackToMap": "Investigar → Tornar al mapa",
+    "backToMap": "← Tornar al mapa"
+  },
+  "activityPicker": {
+    "todaysPlan": "Resum del dia:",
+    "dayCompleted": "Dia completat!",
+    "finishDay": "Acabar el dia"
+  },
+  "map": {
+    "explore": "Explorar",
+    "investigate": "Investigar →",
+    "visit": "Visitar →",
+    "storyBadge": "Història",
+    "youAreHere": "Ets aquí"
+  },
+  "recap": {
+    "yourProgress": "El teu progrés",
+    "yourJourney": "El teu viatge",
+    "placesVisited": "llocs visitats",
+    "totalScore": "Puntuació total",
+    "viewEpilogue": "Veure l'Epíleg",
+    "nextChapter": "Següent Capítol"
+  },
+  "epilogue": {
+    "theEnd": "El Final",
+    "journeyText": "El viatge mai s'acaba del tot. Algú altre just està començant el seu.",
+    "returnToTitle": "Tornar al Títol"
+  },
+  "citySelect": {
+    "tagline": "On comença la teva història?",
+    "moreCitiesSoon": "Properament més ciutats...",
+    "story": "història",
+    "stories": "històries",
+    "locations": "llocs"
+  },
+  "title": {
+    "chooseCharacter": "Tria el teu personatge",
+    "businessman": "L'empresari",
+    "sportsman": "L'esportista",
+    "builtWith": "Fet amb ❤️ per a Barcelona"
+  },
+  "result": {
+    "success": "Aconseguit!",
+    "failed": "Fallit",
+    "wonDesc": "Has completat l'activitat i has guanyat punts d'estadística.",
+    "lostDesc": "No ho has aconseguit aquesta vegada. No has guanyat punts d'estadística.",
+    "statsEarned": "Estadístiques guanyades",
+    "tryAgainHint": "Prova una altra activitat o torna més tard."
+  },
+  "minigames": {
+    "sideScroller": {
+      "arrived": "HAS ARRIBAT!",
+      "winReward": "+5 Vitalitat   +3 Coneixement",
+      "knockedOut": "FORA DE COMBAT",
+      "loseReward": "-10 Vitalitat",
+      "jump": "↑ SALTAR",
+      "shoot": "🔫 DISPARAR"
+    },
+    "quickQuiz": {
+      "questionProgress": "Pregunta {{current}} / {{total}}"
+    },
+    "brawl": {
+      "attackProgress": "Atac {{current}} / {{total}}",
+      "health": "Salut:",
+      "brace": "Prepara't...",
+      "incomingAttack": "Atac entrant!",
+      "parried": "Parat!",
+      "knockedOut": "Fora de combat!",
+      "tookHit": "Has rebut un cop!",
+      "youWin": "Has guanyat!",
+      "startFight": "Començar Baralla",
+      "instruction": "Toca la direcció correcta per parar · sobreviu {{count}} atacs"
+    },
+    "chase": {
+      "clearedCount": "{{cleared}}/{{total}} superats",
+      "lives": "Vides:",
+      "dodge": "Esquiva els obstacles!",
+      "escaped": "🏆 Has escapat!",
+      "caught": "💥 Atrapat!",
+      "run": "Corre!",
+      "instruction": "Canvia de carril per esquivar · sobreviu {{count}} obstacles per guanyar"
+    },
+    "lockpick": {
+      "pins": "Pius:",
+      "pickTheLock": "Forçar el pany",
+      "readyInstruction": "Toca quan l'agulla estigui a l'arc verd · {{count}} errors permesos",
+      "pinOf": "Pi {{current}} de {{total}}",
+      "tapNow": "👆 Ara! Toca per forçar!",
+      "tapOrSpace": "Toca o prem Espai...",
+      "click": "✓ Clic!",
+      "miss": "✗ Error!",
+      "opened": "🔓 Obert!",
+      "jammed": "🔒 Encallat!"
+    },
+    "photograph": {
+      "shotOf": "Foto {{current}} / {{total}}",
+      "frameShot": "Enquadra la foto perfecta",
+      "readyInstruction": "Toca quan el subjecte estigui centrat · {{count}}/{{total}} bones fotos per guanyar",
+      "waitMoment": "Espera el moment adequat...",
+      "tapNow": "📸 Ara! Toca per disparar!",
+      "click": "📸 Clic!",
+      "tooEarly": "❌ Massa aviat!",
+      "greatShots": "🌟 Grans fotos!",
+      "tryAgain": "🎞️ Torna-ho a provar!"
+    },
+    "pickpocket": {
+      "roundOf": "Ronda {{current}} / {{total}}",
+      "alert": "Alerta",
+      "stealInstruction": "Roba quan l'objectiu estigui distret",
+      "readyInstruction": "Toca quan miri cap a un altre costat · {{count}}/{{total}} robatoris per guanyar",
+      "waitMoment": "Espera el moment adequat...",
+      "tapNow": "👆 ARA — toca per robar!",
+      "snatched": "💰 Robat!",
+      "caughtFeedback": "🚨 Enxampat!",
+      "cleanEscape": "🥷 Fugida neta!",
+      "busted": "🚔 Enxampat!"
+    },
+    "tapChallenge": {
+      "roundOf": "Ronda {{current}} / {{total}}",
+      "stopMarker": "Atura el marcador dins la zona verda",
+      "readyInstruction": "Toca o prem Espai · {{count}}/{{total}} encerts per aconseguir-ho",
+      "tapToStop": "Toca per aturar!",
+      "hit": "✓ Encert!",
+      "miss": "✗ Error",
+      "niceTiming": "Bon moment",
+      "justOutside": "Just fora de la zona"
+    }
   }
 }

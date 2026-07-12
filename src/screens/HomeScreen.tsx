@@ -4,23 +4,20 @@ import GameLayout from '../components/GameLayout';
 import LocationImage from '../components/LocationImage';
 import HomeActivities from '../components/HomeActivities';
 import { getCityById, getHomeLocation } from '../data/cities/index';
+import { locationName, locationDescription } from '../i18n/helpers';
 
 interface HomeScreenProps {
   onGoToMap: () => void;
 }
 
 export default function HomeScreen({ onGoToMap }: HomeScreenProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const chosenCity = useGameStore((s) => s.chosenCity);
 
   const city = chosenCity ? getCityById(chosenCity) : null;
   const home = city ? getHomeLocation(city) : null;
-  const homeName = home
-    ? (i18n.language === 'ca' ? home.nameCa ?? home.name : i18n.language === 'es' ? home.nameEs ?? home.name : home.name)
-    : '';
-  const homeDesc = home
-    ? (i18n.language === 'ca' ? home.descriptionCa : i18n.language === 'es' ? home.descriptionEs : home.description)
-    : '';
+  const homeName = home ? locationName(t, chosenCity ?? '', home.id) : '';
+  const homeDesc = home ? locationDescription(t, chosenCity ?? '', home.id) : '';
 
   return (
     <GameLayout showMapButton={false}>
@@ -55,11 +52,7 @@ export default function HomeScreen({ onGoToMap }: HomeScreenProps) {
                 <p className="story-text text-gray-300 text-sm leading-relaxed mb-2">{homeDesc}</p>
               )}
               <p className="story-text text-gray-300 text-sm leading-relaxed">
-                {i18n.language === 'ca'
-                  ? "El sol entra per la finestra. El ventilador de sosté gira. El somni d'aquesta nit encara és fresc a la teva ment. Què fas?"
-                  : i18n.language === 'es'
-                  ? 'El sol entra por la ventana. El ventilador de techo gira. El sueño de esta noche aún está fresco en tu mente. ¿Qué haces?'
-                  : "Sunlight streams through the window. The ceiling fan turns. Last night's dream is still fresh in your mind. What do you do?"}
+                {t('home.morningText')}
               </p>
             </div>
           </div>

@@ -6,8 +6,8 @@ import GameLayout from '../components/GameLayout';
 const BASE = import.meta.env.BASE_URL;
 
 const CHARACTERS = [
-  { id: 'trump', name: 'The businessman', file: 'trump.png' },
-  { id: 'ramos', name: 'The sportsman', file: 'ramos.png' },
+  { id: 'trump', nameKey: 'title.businessman', file: 'trump.png' },
+  { id: 'ramos', nameKey: 'title.sportsman', file: 'ramos.png' },
 ];
 
 export default function TitleScreen() {
@@ -38,7 +38,7 @@ export default function TitleScreen() {
           <div className="w-24 h-0.5 bg-[#e94560]/50 mx-auto mb-6" />
 
           {/* Character picker */}
-          <p className="text-gray-500 text-xs uppercase tracking-wider mb-3">Choose your character</p>
+          <p className="text-gray-500 text-xs uppercase tracking-wider mb-3">{t('title.chooseCharacter')}</p>
           <div className="grid grid-cols-2 gap-3 mb-6">
             {CHARACTERS.map((char) => {
               const isSelected = selected === char.id;
@@ -54,12 +54,12 @@ export default function TitleScreen() {
                 >
                   <img
                     src={`${BASE}characters/${char.file}`}
-                    alt={char.name}
+                    alt={t(char.nameKey)}
                     className="w-full aspect-square object-cover object-top"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent`} />
                   <div className="absolute bottom-0 left-0 right-0 pb-2 px-2">
-                    <p className="text-white text-xs font-semibold">{char.name}</p>
+                    <p className="text-white text-xs font-semibold">{t(char.nameKey)}</p>
                   </div>
                   {isSelected && (
                     <div className="absolute top-2 right-2 w-5 h-5 rounded-full bg-[#e94560] flex items-center justify-center text-white text-xs font-bold">✓</div>
@@ -78,7 +78,7 @@ export default function TitleScreen() {
           </button>
 
           <p className="text-gray-500 text-xs mt-6">
-            Built with ❤️ for Barcelona
+            {t('title.builtWith')}
           </p>
         </div>
       </div>

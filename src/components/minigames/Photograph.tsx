@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const SHOTS = 3;
 const WIN_SHOTS = 2;
@@ -15,6 +16,7 @@ interface PhotographProps {
 const SUBJECTS = ['🕊️', '🌹', '👤', '🐦', '🌸'];
 
 export default function Photograph({ onResult }: PhotographProps) {
+  const { t } = useTranslation();
   const [phase, setPhase] = useState<Phase>('ready');
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
@@ -81,7 +83,7 @@ export default function Photograph({ onResult }: PhotographProps) {
     <div className="w-full max-w-lg mx-auto flex flex-col gap-5 select-none" onClick={handleShoot}>
       {/* Shot counter */}
       <div className="flex items-center justify-between text-xs text-gray-400">
-        <span>Shot {Math.min(round + 1, SHOTS)} / {SHOTS}</span>
+        <span>{t('minigames.photograph.shotOf', { current: Math.min(round + 1, SHOTS), total: SHOTS })}</span>
         <div className="flex gap-1.5">
           {Array.from({ length: SHOTS }).map((_, i) => (
             <div key={i} className={`w-3 h-3 rounded-full transition-colors ${
@@ -124,17 +126,17 @@ export default function Photograph({ onResult }: PhotographProps) {
         {/* Feedback flash */}
         {phase === 'shot' && (
           <div className="absolute inset-0 flex items-center justify-center bg-white/20 animate-pulse pointer-events-none">
-            <span className="text-2xl font-bold text-white drop-shadow-lg">📸 Click!</span>
+            <span className="text-2xl font-bold text-white drop-shadow-lg">{t('minigames.photograph.click')}</span>
           </div>
         )}
         {phase === 'missed' && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/40 pointer-events-none">
-            <span className="text-2xl font-bold text-red-400">❌ Too early!</span>
+            <span className="text-2xl font-bold text-red-400">{t('minigames.photograph.tooEarly')}</span>
           </div>
         )}
         {phase === 'done' && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/50 pointer-events-none">
-            <span className="text-2xl font-bold">{score >= WIN_SHOTS ? '🌟 Great shots!' : '🎞️ Try again!'}</span>
+            <span className="text-2xl font-bold">{score >= WIN_SHOTS ? t('minigames.photograph.greatShots') : t('minigames.photograph.tryAgain')}</span>
           </div>
         )}
       </div>
@@ -157,13 +159,13 @@ export default function Photograph({ onResult }: PhotographProps) {
       <div className="text-center min-h-[2.5rem] flex items-center justify-center">
         {phase === 'ready' && (
           <div className="bg-[#252525] border border-gray-700 rounded-xl px-5 py-3 w-full">
-            <p className="text-white font-semibold text-sm mb-0.5">Frame the perfect shot</p>
-            <p className="text-gray-400 text-xs">Tap when the subject is centred · {WIN_SHOTS}/{SHOTS} good shots to win</p>
+            <p className="text-white font-semibold text-sm mb-0.5">{t('minigames.photograph.frameShot')}</p>
+            <p className="text-gray-400 text-xs">{t('minigames.photograph.readyInstruction', { count: WIN_SHOTS, total: SHOTS })}</p>
           </div>
         )}
         {phase === 'framing' && (
           <p className={`text-sm font-bold transition-all ${inSweet ? 'text-[#22c55e] animate-pulse scale-110' : 'text-gray-500'}`}>
-            {inSweet ? '📸 Now! Tap to shoot!' : 'Wait for the right moment...'}
+            {inSweet ? t('minigames.photograph.tapNow') : t('minigames.photograph.waitMoment')}
           </p>
         )}
       </div>

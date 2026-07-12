@@ -5,6 +5,7 @@ import GameLayout from '../components/GameLayout';
 import DialogueBox from '../components/DialogueBox';
 import MomentLimite from '../components/MomentLimite';
 import { getStoryById } from '../data/story/index';
+import { dialogueText, optionText, momentLimitText, momentOptionText, momentOptionResultText } from '../i18n/helpers';
 import type { DialogueNode } from '../store/types';
 
 interface DialogueScreenProps {
@@ -13,7 +14,7 @@ interface DialogueScreenProps {
 }
 
 export default function DialogueScreen({ chapterIndex, onComplete }: DialogueScreenProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const updateStats = useGameStore((s) => s.updateStats);
   const recordDecision = useGameStore((s) => s.recordDecision);
   const stats = useGameStore((s) => s.stats);
@@ -34,16 +35,6 @@ export default function DialogueScreen({ chapterIndex, onComplete }: DialogueScr
       return t(`characters.${key}`);
     }
     return speaker;
-  };
-
-  const getLocalizedText = (
-    text: string,
-    textEs?: string,
-    textCa?: string
-  ): string => {
-    if (i18n.language === 'ca' && textCa) return textCa;
-    if (i18n.language === 'es' && textEs) return textEs;
-    return text;
   };
 
   const handleOption = (optionId: string) => {
@@ -91,15 +82,15 @@ export default function DialogueScreen({ chapterIndex, onComplete }: DialogueScr
       <GameLayout>
         <div className="h-full p-4 max-w-2xl mx-auto">
           <MomentLimite
-            text={getLocalizedText(ml.text, ml.textEs, ml.textCa)}
+            text={momentLimitText(t, chosenBook ?? '', chapter.id)}
             timeSeconds={ml.timeSeconds}
             options={ml.options.map((opt) => ({
               id: opt.id,
-              text: getLocalizedText(opt.text, opt.textEs, opt.textCa),
+              text: momentOptionText(t, chosenBook ?? '', chapter.id, opt.id),
               requirements: opt.requirements as Partial<Record<string, number>> | undefined,
               currentStats: statsRecord,
               effects: opt.effects as Record<string, number>,
-              resultText: getLocalizedText(opt.resultText, opt.resultTextEs, opt.resultTextCa),
+              resultText: momentOptionResultText(t, chosenBook ?? '', chapter.id, opt.id),
               onClick: () => {
                 handleMomentOption(opt.id);
               },
@@ -116,11 +107,11 @@ export default function DialogueScreen({ chapterIndex, onComplete }: DialogueScr
       <div className="h-full p-4">
         <DialogueBox
           speaker={getSpeakerName(currentNode.speaker)}
-          text={getLocalizedText(currentNode.text, currentNode.textEs, currentNode.textCa)}
+          text={dialogueText(t, chosenBook ?? '', currentNode.id)}
           speakerSprite={currentNode.sprite}
           options={currentNode.options.map((opt) => ({
             id: opt.id,
-            text: getLocalizedText(opt.text, opt.textEs, opt.textCa),
+            text: optionText(t, chosenBook ?? '', opt.id),
             disabled: false,
             onClick: () => handleOption(opt.id),
           }))}

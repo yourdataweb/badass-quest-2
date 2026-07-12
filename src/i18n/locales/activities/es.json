@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "read": {
+      "title": "Leer / Estudiar",
+      "description": "Darle a los libros. El conocimiento es poder."
+    },
+    "sport": {
+      "title": "Hacer Deporte",
+      "description": "Entrenar. Mantenerse en forma."
+    },
+    "socialize": {
+      "title": "Salir con Amigos",
+      "description": "Café, copas, risas. Mantener el contacto."
+    },
+    "sleep": {
+      "title": "Dormir Más",
+      "description": "Dormir más. A veces es lo único que necesitas."
+    }
+  }
+}

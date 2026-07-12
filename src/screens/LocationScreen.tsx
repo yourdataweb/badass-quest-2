@@ -15,6 +15,7 @@ import Chase from '../components/minigames/Chase';
 import Lockpick from '../components/minigames/Lockpick';
 import Photograph from '../components/minigames/Photograph';
 import { getActivitiesForType, type ActivityDef } from '../data/locationActivities';
+import { locationName, locationDescription } from '../i18n/helpers';
 import type { LocationPOI, Stats } from '../store/types';
 
 interface LocationScreenProps {
@@ -68,26 +69,17 @@ export default function LocationScreen({
   onBackToMap,
   onProceed,
 }: LocationScreenProps) {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
   const addVisitedLocation = useGameStore((s) => s.addVisitedLocation);
   const updateStats = useGameStore((s) => s.updateStats);
   const advanceTime = useGameStore((s) => s.advanceTime);
+  const chosenCity = useGameStore((s) => s.chosenCity);
   const completedActivitiesRaw = useGameStore((s) => s.completedLocationActivities[location.id]);
   const completedActivities = completedActivitiesRaw ?? [];
   const markLocationActivityComplete = useGameStore((s) => s.markLocationActivityComplete);
 
-  const locName =
-    (i18n.language === 'ca'
-      ? location.nameCa
-      : i18n.language === 'es'
-      ? location.nameEs
-      : location.name) ?? location.name;
-  const locDesc =
-    (i18n.language === 'ca'
-      ? location.descriptionCa
-      : i18n.language === 'es'
-      ? location.descriptionEs
-      : location.description) ?? location.description;
+  const locName = locationName(t, chosenCity ?? '', location.id);
+  const locDesc = locationDescription(t, chosenCity ?? '', location.id);
 
   /* ── Activity / mini‑game view state ── */
   type ActivityView = { kind: 'idle' } | { kind: 'game'; act: ActivityDef } | { kind: 'result'; act: ActivityDef; won: boolean; effects: Partial<Stats> };
@@ -143,11 +135,7 @@ export default function LocationScreen({
                 <div className="flex items-start gap-2 mb-4 px-3 py-2.5 rounded-lg bg-[#22c55e]/30 border border-[#22c55e]/70">
                   <span className="text-base mt-px">✨</span>
                   <p className="text-green-300 text-sm font-medium leading-relaxed">
-                    {i18n.language === 'ca'
-                      ? 'Aquest lloc et ressona. Alguna cosa et diu que has vingut al lloc correcte.'
-                      : i18n.language === 'es'
-                      ? 'Este lugar te resuena. Algo te dice que has venido al sitio correcto.'
-                      : 'This place resonates with you. Something tells you this is the right place.'}
+                    {t('location.resonates')}
                   </p>
                 </div>
               )}
@@ -172,7 +160,7 @@ export default function LocationScreen({
                 }}
                 className="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-[#22c55e] to-[#16a34a] shadow-lg shadow-[#22c55e]/20 hover:brightness-110 active:scale-[0.98] transition-all"
               >
-                {i18n.language === 'ca' ? 'Investigar' : i18n.language === 'es' ? 'Investigar' : 'Investigate'} →
+                {t('location.investigate')} →
               </button>
             )}
 
@@ -184,11 +172,7 @@ export default function LocationScreen({
                 }}
                 className="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-[#22c55e] to-[#16a34a] shadow-lg shadow-[#22c55e]/20 hover:brightness-110 active:scale-[0.98] transition-all"
               >
-                {i18n.language === 'ca'
-                  ? 'Investigar → Tornar al mapa'
-                  : i18n.language === 'es'
-                  ? 'Investigar → Volver al mapa'
-                  : 'Investigate → Back to map'}
+                {t('location.investigateBackToMap')}
               </button>
             )}
 
@@ -221,11 +205,7 @@ export default function LocationScreen({
               onClick={onBackToMap}
               className="w-full py-2.5 rounded-xl font-medium text-sm text-slate-400 bg-[#1e293b] border border-[#334155] hover:bg-[#253347] hover:text-slate-300 active:scale-[0.98] transition-all"
             >
-              {i18n.language === 'ca'
-                ? '← Tornar al mapa'
-                : i18n.language === 'es'
-                ? '← Volver al mapa'
-                : '← Back to map'}
+              {t('location.backToMap')}
             </button>
           </div>
         </div>

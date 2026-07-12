@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ROUNDS_TOTAL = 5;
 const ROUNDS_TO_WIN = 3;
@@ -12,6 +13,7 @@ interface TapChallengeProps {
 type Phase = 'ready' | 'playing' | 'hit' | 'miss' | 'done';
 
 export default function TapChallenge({ onResult }: TapChallengeProps) {
+  const { t } = useTranslation();
   const [phase, setPhase] = useState<Phase>('ready');
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
@@ -112,7 +114,7 @@ export default function TapChallenge({ onResult }: TapChallengeProps) {
     >
       {/* Round / score header */}
       <div className="flex items-center justify-between text-xs text-gray-500">
-        <span>Round {Math.min(round + 1, ROUNDS_TOTAL)} / {ROUNDS_TOTAL}</span>
+        <span>{t('minigames.tapChallenge.roundOf', { current: Math.min(round + 1, ROUNDS_TOTAL), total: ROUNDS_TOTAL })}</span>
         <div className="flex gap-1">
           {Array.from({ length: ROUNDS_TOTAL }).map((_, i) => (
             <div
@@ -150,7 +152,7 @@ export default function TapChallenge({ onResult }: TapChallengeProps) {
         {/* Feedback label */}
         {(phase === 'hit' || phase === 'miss') && (
           <div className={`absolute inset-0 flex items-center justify-center text-lg font-bold ${phase === 'hit' ? 'text-green-400' : 'text-[#e94560]'}`}>
-            {phase === 'hit' ? '✓ Hit!' : '✗ Miss'}
+            {phase === 'hit' ? t('minigames.tapChallenge.hit') : t('minigames.tapChallenge.miss')}
           </div>
         )}
       </div>
@@ -159,15 +161,15 @@ export default function TapChallenge({ onResult }: TapChallengeProps) {
       <div className="text-center">
         {phase === 'ready' && (
           <div className="bg-[#252525] border border-gray-700 rounded-xl px-6 py-4">
-            <p className="text-white font-semibold text-sm mb-1">Stop the marker inside the green zone</p>
-            <p className="text-gray-500 text-xs">Tap or press Space · {ROUNDS_TO_WIN}/{ROUNDS_TOTAL} hits to succeed</p>
+            <p className="text-white font-semibold text-sm mb-1">{t('minigames.tapChallenge.stopMarker')}</p>
+            <p className="text-gray-500 text-xs">{t('minigames.tapChallenge.readyInstruction', { count: ROUNDS_TO_WIN, total: ROUNDS_TOTAL })}</p>
           </div>
         )}
         {phase === 'playing' && (
-          <p className="text-gray-400 text-sm animate-pulse">Tap to stop!</p>
+          <p className="text-gray-400 text-sm animate-pulse">{t('minigames.tapChallenge.tapToStop')}</p>
         )}
         {(phase === 'hit' || phase === 'miss') && (
-          <p className="text-gray-500 text-xs">{lastHit ? 'Nice timing' : 'Just outside the zone'}</p>
+          <p className="text-gray-500 text-xs">{lastHit ? t('minigames.tapChallenge.niceTiming') : t('minigames.tapChallenge.justOutside')}</p>
         )}
       </div>
     </div>

@@ -1,0 +1,906 @@
+{
+  "barcelona": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "locations": {
+      "bcn-home": {
+        "name": "Your Apartment (Gràcia)",
+        "description": "A cozy apartment in the heart of Gràcia. Your starting point."
+      },
+      "bcn-plaza-catalunya": {
+        "name": "Plaça de Catalunya",
+        "description": "The bustling central square of Barcelona. Pigeons scatter as people cross in every direction. Fountains and statues line the perimeter."
+      },
+      "bcn-plaza-real": {
+        "name": "Plaza Real",
+        "description": "An elegant square with palm trees and arched walkways. Nightlife buzzes here, but in the morning it is peaceful."
+      },
+      "bcn-plaza-espanya": {
+        "name": "Plaça d'Espanya",
+        "description": "A grand roundabout dominated by two Venetian towers and the Fira de Barcelona convention center. The Magic Fountain lies just beyond."
+      },
+      "bcn-library-central": {
+        "name": "La Central del Raval",
+        "description": "A legendary bookstore in the Raval neighborhood. Floor-to-ceiling shelves, the smell of old paper, and a quiet reading nook in the back."
+      },
+      "bcn-library-catalunya": {
+        "name": "Biblioteca de Catalunya",
+        "description": "The national library of Catalonia. Housed in a beautiful historic building, it holds centuries of knowledge."
+      },
+      "bcn-park-ciutadella": {
+        "name": "Parc de la Ciutadella",
+        "description": "The green lung of Barcelona. A peaceful lake, grand fountain, and shady paths where people read, nap, and escape the city."
+      },
+      "bcn-park-guell": {
+        "name": "Parc Güell",
+        "description": "Gaudí's whimsical park on the hill. Colorful mosaics, gingerbread houses, and a view of the whole city."
+      },
+      "bcn-park-montjuic": {
+        "name": "Montjuïc Park",
+        "description": "A sprawling hilltop park with gardens, museums, and the Olympic stadium. Quiet trails wind through pine trees."
+      },
+      "bcn-market-boqueria": {
+        "name": "La Boqueria",
+        "description": "Barcelona's most famous market. A riot of color, smell, and sound. Fresh fruit, cured meats, seafood, and tiny bars serving tapas."
+      },
+      "bcn-market-sant-antoni": {
+        "name": "Mercat de Sant Antoni",
+        "description": "A restored modernist market. Outside, a Sunday book and coin market draws collectors and curious browsers alike."
+      },
+      "bcn-church-santa-maria": {
+        "name": "Santa Maria del Mar",
+        "description": "A stunning Catalan Gothic church in the Born district. Its soaring interior and stained glass create an atmosphere of profound silence."
+      },
+      "bcn-church-sagrada": {
+        "name": "Sagrada Família",
+        "description": "Gaudí's unfinished masterpiece. Towers reach for the sky like stone trees. Under construction for over a century."
+      },
+      "bcn-monument-casa-batllo": {
+        "name": "Casa Batlló",
+        "description": "Gaudí's modernist masterpiece. A building that looks like it belongs under the sea — curved, tiled, alive."
+      },
+      "bcn-monument-pedrera": {
+        "name": "La Pedrera",
+        "description": "Gaudí's stone quarry. A building that flows like waves, with a rooftop of surreal chimneys. An icon of Barcelona."
+      },
+      "bcn-monument-arc-triomf": {
+        "name": "Arc de Triomf",
+        "description": "A red-brick triumphal arch built for the 1888 World Fair. It marks the entrance to the Ciutadella park."
+      },
+      "bcn-cafe-federal": {
+        "name": "Federal Café",
+        "description": "A bright, airy café with excellent coffee. Young professionals tap away on laptops while couples share breakfast."
+      },
+      "bcn-cafe-satan": {
+        "name": "Satan's Coffee Corner",
+        "description": "A tiny specialty coffee shop with attitude. The best flat white in town, served with a smirk."
+      },
+      "bcn-cafe-nomad": {
+        "name": "Nomad Coffee",
+        "description": "A hidden coffee lab. The baristas treat brewing like alchemy. Single-origin beans from around the world."
+      },
+      "bcn-office-22": {
+        "name": "22@ Office District",
+        "description": "The innovation district. Glass towers and startup offices. Where the city works — or pretends to."
+      },
+      "bcn-theatre-lliure": {
+        "name": "Teatre Lliure",
+        "description": "A contemporary theatre on Montjuïc. Avant-garde performances and deep conversations happen within its walls."
+      },
+      "bcn-plaza-sant-jaume": {
+        "name": "Plaça de Sant Jaume",
+        "description": "The political heart of Barcelona. The City Hall and the Generalitat face each other across this ancient square in the Gothic Quarter."
+      },
+      "bcn-plaza-gracia": {
+        "name": "Plaça de la Vila de Gràcia",
+        "description": "The beating heart of the Gràcia neighbourhood. Locals argue on terraces, kids play football, and the clock tower watches over it all."
+      },
+      "bcn-plaza-lesseps": {
+        "name": "Plaça de Lesseps",
+        "description": "A busy junction at the edge of Gràcia and the hillside. The entrance to the forest parks above the city begins here."
+      },
+      "bcn-library-born": {
+        "name": "Biblioteca Agustí Centelles",
+        "description": "A neighbourhood library housed in the Born district. Bright reading rooms open onto the street, and the shelves run deep."
+      },
+      "bcn-park-laberint": {
+        "name": "Parc del Laberint d'Horta",
+        "description": "The oldest garden in Barcelona, hidden in the hills. A cypress hedge maze waits at its centre — simple to enter, easy to get lost in."
+      },
+      "bcn-park-diagonal-mar": {
+        "name": "Parc Diagonal Mar",
+        "description": "A futuristic park at the edge of the city near the sea. Giant steel structures frame the sky; fountains cool the summer air."
+      },
+      "bcn-market-santa-caterina": {
+        "name": "Mercat de Santa Caterina",
+        "description": "A local market crowned by a spectacular mosaic roof of colourful ceramic tiles. Less touristic than the Boqueria — more alive for it."
+      },
+      "bcn-market-galvany": {
+        "name": "Mercat de Galvany",
+        "description": "A quiet, neighbourhood market in the Eixample. Stallholders know their regulars by name. The butcher is legendary."
+      },
+      "bcn-church-pi": {
+        "name": "Basílica de Santa Maria del Pi",
+        "description": "A Gothic church with one of the widest single-nave interiors in the world. The rose window floods the interior with coloured light."
+      },
+      "bcn-monument-palau-musica": {
+        "name": "Palau de la Música Catalana",
+        "description": "A UNESCO World Heritage concert hall by Domènech i Montaner. Stained glass, ceramic flowers, and a skylight that seems to breathe."
+      },
+      "bcn-monument-colom": {
+        "name": "Monument a Colom",
+        "description": "A 60-metre column at the end of La Rambla. Columbus stands at the top, pointing — famously — out to sea. A city icon."
+      },
+      "bcn-monument-palau-nacional": {
+        "name": "Palau Nacional (MNAC)",
+        "description": "A vast neoclassical palace perched on Montjuïc. Home to the National Art Museum — and a view of the entire city from its terrace."
+      },
+      "bcn-monument-tibidabo": {
+        "name": "Tibidabo",
+        "description": "The mountain that looks over all of Barcelona. The amusement park and the church of the Sacred Heart share the summit with the wind."
+      },
+      "bcn-monument-barceloneta": {
+        "name": "La Barceloneta",
+        "description": "The city's beach neighbourhood. The smell of sunscreen and fried fish. Vendors patrol the sand. The sea is always a few steps away."
+      },
+      "bcn-cafe-el-nacional": {
+        "name": "El Nacional",
+        "description": "A grand gastronomic space inside a restored modernist building on Passeig de Gràcia. Four restaurants, four bars, one gorgeous hall."
+      },
+      "bcn-cafe-bar-marsella": {
+        "name": "Bar Marsella",
+        "description": "The oldest bar in Barcelona, open since 1820. Bottles of absinthe gather dust on the shelves. Time has stopped somewhere around 1950."
+      },
+      "bcn-office-poblenou": {
+        "name": "Rambla del Poblenou",
+        "description": "The local rambla of the Poblenou district. Startups and studios have colonised the old factory buildings. The neighbourhood is becoming something new."
+      },
+      "bcn-theatre-liceu": {
+        "name": "Gran Teatre del Liceu",
+        "description": "Barcelona's opera house on La Rambla. Rebuilt after fires and bombings, it has endured everything. The velvet seats remember centuries of emotion."
+      },
+      "bcn-theatre-nacional": {
+        "name": "Teatre Nacional de Catalunya",
+        "description": "A monumental glass-and-steel theatre in the Glòries district. Classical Catalan repertoire alongside international productions."
+      },
+      "bcn-airport": {
+        "name": "Aeroport del Prat",
+        "description": "The gateway to Barcelona. Planes arrive and depart in an endless rhythm. Every journey starts and ends here — or maybe just this one."
+      }
+    }
+  },
+  "beijing": {
+    "name": "Beijing",
+    "country": "China",
+    "locations": {
+      "bjg-home": {
+        "name": "Your apartment",
+        "description": "Your apartment in the city. A comfortable place you call home."
+      },
+      "bjg-airport-beijing-capital-internationa": {
+        "name": "Beijing Capital International Airport",
+        "description": "Beijing Capital International Airport. The city's gateway to the world — and to the journey."
+      },
+      "bjg-airport-beijing-daxing-international": {
+        "name": "Beijing Daxing International Airport",
+        "description": "Beijing Daxing International Airport. The city's gateway to the world — and to the journey."
+      },
+      "bjg-airport-nanyuan-air-base": {
+        "name": "Nanyuan Air Base",
+        "description": "Nanyuan Air Base. The city's gateway to the world — and to the journey."
+      },
+      "bjg-airport-beijing-shahezhen-air-base": {
+        "name": "Beijing Shahezhen Air Base",
+        "description": "Beijing Shahezhen Air Base. The city's gateway to the world — and to the journey."
+      },
+      "bjg-market-donghuamen-complex": {
+        "name": "Donghuamen Complex",
+        "description": "Donghuamen Complex. A bustling market full of colour, sound, and commerce."
+      },
+      "bjg-plaza-tian-anmen-square": {
+        "name": "Tian'anmen Square",
+        "description": "Tian'anmen Square. A lively public square where the city gathers."
+      },
+      "bjg-plaza-alishan-square": {
+        "name": "Alishan Square",
+        "description": "Alishan Square. A lively public square where the city gathers."
+      },
+      "bjg-plaza-model-worker-square": {
+        "name": "Model Worker Square",
+        "description": "Model Worker Square. A lively public square where the city gathers."
+      },
+      "bjg-plaza-enjoying-snow-yard": {
+        "name": "Enjoying Snow Yard",
+        "description": "Enjoying Snow Yard. A lively public square where the city gathers."
+      },
+      "bjg-library-national-library-of-china-an": {
+        "name": "National Library of China Ancient Books Library",
+        "description": "National Library of China Ancient Books Library. A quiet refuge of books and ideas."
+      },
+      "bjg-library-high-school-library": {
+        "name": "High school library",
+        "description": "High school library. A quiet refuge of books and ideas."
+      },
+      "bjg-library-chinese-academy-of-social-sc": {
+        "name": "Chinese Academy of Social Sciences Library",
+        "description": "Chinese Academy of Social Sciences Library. A quiet refuge of books and ideas."
+      },
+      "bjg-monument-former-french-legation": {
+        "name": "Former French Legation",
+        "description": "Former French Legation. A landmark that anchors the city's memory."
+      },
+      "bjg-monument-beijing-ancient-observatory": {
+        "name": "Beijing Ancient Observatory",
+        "description": "Beijing Ancient Observatory. A landmark that anchors the city's memory."
+      },
+      "bjg-monument-well-of-concubine-zhen": {
+        "name": "Well of Concubine Zhen",
+        "description": "Well of Concubine Zhen. A landmark that anchors the city's memory."
+      },
+      "bjg-monument-national-centre-for-the-perf": {
+        "name": "National Centre for the Performing Arts",
+        "description": "National Centre for the Performing Arts. A landmark that anchors the city's memory."
+      },
+      "bjg-park-ritan-park": {
+        "name": "Ritan Park",
+        "description": "Ritan Park. A green lung in the heart of the city."
+      },
+      "bjg-park-temple-of-heaven": {
+        "name": "Temple of Heaven",
+        "description": "Temple of Heaven. A green lung in the heart of the city."
+      },
+      "bjg-park-beihai-park": {
+        "name": "Beihai Park",
+        "description": "Beihai Park. A green lung in the heart of the city."
+      },
+      "bjg-park-yongdingmen-park": {
+        "name": "Yongdingmen Park",
+        "description": "Yongdingmen Park. A green lung in the heart of the city."
+      },
+      "bjg-church-dongyue-temple": {
+        "name": "Dongyue Temple",
+        "description": "Dongyue Temple. A place of history, silence, and ceremony."
+      },
+      "bjg-church-temple-of-wisdom-attained-zh": {
+        "name": "Temple of Wisdom Attained (Zhìhuà sì)",
+        "description": "Temple of Wisdom Attained (Zhìhuà sì). A place of history, silence, and ceremony."
+      },
+      "bjg-church-church-of-zhushikou": {
+        "name": "Church of Zhushikou",
+        "description": "Church of Zhushikou. A place of history, silence, and ceremony."
+      },
+      "bjg-church-altar-of-earth-and-harvests": {
+        "name": "Altar of Earth and Harvests",
+        "description": "Altar of Earth and Harvests. A place of history, silence, and ceremony."
+      },
+      "bjg-theatre-deyunshe": {
+        "name": "Deyunshe",
+        "description": "Deyunshe. Where stories are told under lights every night."
+      },
+      "bjg-theatre-sanqingyuan-theatre": {
+        "name": "Sanqingyuan Theatre",
+        "description": "Sanqingyuan Theatre. Where stories are told under lights every night."
+      },
+      "bjg-theatre-changan-grand-theatre": {
+        "name": "Chang'an Grand Theatre",
+        "description": "Chang'an Grand Theatre. Where stories are told under lights every night."
+      },
+      "bjg-theatre-zhongshan-park-concert-hall": {
+        "name": "Zhongshan Park Concert Hall",
+        "description": "Zhongshan Park Concert Hall. Where stories are told under lights every night."
+      },
+      "bjg-office-organization-department-of-t": {
+        "name": "Organization Department of the CPC Central Committee",
+        "description": "Organization Department of the CPC Central Committee. A hive of industry in the city's working district."
+      },
+      "bjg-office-the-tower-apartments-at-orie": {
+        "name": "The Tower Apartments at Oriental Plaza",
+        "description": "The Tower Apartments at Oriental Plaza. A hive of industry in the city's working district."
+      },
+      "bjg-office-sinopec-tower": {
+        "name": "Sinopec Tower",
+        "description": "Sinopec Tower. A hive of industry in the city's working district."
+      },
+      "bjg-office-huasheng-international": {
+        "name": "Huasheng International",
+        "description": "Huasheng International. A hive of industry in the city's working district."
+      },
+      "bjg-cafe-sculpting-in-time": {
+        "name": "Sculpting in Time Café",
+        "description": "Sculpting in Time Café. Espresso, conversation, and the passing day."
+      },
+      "bjg-cafe-the-bookworm": {
+        "name": "The Bookworm",
+        "description": "The Bookworm. Espresso, conversation, and the passing day."
+      },
+      "bjg-cafe-metal-hands-coffee": {
+        "name": "Metal Hands Coffee",
+        "description": "Metal Hands Coffee. Espresso, conversation, and the passing day."
+      }
+    }
+  },
+  "new-york": {
+    "name": "New York",
+    "country": "USA",
+    "locations": {
+      "nyc-home": {
+        "name": "Your apartment",
+        "description": "Your apartment in the city. A comfortable place you call home."
+      },
+      "nyc-plaza-albee-square": {
+        "name": "Albee Square",
+        "description": "Albee Square. A lively public square where the city gathers."
+      },
+      "nyc-plaza-beastie-boys-square": {
+        "name": "Beastie Boys Square",
+        "description": "Beastie Boys Square. A lively public square where the city gathers."
+      },
+      "nyc-plaza-urban-plaza": {
+        "name": "Urban Plaza",
+        "description": "Urban Plaza. A lively public square where the city gathers."
+      },
+      "nyc-airport-john-f-kennedy-international": {
+        "name": "John F. Kennedy International Airport",
+        "description": "John F. Kennedy International Airport. The city's gateway to the world — and to the journey."
+      },
+      "nyc-airport-westchester-county-airport": {
+        "name": "Westchester County Airport",
+        "description": "Westchester County Airport. The city's gateway to the world — and to the journey."
+      },
+      "nyc-airport-somerset-airport": {
+        "name": "Somerset Airport",
+        "description": "Somerset Airport. The city's gateway to the world — and to the journey."
+      },
+      "nyc-airport-newark-liberty-international": {
+        "name": "Newark Liberty International Airport",
+        "description": "Newark Liberty International Airport. The city's gateway to the world — and to the journey."
+      },
+      "nyc-market-union-square-green-market": {
+        "name": "Union Square Green Market",
+        "description": "Union Square Green Market. A bustling market full of colour, sound, and commerce."
+      },
+      "nyc-market-the-market-line": {
+        "name": "The Market Line",
+        "description": "The Market Line. A bustling market full of colour, sound, and commerce."
+      },
+      "nyc-market-ludlow-flea-market": {
+        "name": "Ludlow Flea Market",
+        "description": "Ludlow Flea Market. A bustling market full of colour, sound, and commerce."
+      },
+      "nyc-market-canal-street-market": {
+        "name": "Canal Street Market",
+        "description": "Canal Street Market. A bustling market full of colour, sound, and commerce."
+      },
+      "nyc-library-ottendorfer-library": {
+        "name": "Ottendorfer Library",
+        "description": "Ottendorfer Library. A quiet refuge of books and ideas."
+      },
+      "nyc-library-elmer-holmes-bobst-library": {
+        "name": "Elmer Holmes Bobst Library",
+        "description": "Elmer Holmes Bobst Library. A quiet refuge of books and ideas."
+      },
+      "nyc-library-jefferson-market-library": {
+        "name": "Jefferson Market Library",
+        "description": "Jefferson Market Library. A quiet refuge of books and ideas."
+      },
+      "nyc-library-chatham-square-library": {
+        "name": "Chatham Square Library",
+        "description": "Chatham Square Library. A quiet refuge of books and ideas."
+      },
+      "nyc-monument-stonewall-inn": {
+        "name": "Stonewall Inn",
+        "description": "Stonewall Inn. A landmark that anchors the city's memory."
+      },
+      "nyc-monument-brooklyn-bridge": {
+        "name": "Brooklyn Bridge",
+        "description": "The Brooklyn Bridge is a hybrid cable-stayed/suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn. Opened on May 24, 1883, the Brooklyn Bridge was the first fixed crossing of the East River."
+      },
+      "nyc-monument-one-world-trade-center": {
+        "name": "One World Trade Center",
+        "description": "One World Trade Center. A landmark that anchors the city's memory."
+      },
+      "nyc-monument-manhattan-bridge": {
+        "name": "Manhattan Bridge",
+        "description": "The Manhattan Bridge is a suspension bridge that crosses the East River in New York City, connecting Lower Manhattan at Canal Street with Downtown Brooklyn. With a length of 6,855 ft it was designed by Leon Moisseiff."
+      },
+      "nyc-church-brooklyn-friends-meetinghous": {
+        "name": "Brooklyn Friends Meetinghouse",
+        "description": "Brooklyn Friends Meetinghouse. A place of history, silence, and ceremony."
+      },
+      "nyc-church-hare-krishna-temple": {
+        "name": "Hare Krishna Temple",
+        "description": "Hare Krishna Temple. A place of history, silence, and ceremony."
+      },
+      "nyc-church-grace-church": {
+        "name": "Grace Church",
+        "description": "Grace Church. A place of history, silence, and ceremony."
+      },
+      "nyc-church-saint-mark-s-in-the-bowery": {
+        "name": "Saint Mark's in-the-Bowery",
+        "description": "Saint Mark's in-the-Bowery. A place of history, silence, and ceremony."
+      },
+      "nyc-park-union-square-park": {
+        "name": "Union Square Park",
+        "description": "1"
+      },
+      "nyc-park-brooklyn-bridge-park": {
+        "name": "Brooklyn Bridge Park",
+        "description": "Brooklyn Bridge Park. A green lung in the heart of the city."
+      },
+      "nyc-park-john-v-lindsay-east-river-pa": {
+        "name": "John V. Lindsay East River Park",
+        "description": "John V. Lindsay East River Park. A green lung in the heart of the city."
+      },
+      "nyc-park-the-queen-elizabeth-ii-septe": {
+        "name": "The Queen Elizabeth II September 11th Garden",
+        "description": "The Queen Elizabeth II September 11th Garden. A green lung in the heart of the city."
+      },
+      "nyc-theatre-anthology-film-archives": {
+        "name": "Anthology Film Archives",
+        "description": "Anthology Film Archives. Where stories are told under lights every night."
+      },
+      "nyc-theatre-classic-stage-company": {
+        "name": "Classic Stage Company",
+        "description": "Classic Stage Company. Where stories are told under lights every night."
+      },
+      "nyc-theatre-performance-space-122": {
+        "name": "Performance Space 122",
+        "description": "Performance Space 122. Where stories are told under lights every night."
+      },
+      "nyc-theatre-public-theater": {
+        "name": "Public Theater",
+        "description": "Public Theater. Where stories are told under lights every night."
+      },
+      "nyc-cafe-yonah-shimmel-knish-bakery": {
+        "name": "Yonah Shimmel Knish Bakery",
+        "description": "Yonah Shimmel Knish Bakery. Espresso, conversation, and the passing day."
+      },
+      "nyc-cafe-the-uncommons": {
+        "name": "The Uncommons",
+        "description": "The Uncommons. Espresso, conversation, and the passing day."
+      },
+      "nyc-cafe-caffe-reggio": {
+        "name": "Caffe Reggio",
+        "description": "Caffe Reggio. Espresso, conversation, and the passing day."
+      },
+      "nyc-cafe-ferrara": {
+        "name": "Ferrara",
+        "description": "Ferrara. Espresso, conversation, and the passing day."
+      },
+      "nyc-office-ocme-dna-forensic-biology-la": {
+        "name": "OCME DNA Forensic Biology Laboratory Building",
+        "description": "OCME DNA Forensic Biology Laboratory Building. A hive of industry in the city's working district."
+      },
+      "nyc-office-28-liberty": {
+        "name": "28 Liberty",
+        "description": "28 Liberty. A hive of industry in the city's working district."
+      },
+      "nyc-office-one-new-york-plaza": {
+        "name": "One New York Plaza",
+        "description": "One New York Plaza. A hive of industry in the city's working district."
+      },
+      "nyc-office-51-astor-place": {
+        "name": "51 Astor Place",
+        "description": "51 Astor Place. A hive of industry in the city's working district."
+      }
+    }
+  },
+  "paris": {
+    "name": "Paris",
+    "country": "France",
+    "locations": {
+      "paris-home": {
+        "name": "Your Apartment (Le Marais)",
+        "description": "A small apartment in the heart of Le Marais. Morning light falls across the parquet floor. The street below is already alive."
+      },
+      "paris-plaza-republique": {
+        "name": "Place de la République",
+        "description": "A vast square at the crossroads of several arrondissements. The bronze Marianne stands guard at the centre. This is where Paris gathers when it needs to say something."
+      },
+      "paris-plaza-vosges": {
+        "name": "Place des Vosges",
+        "description": "The oldest planned square in Paris, built in 1612. Identical red-brick facades surround a private garden. Victor Hugo lived here. The arcades shelter art galleries and quiet cafés."
+      },
+      "paris-plaza-bastille": {
+        "name": "Place de la Bastille",
+        "description": "Where the fortress once stood. Now a roundabout crowned by the Colonne de Juillet. The ghosts of revolution linger in the cobblestones."
+      },
+      "paris-plaza-pigalle": {
+        "name": "Place Pigalle",
+        "description": "At the foot of Montmartre. By day, a neighbourhood square with cafés and record shops. By night, the neon starts up. The city has many moods here."
+      },
+      "paris-library-bnf-richelieu": {
+        "name": "Bibliothèque Richelieu",
+        "description": "The historic heart of the Bibliothèque nationale de France. An oval reading room beneath a vast iron-and-glass dome. Scholars whisper and manuscripts wait in the stacks."
+      },
+      "paris-library-shakespeare": {
+        "name": "Shakespeare and Company",
+        "description": "The legendary English-language bookshop on the Left Bank. Narrow stairwells lead to hidden rooms full of secondhand novels. Writers have slept here in exchange for a thousand words a day."
+      },
+      "paris-library-forney": {
+        "name": "Bibliothèque Forney",
+        "description": "A specialised arts and crafts library housed in the medieval Hôtel de Sens — one of the last Gothic mansions in Paris. The building is the collection."
+      },
+      "paris-park-luxembourg": {
+        "name": "Jardin du Luxembourg",
+        "description": "The favourite garden of Parisians. Gravel paths, iron chairs arranged around the central fountain, and the smell of chestnut trees in autumn. Students read, old men play pétanque."
+      },
+      "paris-park-tuileries": {
+        "name": "Jardin des Tuileries",
+        "description": "A formal garden stretching between the Louvre and Place de la Concorde. Statues by Rodin and Giacometti stand among the trimmed trees. The axis of Paris runs through here."
+      },
+      "paris-park-buttes-chaumont": {
+        "name": "Parc des Buttes-Chaumont",
+        "description": "A hilly, romantic park in the 19th arrondissement. A lake, a cliff, a suspension bridge, and a Greek temple on a rocky island. The most dramatic park in Paris."
+      },
+      "paris-park-bois-boulogne": {
+        "name": "Bois de Boulogne",
+        "description": "A vast forest park on the western edge of the city. Lakes, riding paths, and hidden gardens. Napoleon III modelled it on Hyde Park. It breathes differently from the rest of Paris."
+      },
+      "paris-market-aligre": {
+        "name": "Marché d'Aligre",
+        "description": "The liveliest market in eastern Paris. Outdoor stalls sell vegetables, olives, and spices; the indoor hall has butchers and wine merchants. Prices are real, voices are loud."
+      },
+      "paris-market-enfants-rouges": {
+        "name": "Marché des Enfants Rouges",
+        "description": "The oldest covered market in Paris, dating from 1615. A labyrinth of food stalls from every continent — Moroccan, Japanese, Lebanese, Caribbean. Narrow alleys fill with the smell of everything at once."
+      },
+      "paris-market-bastille": {
+        "name": "Marché Bastille",
+        "description": "A twice-weekly outdoor market stretching along the canal. Cheese, bread, flowers, secondhand books — the full Parisian spread. Thursday mornings it draws the whole neighbourhood."
+      },
+      "paris-church-notre-dame": {
+        "name": "Notre-Dame de Paris",
+        "description": "The Gothic heart of Paris, rising from the Île de la Cité. Eight centuries of stone. The rose windows cast coloured light on the floor. Everything in the city is measured from this point."
+      },
+      "paris-church-sacre-coeur": {
+        "name": "Sacré-Cœur",
+        "description": "A white Byzantine basilica perched on the highest hill in Paris. The steps below are always full of people watching the city spread out below them. Inside, perpetual adoration has continued since 1885."
+      },
+      "paris-church-sainte-chapelle": {
+        "name": "Sainte-Chapelle",
+        "description": "A Gothic chapel almost entirely made of stained glass. Fifteen enormous windows reach 15 metres high. On a sunny morning, the light that fills the upper chapel is unlike anything else in the city."
+      },
+      "paris-monument-eiffel": {
+        "name": "Tour Eiffel",
+        "description": "An iron lattice tower built in 1889, hated by critics and loved by everyone else. At night it sparkles. From the first platform you understand for the first time what Paris actually is."
+      },
+      "paris-monument-arc-triomphe": {
+        "name": "Arc de Triomphe",
+        "description": "A massive neoclassical arch at the centre of twelve radiating avenues. Napoleon ordered it; he never saw it finished. The Unknown Soldier rests beneath the vault."
+      },
+      "paris-monument-louvre": {
+        "name": "Musée du Louvre",
+        "description": "The largest art museum in the world, inside a former royal palace. The glass pyramid marks the entrance. Inside, 35,000 works from 9,000 years of civilisation wait in endless rooms."
+      },
+      "paris-monument-pompidou": {
+        "name": "Centre Pompidou",
+        "description": "A building turned inside out — the pipes, ducts, and escalators are on the outside. When it opened in 1977, Paris was outraged. Now they love it. The view from the top terrace is honest and strange."
+      },
+      "paris-monument-moulin-rouge": {
+        "name": "Moulin Rouge",
+        "description": "The red windmill of Montmartre. The birthplace of the cancan. Toulouse-Lautrec drank here and drew everything he saw. The show still runs every night."
+      },
+      "paris-monument-pont-neuf": {
+        "name": "Pont Neuf",
+        "description": "The oldest standing bridge in Paris, built in 1607. Despite its name — New Bridge — it has outlasted everything around it. Lovers lean over the parapet. The Seine moves slowly underneath."
+      },
+      "paris-cafe-flore": {
+        "name": "Café de Flore",
+        "description": "The existentialist café. Sartre and de Beauvoir held court at these tables for decades. The coffee is expensive and the waiters are impeccable. You are allowed to sit for a long time."
+      },
+      "paris-cafe-deux-magots": {
+        "name": "Les Deux Magots",
+        "description": "Hemingway, Picasso, Simone de Beauvoir — they all came here. The terrace faces the old abbey. Two Chinese wooden figures hang from the ceiling and have watched the 20th century pass."
+      },
+      "paris-cafe-procope": {
+        "name": "Le Procope",
+        "description": "The oldest café in Paris, opened in 1686. Voltaire, Rousseau, and Robespierre all had their table. The coffee was a revelation when it arrived in the city. It still tastes of something older than itself."
+      },
+      "paris-office-defense": {
+        "name": "La Défense",
+        "description": "Paris's business district, built deliberately outside the historical centre. Glass towers line the axe historique. The Grande Arche frames the sky. Everything here is very new and very large."
+      },
+      "paris-theatre-garnier": {
+        "name": "Palais Garnier",
+        "description": "The Phantom's opera house. All gold, marble, and grand staircases. The chandelier weighs six tonnes. Chagall painted the ceiling. The building is more dramatic than anything performed inside it."
+      },
+      "paris-theatre-chatelet": {
+        "name": "Théâtre du Châtelet",
+        "description": "A grand 19th-century theatre on the right bank of the Seine. 2,500 seats and a repertoire that spans opera, dance, and contemporary performance. Diaghilev premiered the Ballets Russes here."
+      },
+      "paris-airport-cdg": {
+        "name": "Aéroport Charles de Gaulle",
+        "description": "The gateway to France. Terminal 2F with its curving roof, the RER B running into the city, the particular smell of jet fuel and anticipation. Every arrival begins with this long corridor."
+      }
+    }
+  },
+  "seville": {
+    "name": "Seville",
+    "country": "Spain",
+    "locations": {
+      "seville-home": {
+        "name": "Your Apartment (Triana)",
+        "description": "A flat on the Triana side of the river. Through the window, the old bridge and the cathedral tower. Somewhere below, a radio plays flamenco."
+      },
+      "seville-plaza-espana": {
+        "name": "Plaza de España",
+        "description": "A semicircular palace of brick and tile built for the 1929 Ibero-American Exposition. A canal rings the base; ceramic alcoves depict every province of Spain. It is absurdly beautiful."
+      },
+      "seville-plaza-nueva": {
+        "name": "Plaza Nueva",
+        "description": "The civic heart of modern Seville. The Town Hall faces an equestrian statue of Fernando III. Orange trees line the perimeter and drop fruit in winter."
+      },
+      "seville-plaza-salvador": {
+        "name": "Plaza del Salvador",
+        "description": "A lively square in the old city dominated by the baroque Church of El Salvador. At dusk it fills with people drinking manzanilla on the steps. The real Seville happens here."
+      },
+      "seville-plaza-setas": {
+        "name": "Plaza de la Encarnación",
+        "description": "Where an old market stood for centuries, now dominated by the Metropol Parasol — an undulating wooden canopy locals call Las Setas. Ancient Roman ruins lie underneath the modern structure."
+      },
+      "seville-library-archivo-indias": {
+        "name": "Archivo General de Indias",
+        "description": "The greatest archive of the Spanish colonial era, housed in a 16th-century Renaissance building beside the cathedral. Forty-three thousand bundles of documents trace every voyage, treaty, and conquest of the New World."
+      },
+      "seville-library-universidad": {
+        "name": "Biblioteca de la Universidad de Sevilla",
+        "description": "Housed in the former Royal Tobacco Factory — where Carmen worked, according to Bizet. High vaulted ceilings, cool stone corridors, and reading rooms that have absorbed centuries of studying."
+      },
+      "seville-park-maria-luisa": {
+        "name": "Parque de María Luisa",
+        "description": "Seville's great public park, shaded by orange trees, magnolias, and palms. Fountains cool the air; peacocks cross the paths without hurrying. The Plaza de España rises at one end."
+      },
+      "seville-park-alameda": {
+        "name": "Alameda de Hércules",
+        "description": "One of the oldest public promenades in Europe, lined with poplar trees and Roman columns. By day, dogs and children. By evening, terraces fill. The neighbourhood around it has always been a little bohemian."
+      },
+      "seville-park-jardines-alcazar": {
+        "name": "Jardines del Alcázar",
+        "description": "Walled gardens inside the Royal Alcázar. Fountains, orange trees, rose hedges, and pavilions arranged across centuries of Islamic and Renaissance design. The heat outside disappears inside the walls."
+      },
+      "seville-market-triana": {
+        "name": "Mercado de Triana",
+        "description": "The neighbourhood market of Triana, built over the ruins of the Castillo de San Jorge. Ceramicists, fishmongers, and tapas bars share the covered hall. The tiles on the walls are local work."
+      },
+      "seville-market-arenal": {
+        "name": "Mercado del Arenal",
+        "description": "A 19th-century iron market hall in the Arenal district. Stalls sell jamón, olives, fresh fish, and spices. A few bars inside serve morning coffee and cold beer with equal conviction."
+      },
+      "seville-market-feria": {
+        "name": "Mercado de la Feria",
+        "description": "The oldest market street in Seville, running through the Macarena quarter. Every Thursday a flea market — El Jueves — takes over the street. Dealers in antiques, coins, and forgotten things."
+      },
+      "seville-church-catedral": {
+        "name": "Catedral de Sevilla",
+        "description": "The largest Gothic cathedral in the world, built on the site of a great mosque. Christopher Columbus is buried here. The scale inside is hard to believe — the nave swallows the light."
+      },
+      "seville-church-salvador": {
+        "name": "Iglesia del Salvador",
+        "description": "The second largest church in Seville, a Baroque masterpiece built over a 10th-century mosque. The courtyard of orange trees is what the mosque left behind. Inside, gilded altarpieces reach for the ceiling."
+      },
+      "seville-church-macarena": {
+        "name": "Basílica de la Macarena",
+        "description": "Home to the Virgen de la Esperanza Macarena, the most venerated image in Seville. During Holy Week, grown men weep when she passes. The golden float that carries her is kept here in a side room."
+      },
+      "seville-monument-alcazar": {
+        "name": "Real Alcázar",
+        "description": "A royal palace that has been in continuous use since the 10th century. Mudéjar archways, azulejo tiles, and carved plaster ceilings that took years to build. Still the official Seville residence of the Spanish royal family."
+      },
+      "seville-monument-giralda": {
+        "name": "La Giralda",
+        "description": "The bell tower of the cathedral, originally the minaret of the Almohad mosque. The ramp inside was built for horsemen. From the top, all of Seville and its river lie below you."
+      },
+      "seville-monument-torre-oro": {
+        "name": "Torre del Oro",
+        "description": "A 13th-century dodecagonal watchtower on the bank of the Guadalquivir, built by the Almohads to control river access. Its name — Tower of Gold — may come from the gold tiles that once clad it. Now it houses a small naval museum."
+      },
+      "seville-monument-metropol-parasol": {
+        "name": "Metropol Parasol",
+        "description": "The largest wooden structure in the world, designed by Jürgen Mayer. Six undulating mushroom-like canopies rise above the old town. The walkway on top offers a roofline view of the city that nothing else gives."
+      },
+      "seville-monument-plaza-toros": {
+        "name": "Plaza de Toros de la Maestranza",
+        "description": "One of the oldest and most famous bullrings in Spain, built in 1761. Whether or not you watch a corrida, the baroque façade and ochre interior are architecture of a particular kind of seriousness."
+      },
+      "seville-cafe-rinconcillo": {
+        "name": "El Rinconcillo",
+        "description": "The oldest bar in Seville, open since 1670. The barmen chalk your bill on the wooden counter. Jamón hangs from the ceiling. The wine comes from a barrel. Nothing has changed in a very long time, and that is the point."
+      },
+      "seville-cafe-la-campana": {
+        "name": "La Campana",
+        "description": "A historic pastry shop and café at the head of Calle Sierpes, Seville's main pedestrian street. The window display of mantecados and polvorones changes with the season. The marble tables have heard a lot of conversations."
+      },
+      "seville-cafe-casa-morales": {
+        "name": "Casa Morales",
+        "description": "A bar and bodega near the cathedral, open since 1850. Wine served from terracotta tinajas — giant clay jars built into the walls. Stone floor, low ceiling, and light that arrives at a permanent slant."
+      },
+      "seville-office-cartuja": {
+        "name": "Isla de la Cartuja",
+        "description": "The island that hosted Expo '92, now a technology and science park. The old monastery where Columbus planned his voyage still stands among the glass office buildings. Two pasts coexist uneasily."
+      },
+      "seville-theatre-maestranza": {
+        "name": "Teatro de la Maestranza",
+        "description": "Seville's principal opera house on the riverside. The city that inspired Carmen, Don Giovanni, and The Barber of Seville now has a stage worthy of them. Summer performances begin after dark when the heat finally lifts."
+      },
+      "seville-theatre-central": {
+        "name": "Teatro Central",
+        "description": "A contemporary performing arts theatre on the Cartuja island. Dance, theatre, and experimental work. One of the few venues in Seville where the programme surprises you."
+      },
+      "seville-airport-svq": {
+        "name": "Aeropuerto de Sevilla",
+        "description": "A modest airport for a city of this character. The arrivals hall opens onto the Andalusian light. From here, a taxi or bus drops you into the city in twenty minutes, and then the heat and the smell of orange blossom take over."
+      }
+    }
+  },
+  "tokyo": {
+    "name": "Tokyo",
+    "country": "Japan",
+    "locations": {
+      "tky-home": {
+        "name": "Your apartment",
+        "description": "Your apartment in the city. A comfortable place you call home."
+      },
+      "tky-airport-narita-international-airport": {
+        "name": "Narita International Airport",
+        "description": "Narita International Airport. The city's gateway to the world — and to the journey."
+      },
+      "tky-airport-tokyo-international-airport": {
+        "name": "Tokyo International Airport",
+        "description": "Tokyo International Airport. The city's gateway to the world — and to the journey."
+      },
+      "tky-airport-yokota-air-base": {
+        "name": "Yokota Air Base",
+        "description": "Yokota Air Base. The city's gateway to the world — and to the journey."
+      },
+      "tky-airport-iruma-air-base": {
+        "name": "Iruma Air Base",
+        "description": "Iruma Air Base. The city's gateway to the world — and to the journey."
+      },
+      "tky-market-tsukiji-outer-market": {
+        "name": "Tsukiji Outer Market",
+        "description": "Tsukiji Outer Market. A bustling market full of colour, sound, and commerce."
+      },
+      "tky-market-ameya-yokocho": {
+        "name": "Ameya-Yokochō",
+        "description": "Ameya-Yokochō. A bustling market full of colour, sound, and commerce."
+      },
+      "tky-market-tsukishima-second-children-s": {
+        "name": "Tsukishima Second Children's Park Farmers Market",
+        "description": "Tsukishima Second Children's Park Farmers Market. A bustling market full of colour, sound, and commerce."
+      },
+      "tky-market-aomori-antenna-shop": {
+        "name": "Aomori Antenna Shop",
+        "description": "Aomori Antenna Shop. A bustling market full of colour, sound, and commerce."
+      },
+      "tky-plaza-silver-bell-square-b1": {
+        "name": "Silver Bell Square B1",
+        "description": "Silver Bell Square B1. A lively public square where the city gathers."
+      },
+      "tky-plaza-iidabashi-3-chrome-square": {
+        "name": "Iidabashi 3-chrome Square",
+        "description": "Iidabashi 3-chrome Square. A lively public square where the city gathers."
+      },
+      "tky-plaza-dorin-square-b1-c62-steam-lo": {
+        "name": "Dōrin Square B1 (C62 Steam Locomotive)",
+        "description": "Dōrin Square B1 (C62 Steam Locomotive). A lively public square where the city gathers."
+      },
+      "tky-plaza-group-meeting-point-for-stud": {
+        "name": "Group Meeting Point (for Students)",
+        "description": "Group Meeting Point (for Students). A lively public square where the city gathers."
+      },
+      "tky-library-national-archives-of-japan": {
+        "name": "National Archives of Japan",
+        "description": "National Archives of Japan. A quiet refuge of books and ideas."
+      },
+      "tky-library-national-diet-library-tokyo": {
+        "name": "National Diet Library - Tokyo Main",
+        "description": "National Diet Library - Tokyo Main. A quiet refuge of books and ideas."
+      },
+      "tky-library-university-of-tokyo-general": {
+        "name": "University of Tokyo General Library",
+        "description": "University of Tokyo General Library. A quiet refuge of books and ideas."
+      },
+      "tky-library-yoshihiro-yonezawa-memorial": {
+        "name": "Yoshihiro Yonezawa Memorial Library of Manga and Subculture",
+        "description": "Yoshihiro Yonezawa Memorial Library of Manga and Subculture. A quiet refuge of books and ideas."
+      },
+      "tky-church-ichigaya-kamegaoka-hachiman": {
+        "name": "Ichigaya-Kamegaoka-Hachiman-gū",
+        "description": "Ichigaya-Kamegaoka-Hachiman-gū. A place of history, silence, and ceremony."
+      },
+      "tky-church-fukagawa-shimmei-shrine": {
+        "name": "Fukagawa Shimmei Shrine",
+        "description": "Fukagawa Shimmei Shrine. A place of history, silence, and ceremony."
+      },
+      "tky-church-shofukuin": {
+        "name": "Shōfukuin",
+        "description": "Shōfukuin. A place of history, silence, and ceremony."
+      },
+      "tky-church-genkakuji-temple": {
+        "name": "Genkakuji Temple",
+        "description": "Genkakuji Temple. A place of history, silence, and ceremony."
+      },
+      "tky-monument-tokyo-ramen-street": {
+        "name": "Tokyo Ramen Street",
+        "description": "Tokyo Ramen Street. A landmark that anchors the city's memory."
+      },
+      "tky-monument-akasaka-sacas": {
+        "name": "Akasaka Sacas",
+        "description": "Akasaka Sacas. A landmark that anchors the city's memory."
+      },
+      "tky-monument-kaminarimon": {
+        "name": "Kaminarimon",
+        "description": "Kaminarimon. A landmark that anchors the city's memory."
+      },
+      "tky-monument-kanda-book-town": {
+        "name": "Kanda Book Town",
+        "description": "Kanda Book Town. A landmark that anchors the city's memory."
+      },
+      "tky-park-hongo-water-station-park": {
+        "name": "Hongo Water Station Park",
+        "description": "Hongo Water Station Park. A green lung in the heart of the city."
+      },
+      "tky-park-hama-rikyu-gardens": {
+        "name": "Hama-rikyū Gardens",
+        "description": "Hama-rikyū Gardens. A green lung in the heart of the city."
+      },
+      "tky-park-koishikawa-korakuen-gardens": {
+        "name": "Koishikawa Kōrakuen Gardens",
+        "description": "Koishikawa Kōrakuen Gardens. A green lung in the heart of the city."
+      },
+      "tky-park-kiyosumi-gardens": {
+        "name": "Kiyosumi Gardens",
+        "description": "Kiyosumi Gardens. A green lung in the heart of the city."
+      },
+      "tky-theatre-tokyo-takarazuka-theater": {
+        "name": "Tokyo Takarazuka Theater",
+        "description": "Tokyo Takarazuka Theater. Where stories are told under lights every night."
+      },
+      "tky-theatre-suzumoto-entertainment-hall": {
+        "name": "Suzumoto Entertainment Hall",
+        "description": "Suzumoto Entertainment Hall. Where stories are told under lights every night."
+      },
+      "tky-theatre-meijiza": {
+        "name": "Meijiza",
+        "description": "Meijiza. Where stories are told under lights every night."
+      },
+      "tky-theatre-mitsukoshi-theater": {
+        "name": "Mitsukoshi Theater",
+        "description": "Mitsukoshi Theater. Where stories are told under lights every night."
+      },
+      "tky-cafe-tully-s-coffee": {
+        "name": "Tully's Coffee",
+        "description": "Tully's Coffee. Espresso, conversation, and the passing day."
+      },
+      "tky-cafe-ryogoku-terrace": {
+        "name": "Ryogoku Terrace",
+        "description": "Ryogoku Terrace. Espresso, conversation, and the passing day."
+      },
+      "tky-cafe-home-cafe": {
+        "name": "@home cafe",
+        "description": "@home cafe. Espresso, conversation, and the passing day."
+      },
+      "tky-cafe-r25-cafe": {
+        "name": "R25 café",
+        "description": "R25 café. Espresso, conversation, and the passing day."
+      },
+      "tky-office-new-otani-garden-court": {
+        "name": "New Otani Garden Court",
+        "description": "New Otani Garden Court. A hive of industry in the city's working district."
+      },
+      "tky-office-grantokyo-south-tower": {
+        "name": "GranTokyo South Tower",
+        "description": "GranTokyo South Tower. A hive of industry in the city's working district."
+      },
+      "tky-office-midtown-tower": {
+        "name": "Midtown Tower",
+        "description": "Midtown Tower. A hive of industry in the city's working district."
+      },
+      "tky-office-sanno-park-tower": {
+        "name": "Sanno Park Tower",
+        "description": "Sanno Park Tower. A hive of industry in the city's working district."
+      }
+    }
+  }
+}

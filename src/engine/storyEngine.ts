@@ -166,7 +166,3 @@ export function isCorrectLocation(
   const required = resolveRequiredLocations(chapter?.requiredLocationTypes ?? [], allLocations);
   return required.some((l) => l.id === location.id);
 }
-
-export function getChapterTitle(chapter: StoryChapter): string {
-  return chapter.title;
-}

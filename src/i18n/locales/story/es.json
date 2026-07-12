@@ -1,0 +1,196 @@
+{
+  "the-alchemist": {
+    "title": "El Alquimista",
+    "intro": "Tienes 26 años y una vida normal. Un piso en la ciudad. Un trabajo. Unos amigos. Pero llevas días soñando la misma escena cada noche: una plaza llena de palomas que se alzan a la vez, y una figura que señala al norte.\n\nCada mañana te despiertas con la sensación de que el sueño significa algo. Hoy, algo te dice que deberías seguirlo.",
+    "chapters": {
+      "ch1": {
+        "title": "The Signal",
+        "description": "An old man on a bench. Two coins. A direction."
+      },
+      "ch2-sandbox": {
+        "title": "The Merchant of Glass",
+        "description": "You need to earn money and find your footing before pursuing the next clue. Merce needs help at the market."
+      },
+      "ch3": {
+        "title": "The Englishman",
+        "description": "The Englishman studies symbols in the park. He has a map of the city with a secret code."
+      },
+      "ch4-sandbox": {
+        "title": "The Desert Crossing",
+        "description": "Visit the three locations. Find the clues. Life keeps happening around you."
+      },
+      "ch5": {
+        "title": "The Trial",
+        "description": "A fountain in a square awaits. Someone has been watching your journey."
+      },
+      "epilogue": {
+        "title": "The Return",
+        "description": "A year later. A café across the city. Someone looks lost with a map."
+      }
+    },
+    "dialogue": {
+      "ch1-arrive": {
+        "text": "Llegas a la plaza. Las palomas se dispersan al cruzar — como en el sueño. Un anciano está sentado en un banco, dando de comer a las pocas aves que quedan. Alza la vista cuando te acercas."
+      },
+      "ch1-melqui": {
+        "text": "\"Tres noches seguidas, ¿verdad? El mismo sueño. La plaza. Los pájaros. La figura señalando al norte.\" Sonríe suavemente. \"Te estaba esperando.\""
+      },
+      "ch1-urim": {
+        "text": "\"Todo el mundo tiene una Leyenda Personal. Un propósito que te llama. La mayoría nunca escucha. Tú lo hiciste. Por eso estás aquí.\" Mete la mano en el bolsillo y saca dos monedas antiguas."
+      },
+      "ch1-first-clue": {
+        "text": "\"Ve a una librería cercana. Busca un libro azul. Te dirá adónde ir después. Y guarda las monedas — cuando no sepas qué elegir, tíralas.\" Se levanta, se sacude el abrigo, y desaparece entre la multitud."
+      },
+      "ch2-arrive-library": {
+        "text": "Entras en la biblioteca. El olor a papel viejo te envuelve. Una mujer en el mostrador — cincuentona, sonrisa cálida, manos manchadas de tinta — alza la vista."
+      },
+      "ch2-merce": {
+        "text": "\"¡Ah, el libro azul! Alguien más preguntó por él. Un inglés. Se fue con prisa — dijo algo sobre un parque.\" Hace una pausa. \"Pero escucha — me vendría bien ayuda en mi tienda. Cristalería. Aquí cerca. Te pago, y quizá pueda contarte más sobre ese inglés.\""
+      },
+      "ch3-find": {
+        "text": "Lo encuentras en un banco cerca del lago en el parque. Es más joven de lo esperado — treintañero, chaqueta de tweed, garabateando en un bloc. Un mapa cubierto de símbolos yace a su lado."
+      },
+      "ch3-symbols": {
+        "text": "\"Ah, eres el de la biblioteca. Mercè me envió un mensaje. Estudio alquimia — no la de convertir plomo en oro, sino el simbolismo oculto en los lugares. Esta ciudad está llena de ello. Los viejos maestros lo sabían. Y hay un patrón — tres lugares. Tres símbolos. He descifrado dos, pero el tercero...\" Se pierde, mirando el mapa."
+      },
+      "ch3-map-clue": {
+        "text": "Te enseña el mapa. \"Estos tres símbolos corresponden a lugares de esta ciudad. He identificado: un mercado — El conocimiento se compra y se vende. Una iglesia — El silencio guarda secretos. Pero el tercero... es una criatura. Un dragón. Algo herido.\""
+      },
+      "ch3-ready": {
+        "text": "\"¡Sí! El dragón del tejado. Eso es. Tres lugares — un mercado, una iglesia, un monumento. Visítalos. Encuentra las pistas. La respuesta está al final del camino.\""
+      },
+      "ch4-intro": {
+        "text": "Tres lugares. Tres pistas. El viaje que tienes por delante llevará tiempo — y la vida no se detendrá mientras buscas. Elige tu camino sabiamente."
+      },
+      "ch5-arrive": {
+        "text": "La fuente de la plaza está en silencio. De día. Una figura está en su borde — un hombre, joven, mirándote acercarse con ojos que lo saben todo."
+      },
+      "ch5-alchemist": {
+        "text": "\"Soy el que pone las pruebas. No para detenerte — para ponerte a prueba. Has llegado lejos. Mercè, el inglés, los símbolos... pero la verdadera pregunta no es si puedes encontrar el tesoro. Es qué estás dispuesto a sacrificar por él.\""
+      },
+      "ch5-verdict": {
+        "text": "\"Has respondido. La fuente guarda muchos secretos, pero el mayor es este: el tesoro nunca estuvo al otro lado del mar. Estaba en tu propia ciudad, esperando a que hicieras el viaje para ser digno de él. Mira las coordenadas.\" Te entrega un papel con una sola ubicación escrita."
+      },
+      "ch5-exit": {
+        "text": "Las coordenadas apuntan de vuelta a donde todo empezó. La misma plaza. El mismo banco. Pero ahora — el banco está vacío, y una pequeña caja yace debajo."
+      },
+      "ch5-treasure": {
+        "text": "Dentro de la caja: un diario de cuero gastado. Páginas escritas a mano. La historia de otra persona. Alguien que siguió el mismo camino, décadas atrás. Y una carta de Melquisedec, esperándote."
+      },
+      "epilogue-cafe": {
+        "text": "Ha pasado un año. Estás sentado en un café. Tu vida ha cambiado — no porque encontraras un tesoro, sino porque hiciste el viaje. Una persona joven en la mesa de al lado mira un mapa de la ciudad con la misma expresión que tú tuviste una vez."
+      },
+      "epilogue-circle": {
+        "text": "El círculo se cierra. El Alquimista se convierte en guía. Tu viaje termina — pero para otro, apenas comienza."
+      }
+    },
+    "options": {
+      "ch1-approach": {
+        "text": "Acercarme. \"Disculpe... ¿le conozco?\""
+      },
+      "ch1-observe": {
+        "text": "Quedarme atrás y observarle un momento."
+      },
+      "ch1-who": {
+        "text": "\"¿Quién eres? ¿Cómo sabes lo de mis sueños?\""
+      },
+      "ch1-yes": {
+        "text": "\"Sí. Necesito entender qué significa esto.\" (Decisivo)"
+      },
+      "ch1-doubt": {
+        "text": "\"Esto es una locura. Debería irme.\""
+      },
+      "ch1-accept-coins": {
+        "text": "Aceptar las monedas. \"¿Qué hago con esto?\""
+      },
+      "ch1-refuse": {
+        "text": "\"No necesito monedas. Solo dime qué hacer.\""
+      },
+      "ch1-go-library": {
+        "text": "Ir a una librería. Encontrar ese libro azul."
+      },
+      "ch1-explore-first": {
+        "text": "Explorar la plaza un poco más antes de ir a la librería."
+      },
+      "ch2-ask-book": {
+        "text": "\"Busco un libro azul. Un anciano me envió.\""
+      },
+      "ch2-browse": {
+        "text": "Ojear los estantes. Dejar que el libro me encuentre."
+      },
+      "ch2-help": {
+        "text": "\"Te ayudo. ¿Qué hay que hacer?\""
+      },
+      "ch2-decline": {
+        "text": "\"Necesito encontrar a ese inglés. Igual luego.\""
+      },
+      "ch3-approach": {
+        "text": "\"Disculpe. ¿Es usted el que buscaba el libro azul?\""
+      },
+      "ch3-quiet": {
+        "text": "Sentarme cerca y observar lo que dibuja."
+      },
+      "ch3-help": {
+        "text": "\"Enséñame el mapa. Igual puedo ayudar.\""
+      },
+      "ch3-research": {
+        "text": "\"Déjame investigar. Conozco un sitio donde encontrar respuestas.\""
+      },
+      "ch3-dragon": {
+        "text": "\"Un dragón herido... un monumento. Un dragón en su tejado.\""
+      },
+      "ch3-ask": {
+        "text": "\"No lo sé. Háblame más de los símbolos.\""
+      },
+      "ch3-start-quest": {
+        "text": "Darle las gracias y salir a visitar los tres lugares."
+      },
+      "ch4-first": {
+        "text": "Ir a un mercado primero."
+      },
+      "ch4-work-first": {
+        "text": "Necesito dinero. Trabajar un poco antes de explorar."
+      },
+      "ch5-approach": {
+        "text": "Acercarme. \"Me has estado siguiendo, ¿verdad?\""
+      },
+      "ch5-wary": {
+        "text": "Mantener la distancia. \"¿Quién eres?\""
+      },
+      "ch5-everything": {
+        "text": "\"Todo. Lo daré todo por esto.\""
+      },
+      "ch5-nothing": {
+        "text": "\"Nada. Ya tengo lo que necesito.\""
+      },
+      "ch5-both": {
+        "text": "\"Puedo compaginarlo. Mi vida y este viaje.\" (Requiere equilibrio)"
+      },
+      "ch5-wind": {
+        "text": "\"Enséñame a convertirme en el viento.\""
+      },
+      "ch5-look": {
+        "text": "Leer las coordenadas. \"La plaza principal...\""
+      },
+      "ch5-box": {
+        "text": "Abrir la caja."
+      },
+      "ch5-letter": {
+        "text": "Leer la carta."
+      },
+      "ep-approach": {
+        "text": "Acercarme. \"¿Necesitas ayuda?\""
+      },
+      "ep-smile": {
+        "text": "Sonreír y seguir con tu café. Dejar que encuentren su propio camino."
+      },
+      "ep-sit": {
+        "text": "Sentarme a su lado sin decir palabra. Si preguntan, responderé."
+      },
+      "ep-end": {
+        "text": "Terminar la historia."
+      }
+    },
+    "momentLimit": {}
+  }
+}

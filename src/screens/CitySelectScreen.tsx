@@ -3,6 +3,7 @@ import { useGameStore } from '../store/gameStore';
 import { getAllCities } from '../data/cities/index';
 import { getAllStories } from '../data/story/index';
 import GameLayout from '../components/GameLayout';
+import { cityName, cityCountry } from '../i18n/helpers';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -37,7 +38,7 @@ export default function CitySelectScreen() {
           <h2 className="pixel-text text-xl text-white mb-2 drop-shadow-lg" style={{ textShadow: '0 2px 16px rgba(0,0,0,0.8)' }}>
             {t('app.selectCity')}
           </h2>
-          <p className="text-gray-300 text-sm mb-8 drop-shadow">Where does your story begin?</p>
+          <p className="text-gray-300 text-sm mb-8 drop-shadow">{t('citySelect.tagline')}</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {cities.map((city) => (
@@ -49,24 +50,24 @@ export default function CitySelectScreen() {
                 <div className="relative h-40 overflow-hidden">
                   <img
                     src={`${BASE}cities/${city.id}.jpg`}
-                    alt={city.name}
+                    alt={cityName(t, city.id)}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <div className="flex items-end justify-between">
                       <div>
-                        <h3 className="text-white font-bold text-2xl drop-shadow-lg">{city.name}</h3>
-                        <p className="text-gray-300 text-sm">{city.country}</p>
+                        <h3 className="text-white font-bold text-2xl drop-shadow-lg">{cityName(t, city.id)}</h3>
+                        <p className="text-gray-300 text-sm">{cityCountry(t, city.id)}</p>
                       </div>
                       <span className="text-white text-2xl group-hover:translate-x-1 transition-transform">→</span>
                     </div>
                   </div>
                 </div>
                 <div className="px-4 py-3 flex items-center justify-center gap-4 border-t border-white/20 bg-black/20">
-                  <span className="text-xs text-gray-200">🏘️ {city.locations.length}+ locations</span>
+                  <span className="text-xs text-gray-200">🏘️ {city.locations.length}+ {t('citySelect.locations')}</span>
                   <span className="text-xs text-gray-400">·</span>
-                  <span className="text-xs text-gray-200">📖 {storyCount} {storyCount === 1 ? 'story' : 'stories'}</span>
+                  <span className="text-xs text-gray-200">📖 {storyCount} {storyCount === 1 ? t('citySelect.story') : t('citySelect.stories')}</span>
                 </div>
               </div>
             ))}
@@ -74,7 +75,7 @@ export default function CitySelectScreen() {
 
           {cities.length < 2 && (
             <p className="text-gray-500 text-xs mt-6 italic">
-              More cities coming soon...
+              {t('citySelect.moreCitiesSoon')}
             </p>
           )}
         </div>

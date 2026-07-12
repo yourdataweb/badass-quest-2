@@ -1,10 +1,12 @@
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useGameStore } from '../store/gameStore';
 import { getCityById, getHomeLocationId, getLocationById } from '../data/cities/index';
 import { getStoryById } from '../data/story/index';
 import { getLocationsForChapter, resolveRequiredLocations } from '../engine/storyEngine';
+import { locationName } from '../i18n/helpers';
 import type { LocationPOI } from '../store/types';
 
 const BASE = import.meta.env.BASE_URL;
@@ -72,6 +74,7 @@ interface MapBackgroundProps {
 }
 
 export default function MapBackground({ onLocationSelect }: MapBackgroundProps) {
+  const { t, i18n } = useTranslation();
   const mapRef = useRef<HTMLDivElement>(null);
   const leafletMapRef = useRef<L.Map | null>(null);
   const playerMarkerRef = useRef<L.Marker | null>(null);
@@ -202,11 +205,11 @@ export default function MapBackground({ onLocationSelect }: MapBackgroundProps) 
               onerror="this.style.display='none'"
             />
             <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0.15) 55%,transparent 100%);"></div>
-            ${isRequired ? `<div style="position:absolute;top:8px;right:8px;background:#e94560;color:white;font-size:9px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 7px;border-radius:20px;">Story</div>` : ''}
+            ${isRequired ? `<div style="position:absolute;top:8px;right:8px;background:#e94560;color:white;font-size:9px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 7px;border-radius:20px;">${t('map.storyBadge')}</div>` : ''}
             <div style="position:absolute;bottom:0;left:0;right:0;padding:8px 10px;">
               <div style="display:flex;align-items:center;gap:6px;">
                 <span style="font-size:17px;line-height:1;">${LOCATION_EMOJIS[loc.type] ?? '📍'}</span>
-                <span style="font-size:13px;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.9);line-height:1.2;">${loc.name}</span>
+                <span style="font-size:13px;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.9);line-height:1.2;">${chosenCity ? locationName(t, chosenCity, loc.id) : ''}</span>
               </div>
             </div>
           </div>
@@ -215,7 +218,7 @@ export default function MapBackground({ onLocationSelect }: MapBackgroundProps) 
               onclick="window.__selectLocation && window.__selectLocation('${loc.id}')"
               style="width:100%;padding:9px 0;background:${accentGradient};color:white;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;box-shadow:${accentShadow};letter-spacing:0.02em;"
             >
-              ${isRequired ? 'Investigate →' : 'Visit →'}
+              ${isRequired ? t('map.investigate') : t('map.visit')}
             </button>
           </div>
         </div>
@@ -223,7 +226,7 @@ export default function MapBackground({ onLocationSelect }: MapBackgroundProps) 
 
       marker.addTo(map);
     });
-  }, [currentChapter, available.length, chosenCity]);
+  }, [currentChapter, available.length, chosenCity, i18n.language, t]);
 
   // Update player marker when location changes
   useEffect(() => {
@@ -238,10 +241,10 @@ export default function MapBackground({ onLocationSelect }: MapBackgroundProps) 
       [playerLocation.position.lat, playerLocation.position.lng],
       { icon: createPlayerIcon(chosenCharacter), zIndexOffset: 1000 }
     );
-    playerMarker.bindTooltip('You are here', { direction: 'top', offset: [0, -18] });
+    playerMarker.bindTooltip(t('map.youAreHere'), { direction: 'top', offset: [0, -18] });
     playerMarker.addTo(map);
     playerMarkerRef.current = playerMarker;
-  }, [currentLocationId, chosenCharacter, chosenCity]);
+  }, [currentLocationId, chosenCharacter, chosenCity, i18n.language, t]);
 
   return (
     <div

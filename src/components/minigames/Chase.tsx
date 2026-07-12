@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const LANES = 3;
 const TOTAL_OBSTACLES = 10;
@@ -20,6 +21,7 @@ interface ChaseProps {
 }
 
 export default function Chase({ onResult }: ChaseProps) {
+  const { t } = useTranslation();
   const [phase, setPhase] = useState<Phase>('ready');
   const [playerLane, setPlayerLane] = useState(1);
   const [obstacles, setObstacles] = useState<Obstacle[]>([]);
@@ -169,9 +171,9 @@ export default function Chase({ onResult }: ChaseProps) {
     <div className="w-full max-w-lg mx-auto flex flex-col gap-4 select-none">
       {/* HUD */}
       <div className="flex items-center justify-between text-xs text-gray-400">
-        <span>{cleared}/{TOTAL_OBSTACLES} cleared</span>
+        <span>{t('minigames.chase.clearedCount', { cleared, total: TOTAL_OBSTACLES })}</span>
         <div className="flex gap-1 items-center">
-          <span className="text-gray-500 mr-1">Lives:</span>
+          <span className="text-gray-500 mr-1">{t('minigames.chase.lives')}</span>
           {Array.from({ length: MAX_HITS }).map((_, i) => (
             <span key={i} className={`text-base ${i < hits ? 'opacity-20' : 'text-red-400'}`}>💔</span>
           ))}
@@ -231,12 +233,12 @@ export default function Chase({ onResult }: ChaseProps) {
 
         {phase === 'ready' && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/50">
-            <p className="text-gray-100 font-bold">Dodge the obstacles!</p>
+            <p className="text-gray-100 font-bold">{t('minigames.chase.dodge')}</p>
           </div>
         )}
         {phase === 'done' && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/60">
-            <span className="text-3xl">{hits < MAX_HITS ? '🏆 Escaped!' : '💥 Caught!'}</span>
+            <span className="text-3xl">{hits < MAX_HITS ? t('minigames.chase.escaped') : t('minigames.chase.caught')}</span>
           </div>
         )}
       </div>
@@ -247,7 +249,7 @@ export default function Chase({ onResult }: ChaseProps) {
           onClick={startGame}
           className="w-full py-3 rounded-xl bg-gradient-to-r from-[#f59e0b] to-[#d97706] text-white font-bold text-sm shadow-lg shadow-[#f59e0b]/20"
         >
-          Run!
+          {t('minigames.chase.run')}
         </button>
       ) : (
         <div className="grid grid-cols-2 gap-3">
@@ -267,7 +269,7 @@ export default function Chase({ onResult }: ChaseProps) {
       )}
 
       <p className="text-center text-xs text-gray-400">
-        Switch lanes to dodge obstacles · survive {TOTAL_OBSTACLES} obstacles to win
+        {t('minigames.chase.instruction', { count: TOTAL_OBSTACLES })}
       </p>
     </div>
   );

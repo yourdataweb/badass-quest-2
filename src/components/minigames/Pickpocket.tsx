@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ROUNDS = 3;
 const WIN_ROUNDS = 2;
@@ -13,6 +14,7 @@ interface PickpocketProps {
 }
 
 export default function Pickpocket({ onResult }: PickpocketProps) {
+  const { t } = useTranslation();
   const [phase, setPhase] = useState<Phase>('ready');
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
@@ -83,7 +85,7 @@ export default function Pickpocket({ onResult }: PickpocketProps) {
     <div className="w-full max-w-lg mx-auto flex flex-col gap-5 select-none" onClick={handleTap}>
       {/* Round dots */}
       <div className="flex items-center justify-between text-xs text-gray-400">
-        <span>Round {Math.min(round + 1, ROUNDS)} / {ROUNDS}</span>
+        <span>{t('minigames.pickpocket.roundOf', { current: Math.min(round + 1, ROUNDS), total: ROUNDS })}</span>
         <div className="flex gap-1.5">
           {Array.from({ length: ROUNDS }).map((_, i) => (
             <div key={i} className={`w-3 h-3 rounded-full transition-colors ${
@@ -126,7 +128,7 @@ export default function Pickpocket({ onResult }: PickpocketProps) {
         {/* Alert meter */}
         {phase === 'watching' && (
           <div className="absolute top-3 right-3 flex flex-col items-center gap-1">
-            <span className="text-[10px] text-gray-500 uppercase tracking-wider">Alert</span>
+            <span className="text-[10px] text-gray-500 uppercase tracking-wider">{t('minigames.pickpocket.alert')}</span>
             <div className="w-3 h-20 bg-gray-700 rounded-full overflow-hidden border border-gray-700 flex flex-col-reverse">
               <div
                 className="w-full rounded-full transition-none"
@@ -144,13 +146,13 @@ export default function Pickpocket({ onResult }: PickpocketProps) {
         {phase === 'feedback' && feedback && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/50">
             <span className={`text-2xl font-bold ${feedback === 'stolen' ? 'text-yellow-600' : 'text-red-500'}`}>
-              {feedback === 'stolen' ? '💰 Snatched!' : '🚨 Caught!'}
+              {feedback === 'stolen' ? t('minigames.pickpocket.snatched') : t('minigames.pickpocket.caughtFeedback')}
             </span>
           </div>
         )}
         {phase === 'done' && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/60">
-            <span className="text-2xl font-bold">{score >= WIN_ROUNDS ? '🥷 Clean escape!' : '🚔 Busted!'}</span>
+            <span className="text-2xl font-bold">{score >= WIN_ROUNDS ? t('minigames.pickpocket.cleanEscape') : t('minigames.pickpocket.busted')}</span>
           </div>
         )}
       </div>
@@ -159,13 +161,13 @@ export default function Pickpocket({ onResult }: PickpocketProps) {
       <div className="text-center min-h-[2.5rem] flex items-center justify-center">
         {phase === 'ready' && (
           <div className="bg-[#252525] border border-gray-700 rounded-xl px-5 py-3 w-full">
-            <p className="text-white font-semibold text-sm mb-0.5">Steal when the mark is distracted</p>
-            <p className="text-gray-500 text-xs">Tap when they look away · {WIN_ROUNDS}/{ROUNDS} steals to win</p>
+            <p className="text-white font-semibold text-sm mb-0.5">{t('minigames.pickpocket.stealInstruction')}</p>
+            <p className="text-gray-500 text-xs">{t('minigames.pickpocket.readyInstruction', { count: WIN_ROUNDS, total: ROUNDS })}</p>
           </div>
         )}
         {phase === 'watching' && (
           <p className={`text-sm font-bold transition-all ${isSafe ? 'text-yellow-500 animate-pulse scale-110' : 'text-gray-500'}`}>
-            {isSafe ? '👆 NOW — tap to steal!' : 'Wait for the right moment...'}
+            {isSafe ? t('minigames.pickpocket.tapNow') : t('minigames.pickpocket.waitMoment')}
           </p>
         )}
       </div>

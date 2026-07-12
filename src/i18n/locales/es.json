@@ -32,7 +32,8 @@
     "locationsAvailable": "Lugares disponibles",
     "currentLocation": "Estás en",
     "distance": "distancia",
-    "chapter": "Capítulo"
+    "chapter": "Capítulo",
+    "close": "Cerrar"
   },
   "home": {
     "title": "Tu Piso",
@@ -47,25 +48,8 @@
     "goOut": "Salir a la calle",
     "goOutDesc": "Abrir el mapa y elegir un destino",
     "mailbox": "Mirar el correo",
-    "mailboxDesc": "Quizás tienes carta"
-  },
-  "activities": {
-    "work": "Trabajar",
-    "workDesc": "Jornada completa de 8 horas",
-    "halfWork": "Media jornada",
-    "halfWorkDesc": "4 horas de trabajo",
-    "explore": "Explorar la ciudad",
-    "exploreDesc": "Descubrir nuevos lugares y pistas ocultas",
-    "read": "Leer / Estudiar",
-    "readDesc": "Aumentar tu conocimiento",
-    "sport": "Hacer deporte",
-    "sportDesc": "Mejorar tu vitalidad",
-    "socialize": "Salir con amigos",
-    "socializeDesc": "Conectar con tu red social",
-    "meditate": "Meditar / Reflexionar",
-    "meditateDesc": "Conectar con tu Leyenda Personal",
-    "sleep": "Dormir más",
-    "sleepDesc": "Recuperar energía"
+    "mailboxDesc": "Quizás tienes carta",
+    "morningText": "El sol entra por la ventana. El ventilador de techo gira. El sueño de esta noche aún está fresco en tu mente. ¿Qué haces?"
   },
   "activitiesSide": {
     "libraryRead": "Leer Pergaminos",
@@ -100,5 +84,136 @@
     "knowledgeDesc": "Cultura, calle, sabiduría",
     "socialDesc": "Amistades, contactos, confianza",
     "careerDesc": "Situación laboral"
+  },
+  "location": {
+    "resonates": "Este lugar te resuena. Algo te dice que has venido al sitio correcto.",
+    "investigate": "Investigar",
+    "investigateBackToMap": "Investigar → Volver al mapa",
+    "backToMap": "← Volver al mapa"
+  },
+  "activityPicker": {
+    "todaysPlan": "Resumen del día:",
+    "dayCompleted": "¡Día completado!",
+    "finishDay": "Terminar el día"
+  },
+  "map": {
+    "explore": "Explorar",
+    "investigate": "Investigar →",
+    "visit": "Visitar →",
+    "storyBadge": "Historia",
+    "youAreHere": "Estás aquí"
+  },
+  "recap": {
+    "yourProgress": "Tu progreso",
+    "yourJourney": "Tu viaje",
+    "placesVisited": "lugares visitados",
+    "totalScore": "Puntuación total",
+    "viewEpilogue": "Ver el Epílogo",
+    "nextChapter": "Siguiente Capítulo"
+  },
+  "epilogue": {
+    "theEnd": "El Fin",
+    "journeyText": "El viaje nunca termina de verdad. Otra persona está empezando el suyo.",
+    "returnToTitle": "Volver al Título"
+  },
+  "citySelect": {
+    "tagline": "¿Dónde empieza tu historia?",
+    "moreCitiesSoon": "Más ciudades próximamente...",
+    "story": "historia",
+    "stories": "historias",
+    "locations": "lugares"
+  },
+  "title": {
+    "chooseCharacter": "Elige tu personaje",
+    "businessman": "El empresario",
+    "sportsman": "El deportista",
+    "builtWith": "Hecho con ❤️ para Barcelona"
+  },
+  "result": {
+    "success": "¡Conseguido!",
+    "failed": "Fallido",
+    "wonDesc": "Completaste la actividad y ganaste puntos de estadística.",
+    "lostDesc": "No lo lograste esta vez. No ganaste puntos de estadística.",
+    "statsEarned": "Estadísticas ganadas",
+    "tryAgainHint": "Prueba otra actividad o vuelve más tarde."
+  },
+  "minigames": {
+    "sideScroller": {
+      "arrived": "¡LLEGASTE!",
+      "winReward": "+5 Vitalidad   +3 Conocimiento",
+      "knockedOut": "FUERA DE COMBATE",
+      "loseReward": "-10 Vitalidad",
+      "jump": "↑ SALTAR",
+      "shoot": "🔫 DISPARAR"
+    },
+    "quickQuiz": {
+      "questionProgress": "Pregunta {{current}} / {{total}}"
+    },
+    "brawl": {
+      "attackProgress": "Ataque {{current}} / {{total}}",
+      "health": "Salud:",
+      "brace": "Prepárate...",
+      "incomingAttack": "¡Ataque entrante!",
+      "parried": "¡Parado!",
+      "knockedOut": "¡Fuera de combate!",
+      "tookHit": "¡Recibiste un golpe!",
+      "youWin": "¡Ganaste!",
+      "startFight": "Empezar Pelea",
+      "instruction": "Toca la dirección correcta para parar · sobrevive {{count}} ataques"
+    },
+    "chase": {
+      "clearedCount": "{{cleared}}/{{total}} superados",
+      "lives": "Vidas:",
+      "dodge": "¡Esquiva los obstáculos!",
+      "escaped": "🏆 ¡Escapaste!",
+      "caught": "💥 ¡Atrapado!",
+      "run": "¡Corre!",
+      "instruction": "Cambia de carril para esquivar · sobrevive {{count}} obstáculos para ganar"
+    },
+    "lockpick": {
+      "pins": "Pines:",
+      "pickTheLock": "Forzar la cerradura",
+      "readyInstruction": "Toca cuando la aguja esté en el arco verde · {{count}} fallos permitidos",
+      "pinOf": "Pin {{current}} de {{total}}",
+      "tapNow": "👆 ¡Ahora! ¡Toca para forzar!",
+      "tapOrSpace": "Toca o pulsa Espacio...",
+      "click": "✓ ¡Clic!",
+      "miss": "✗ ¡Fallo!",
+      "opened": "🔓 ¡Abierto!",
+      "jammed": "🔒 ¡Atascado!"
+    },
+    "photograph": {
+      "shotOf": "Foto {{current}} / {{total}}",
+      "frameShot": "Encuadra la foto perfecta",
+      "readyInstruction": "Toca cuando el sujeto esté centrado · {{count}}/{{total}} buenas fotos para ganar",
+      "waitMoment": "Espera el momento adecuado...",
+      "tapNow": "📸 ¡Ahora! ¡Toca para disparar!",
+      "click": "📸 ¡Clic!",
+      "tooEarly": "❌ ¡Demasiado pronto!",
+      "greatShots": "🌟 ¡Grandes fotos!",
+      "tryAgain": "🎞️ ¡Inténtalo de nuevo!"
+    },
+    "pickpocket": {
+      "roundOf": "Ronda {{current}} / {{total}}",
+      "alert": "Alerta",
+      "stealInstruction": "Roba cuando el objetivo esté distraído",
+      "readyInstruction": "Toca cuando mire hacia otro lado · {{count}}/{{total}} robos para ganar",
+      "waitMoment": "Espera el momento adecuado...",
+      "tapNow": "👆 AHORA — ¡toca para robar!",
+      "snatched": "💰 ¡Robado!",
+      "caughtFeedback": "🚨 ¡Pillado!",
+      "cleanEscape": "🥷 ¡Escape limpio!",
+      "busted": "🚔 ¡Trincado!"
+    },
+    "tapChallenge": {
+      "roundOf": "Ronda {{current}} / {{total}}",
+      "stopMarker": "Detén el marcador dentro de la zona verde",
+      "readyInstruction": "Toca o pulsa Espacio · {{count}}/{{total}} aciertos para lograrlo",
+      "tapToStop": "¡Toca para detener!",
+      "hit": "✓ ¡Acierto!",
+      "miss": "✗ Fallo",
+      "niceTiming": "Buen timing",
+      "justOutside": "Justo fuera de la zona"
+    }
   }
 }

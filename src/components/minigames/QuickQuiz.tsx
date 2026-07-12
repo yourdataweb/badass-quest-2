@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { QuizQuestion } from '../../data/locationActivities';
 
 const QUESTIONS_PER_GAME = 3;
@@ -23,6 +24,7 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export default function QuickQuiz({ questions, onResult }: QuickQuizProps) {
+  const { t } = useTranslation();
   // Pick a fresh random subset once per mount — stable across re-renders
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const qs = useMemo(() => shuffle(questions).slice(0, QUESTIONS_PER_GAME), []);
@@ -94,7 +96,7 @@ export default function QuickQuiz({ questions, onResult }: QuickQuizProps) {
     <div className="w-full max-w-lg mx-auto flex flex-col gap-4">
       {/* Progress header */}
       <div className="flex items-center justify-between text-xs text-gray-400 mb-1">
-        <span>Question {index + 1} / {qs.length}</span>
+        <span>{t('minigames.quickQuiz.questionProgress', { current: index + 1, total: qs.length })}</span>
         <span className={timeLeft <= 3 ? 'text-red-400 font-bold' : ''}>⏱ {timeLeft}s</span>
       </div>
 

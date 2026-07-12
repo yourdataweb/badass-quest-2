@@ -1,0 +1,196 @@
+{
+  "the-alchemist": {
+    "title": "L'Alquimista",
+    "intro": "Tens 26 anys i una vida normal. Un pis a la ciutat. Una feina. Uns amics. Però fa dies que somies la mateixa escena cada nit: una plaça plena de coloms que s'alcen alhora, i una figura que assenyala al nord.\n\nCada matí et despertes amb la sensació que el somni vol dir alguna cosa. Avui, alguna cosa et diu que hauries de seguir-lo.",
+    "chapters": {
+      "ch1": {
+        "title": "The Signal",
+        "description": "An old man on a bench. Two coins. A direction."
+      },
+      "ch2-sandbox": {
+        "title": "The Merchant of Glass",
+        "description": "You need to earn money and find your footing before pursuing the next clue. Merce needs help at the market."
+      },
+      "ch3": {
+        "title": "The Englishman",
+        "description": "The Englishman studies symbols in the park. He has a map of the city with a secret code."
+      },
+      "ch4-sandbox": {
+        "title": "The Desert Crossing",
+        "description": "Visit the three locations. Find the clues. Life keeps happening around you."
+      },
+      "ch5": {
+        "title": "The Trial",
+        "description": "A fountain in a square awaits. Someone has been watching your journey."
+      },
+      "epilogue": {
+        "title": "The Return",
+        "description": "A year later. A café across the city. Someone looks lost with a map."
+      }
+    },
+    "dialogue": {
+      "ch1-arrive": {
+        "text": "Arribes a la plaça. Els coloms es dispersen al creuar — com al somni. Un ancià està assegut en un banc, donant de menjar als pocs ocells que queden. Alça la mirada quan t'acostes."
+      },
+      "ch1-melqui": {
+        "text": "\"Tres nits seguides, oi? El mateix somni. La plaça. Els ocells. La figura assenyalant al nord.\" Somriu suaument. \"T'estava esperant.\""
+      },
+      "ch1-urim": {
+        "text": "\"Tothom té una Llegenda Personal. Un propòsit que et crida. La majoria mai escolta. Tu ho vas fer. Per això ets aquí.\" Fica la mà a la butxaca i treu dues monedes antigues."
+      },
+      "ch1-first-clue": {
+        "text": "\"Ves a una llibreria propera. Busca un llibre blau. Et dirà on anar després. I guarda les monedes — quan no sàpigues què triar, llença-les.\" S'aixeca, s'espolta l'abric, i desapareix entre la multitud."
+      },
+      "ch2-arrive-library": {
+        "text": "Entres a la biblioteca. L'olor a paper vell t'envolta. Una dona al mostrador — cinquantona, somriure càlid, mans tacades de tinta — alça la mirada."
+      },
+      "ch2-merce": {
+        "text": "\"Ah, el llibre blau! Algú més va preguntar per ell. Un anglès. Va marxar amb pressa — va dir alguna cosa sobre un parc.\" Fa una pausa. \"Però escolta — em vindria bé ajuda a la meva botiga. Vidrieria. Aquí a prop. Et pago, i potser et pugui explicar més sobre aquell anglès.\""
+      },
+      "ch3-find": {
+        "text": "El trobes en un banc prop del llac al parc. És més jove del que esperaves — trenta anys, jaqueta de tweed, gargotejant en un bloc. Un mapa cobert de símbols jeu al seu costat."
+      },
+      "ch3-symbols": {
+        "text": "\"Ah, ets el de la biblioteca. Mercè em va enviar un missatge. Estudio alquímia — no la de convertir plom en or, sinó el simbolisme ocult als llocs. Aquesta ciutat n'és plena. Els vells mestres ho sabien. I hi ha un patró — tres llocs. Tres símbols. N'he desxifrat dos, però el tercer...\" Es perd, mirant el mapa."
+      },
+      "ch3-map-clue": {
+        "text": "T'ensenya el mapa. \"Aquests tres símbols corresponen a llocs d'aquesta ciutat. He identificat: un mercat — El coneixement es compra i es ven. Una església — El silenci guarda secrets. Però el tercer... és una criatura. Un drac. Alguna cosa ferida.\""
+      },
+      "ch3-ready": {
+        "text": "\"Sí! El drac de la teulada. Això és. Tres llocs — un mercat, una església, un monument. Visita'ls. Troba les pistes. La resposta és al final del camí.\""
+      },
+      "ch4-intro": {
+        "text": "Tres llocs. Tres pistes. El viatge que tens per davant portarà temps — i la vida no s'aturarà mentre busques. Tria el teu camí sàviament."
+      },
+      "ch5-arrive": {
+        "text": "La font de la plaça està en silenci. De dia. Una figura està a la seva vora — un home, jove, mirant-te apropar amb ulls que ho saben tot."
+      },
+      "ch5-alchemist": {
+        "text": "\"Sóc el que posa les proves. No per aturar-te — per posar-te a prova. Has arribat lluny. Mercè, l'anglès, els símbols... però la veritable pregunta no és si pots trobar el tresor. És què estàs disposat a sacrificar per ell.\""
+      },
+      "ch5-verdict": {
+        "text": "\"Has respost. La font guarda molts secrets, però el major és aquest: el tresor mai va ser a l'altra banda del mar. Era a la teva pròpia ciutat, esperant que fessis el viatge per ser digne d'ell. Mira les coordenades.\" Et dona un paper amb una sola ubicació escrita."
+      },
+      "ch5-exit": {
+        "text": "Les coordenades apunten de tornada a on tot va començar. La mateixa plaça. El mateix banc. Però ara — el banc està buit, i una petita caixa jeu a sota."
+      },
+      "ch5-treasure": {
+        "text": "Dins de la caixa: un diari de cuiro gastat. Pàgines escrites a mà. La història d'una altra persona. Algú que va seguir el mateix camí, dècades enrere. I una carta de Melquisedec, esperant-te."
+      },
+      "epilogue-cafe": {
+        "text": "Ha passat un any. Ets assegut en un cafè. La teva vida ha canviat — no perquè trobessis un tresor, sinó perquè vas fer el viatge. Una persona jove a la taula del costat mira un mapa de la ciutat amb la mateixa expressió que tu vas tenir una vegada."
+      },
+      "epilogue-circle": {
+        "text": "El cercle es tanca. L'Alquimista es converteix en guia. El teu viatge acaba — però per un altre, tot just comença."
+      }
+    },
+    "options": {
+      "ch1-approach": {
+        "text": "Apropar-me. \"Disculpi... el conec?\""
+      },
+      "ch1-observe": {
+        "text": "Quedar-me enrere i observar-lo un moment."
+      },
+      "ch1-who": {
+        "text": "\"Qui ets? Com saps el dels meus somnis?\""
+      },
+      "ch1-yes": {
+        "text": "\"Sí. Necessito entendre què significa això.\" (Decisiu)"
+      },
+      "ch1-doubt": {
+        "text": "\"Això és una bogeria. Hauria de marxar.\""
+      },
+      "ch1-accept-coins": {
+        "text": "Acceptar les monedes. \"Què faig amb això?\""
+      },
+      "ch1-refuse": {
+        "text": "\"No necessito monedes. Només digues què fer.\""
+      },
+      "ch1-go-library": {
+        "text": "Anar a una llibreria. Trobar aquell llibre blau."
+      },
+      "ch1-explore-first": {
+        "text": "Explorar la plaça una mica més abans d'anar a la llibreria."
+      },
+      "ch2-ask-book": {
+        "text": "\"Busco un llibre blau. Un ancià em va enviar.\""
+      },
+      "ch2-browse": {
+        "text": "Ullar els prestatges. Deixar que el llibre em trobi."
+      },
+      "ch2-help": {
+        "text": "\"T'ajudo. Què cal fer?\""
+      },
+      "ch2-decline": {
+        "text": "\"Necessito trobar a aquell anglès. Potser després.\""
+      },
+      "ch3-approach": {
+        "text": "\"Disculpi. És vostè el que buscava el llibre blau?\""
+      },
+      "ch3-quiet": {
+        "text": "Seure a prop i observar què dibuixa."
+      },
+      "ch3-help": {
+        "text": "\"Ensenya'm el mapa. Potser puc ajudar.\""
+      },
+      "ch3-research": {
+        "text": "\"Deixa'm investigar. Conec un lloc on trobar respostes.\""
+      },
+      "ch3-dragon": {
+        "text": "\"Un drac ferit... un monument. Un drac a la seva teulada.\""
+      },
+      "ch3-ask": {
+        "text": "\"No ho sé. Parla'm més dels símbols.\""
+      },
+      "ch3-start-quest": {
+        "text": "Donar-li les gràcies i sortir a visitar els tres llocs."
+      },
+      "ch4-first": {
+        "text": "Anar a un mercat primer."
+      },
+      "ch4-work-first": {
+        "text": "Necessito diners. Treballar una mica abans d'explorar."
+      },
+      "ch5-approach": {
+        "text": "Apropar-me. \"M'has estat seguint, oi?\""
+      },
+      "ch5-wary": {
+        "text": "Mantenir la distància. \"Qui ets?\""
+      },
+      "ch5-everything": {
+        "text": "\"Tot. Ho donaré tot per això.\""
+      },
+      "ch5-nothing": {
+        "text": "\"Res. Ja tinc el que necessito.\""
+      },
+      "ch5-both": {
+        "text": "\"Puc compaginar-ho. La meva vida i aquest viatge.\" (Requereix equilibri)"
+      },
+      "ch5-wind": {
+        "text": "\"Ensenya'm a convertir-me en el vent.\""
+      },
+      "ch5-look": {
+        "text": "Llegir les coordenades. \"La plaça principal...\""
+      },
+      "ch5-box": {
+        "text": "Obrir la caixa."
+      },
+      "ch5-letter": {
+        "text": "Llegir la carta."
+      },
+      "ep-approach": {
+        "text": "Apropar-me. \"Necessites ajuda?\""
+      },
+      "ep-smile": {
+        "text": "Somriure i seguir amb el teu cafè. Deixar que trobin el seu propi camí."
+      },
+      "ep-sit": {
+        "text": "Seure al seu costat sense dir res. Si pregunten, respondré."
+      },
+      "ep-end": {
+        "text": "Acabar la història."
+      }
+    },
+    "momentLimit": {}
+  }
+}

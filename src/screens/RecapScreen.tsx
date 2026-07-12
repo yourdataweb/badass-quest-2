@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useGameStore } from '../store/gameStore';
 import GameLayout from '../components/GameLayout';
 import { getStoryById } from '../data/story/index';
-import { getChapterTitle } from '../engine/storyEngine';
+import { chapterTitle, chapterDescription } from '../i18n/helpers';
 
 interface RecapScreenProps {
   chapterIndex: number;
@@ -11,7 +11,7 @@ interface RecapScreenProps {
 }
 
 export default function RecapScreen({ chapterIndex, onNext, isLastChapter }: RecapScreenProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const stats = useGameStore((s) => s.stats);
   const visitedLocationIds = useGameStore((s) => s.visitedLocationIds);
   const time = useGameStore((s) => s.time);
@@ -19,8 +19,8 @@ export default function RecapScreen({ chapterIndex, onNext, isLastChapter }: Rec
 
   const story = chosenBook ? getStoryById(chosenBook) : null;
   const chapter = story?.chapters[chapterIndex];
-  const title = chapter ? getChapterTitle(chapter) : '';
-  const desc = chapter?.description ?? '';
+  const title = chapter ? chapterTitle(t, chosenBook ?? '', chapter.id) : '';
+  const desc = chapter ? chapterDescription(t, chosenBook ?? '', chapter.id) : '';
 
   const totalStats = Object.values(stats).reduce((a, b) => a + b, 0);
 
@@ -44,7 +44,7 @@ export default function RecapScreen({ chapterIndex, onNext, isLastChapter }: Rec
             {/* Stats summary */}
             <div className="dialogue-box p-4">
               <h3 className="text-white font-semibold text-sm mb-3">
-                {i18n.language === 'ca' ? 'El teu progrés' : i18n.language === 'es' ? 'Tu progreso' : 'Your progress'}
+                {t('recap.yourProgress')}
               </h3>
               <div className="grid grid-cols-3 gap-3">
                 {[
@@ -81,12 +81,12 @@ export default function RecapScreen({ chapterIndex, onNext, isLastChapter }: Rec
             {/* Journey stats */}
             <div className="dialogue-box p-4">
               <h3 className="text-white font-semibold text-sm mb-3">
-                {i18n.language === 'ca' ? 'El teu viatge' : i18n.language === 'es' ? 'Tu viaje' : 'Your journey'}
+                {t('recap.yourJourney')}
               </h3>
               <div className="space-y-2 text-sm text-gray-400">
-                <p>📍 {visitedLocationIds.length} {i18n.language === 'ca' ? 'llocs visitats' : i18n.language === 'es' ? 'lugares visitados' : 'places visited'}</p>
+                <p>📍 {visitedLocationIds.length} {t('recap.placesVisited')}</p>
                 <p>📅 {time.day}/{time.month}/{time.year}</p>
-                <p>💪 {i18n.language === 'ca' ? 'Puntuació total' : i18n.language === 'es' ? 'Puntuación total' : 'Total score'}: {totalStats}</p>
+                <p>💪 {t('recap.totalScore')}: {totalStats}</p>
               </div>
             </div>
           </div>
@@ -99,9 +99,7 @@ export default function RecapScreen({ chapterIndex, onNext, isLastChapter }: Rec
               onClick={onNext}
               className="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-[#22c55e] to-[#16a34a] shadow-lg shadow-[#22c55e]/25 hover:brightness-110 active:scale-[0.98] transition-all"
             >
-              {isLastChapter
-                ? (i18n.language === 'ca' ? "Veure l'Epíleg" : i18n.language === 'es' ? 'Ver el Epílogo' : 'View Epilogue')
-                : (i18n.language === 'ca' ? 'Següent Capítol' : i18n.language === 'es' ? 'Siguiente Capítulo' : 'Next Chapter')}
+              {isLastChapter ? t('recap.viewEpilogue') : t('recap.nextChapter')}
             </button>
           </div>
         </div>

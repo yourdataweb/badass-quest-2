@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface MiniGameModalProps {
   title: string;
@@ -20,6 +21,7 @@ export default function MiniGameModal({
   backgroundImage,
 }: MiniGameModalProps) {
   const overlayRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
 
   return (
     <div
@@ -39,7 +41,7 @@ export default function MiniGameModal({
             className="ml-3 shrink-0 w-8 h-8 flex items-center justify-center rounded-full
               bg-gray-700 hover:bg-[#16a34a] text-gray-400 hover:text-white
               transition-colors text-lg font-bold"
-            aria-label="Close"
+            aria-label={t('ui.close')}
           >
             ✕
           </button>

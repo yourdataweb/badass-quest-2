@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const PINS = 3;
 const BASE_RPM = 0.8;        // rotations per second for pin 0
@@ -14,6 +15,7 @@ interface LockpickProps {
 }
 
 export default function Lockpick({ onResult }: LockpickProps) {
+  const { t } = useTranslation();
   const [phase, setPhase] = useState<Phase>('ready');
   const [pin, setPin] = useState(0);
   const [angle, setAngle] = useState(0);
@@ -129,7 +131,7 @@ export default function Lockpick({ onResult }: LockpickProps) {
       {/* Progress: pins + misses */}
       <div className="flex items-center justify-between w-full text-xs text-gray-400">
         <div className="flex items-center gap-2">
-          <span>Pins:</span>
+          <span>{t('minigames.lockpick.pins')}</span>
           {Array.from({ length: PINS }).map((_, i) => (
             <div
               key={i}
@@ -193,14 +195,14 @@ export default function Lockpick({ onResult }: LockpickProps) {
         {(phase === 'click' || phase === 'miss') && (
           <div className="absolute inset-0 flex items-end justify-center pb-3 pointer-events-none">
             <span className={`text-lg font-bold ${phase === 'click' ? 'text-[#22c55e]' : 'text-red-400'}`}>
-              {phase === 'click' ? '✓ Click!' : '✗ Miss!'}
+              {phase === 'click' ? t('minigames.lockpick.click') : t('minigames.lockpick.miss')}
             </span>
           </div>
         )}
         {phase === 'done' && (
           <div className="absolute inset-0 flex items-end justify-center pb-3 pointer-events-none">
             <span className="text-lg font-bold">
-              {misses < MAX_MISSES ? '🔓 Opened!' : '🔒 Jammed!'}
+              {misses < MAX_MISSES ? t('minigames.lockpick.opened') : t('minigames.lockpick.jammed')}
             </span>
           </div>
         )}
@@ -208,20 +210,20 @@ export default function Lockpick({ onResult }: LockpickProps) {
 
       {/* Pin label */}
       {phase !== 'done' && (
-        <p className="text-gray-400 text-sm">Pin {Math.min(pin + 1, PINS)} of {PINS}</p>
+        <p className="text-gray-400 text-sm">{t('minigames.lockpick.pinOf', { current: Math.min(pin + 1, PINS), total: PINS })}</p>
       )}
 
       {/* Instruction */}
       <div className="text-center w-full">
         {phase === 'ready' && (
           <div className="bg-[#252525] border border-gray-700 rounded-xl px-5 py-3">
-            <p className="text-white font-semibold text-sm mb-0.5">Pick the lock</p>
-            <p className="text-gray-500 text-xs">Tap when the needle is in the green arc · {MAX_MISSES} misses allowed</p>
+            <p className="text-white font-semibold text-sm mb-0.5">{t('minigames.lockpick.pickTheLock')}</p>
+            <p className="text-gray-500 text-xs">{t('minigames.lockpick.readyInstruction', { count: MAX_MISSES })}</p>
           </div>
         )}
         {phase === 'picking' && (
           <p className={`text-sm font-semibold transition-colors ${inSweetSpot(angle) ? 'text-yellow-500 animate-pulse' : 'text-gray-500'}`}>
-            {inSweetSpot(angle) ? '👆 Now! Tap to pick!' : 'Tap or press Space...'}
+            {inSweetSpot(angle) ? t('minigames.lockpick.tapNow') : t('minigames.lockpick.tapOrSpace')}
           </p>
         )}
       </div>

@@ -32,7 +32,8 @@
     "locationsAvailable": "Available places",
     "currentLocation": "You are at",
     "distance": "distance",
-    "chapter": "Chapter"
+    "chapter": "Chapter",
+    "close": "Close"
   },
   "home": {
     "title": "Your Apartment",
@@ -47,25 +48,8 @@
     "goOut": "Go Outside",
     "goOutDesc": "Open the map and choose a destination",
     "mailbox": "Check the Mail",
-    "mailboxDesc": "Maybe there's a letter"
-  },
-  "activities": {
-    "work": "Work",
-    "workDesc": "Full 8-hour workday",
-    "halfWork": "Half Day",
-    "halfWorkDesc": "4 hours of work",
-    "explore": "Explore the City",
-    "exploreDesc": "Discover new places and hidden clues",
-    "read": "Read / Study",
-    "readDesc": "Increase your knowledge",
-    "sport": "Exercise",
-    "sportDesc": "Improve your vitality",
-    "socialize": "Hang Out with Friends",
-    "socializeDesc": "Connect with your social circle",
-    "meditate": "Meditate / Reflect",
-    "meditateDesc": "Connect with your Personal Legend",
-    "sleep": "Sleep In",
-    "sleepDesc": "Recover energy"
+    "mailboxDesc": "Maybe there's a letter",
+    "morningText": "Sunlight streams through the window. The ceiling fan turns. Last night's dream is still fresh in your mind. What do you do?"
   },
   "activitiesSide": {
     "libraryRead": "Study Scrolls",
@@ -100,5 +84,136 @@
     "knowledgeDesc": "Culture, street smarts, wisdom",
     "socialDesc": "Friendships, contacts, trust",
     "careerDesc": "Work situation"
+  },
+  "location": {
+    "resonates": "This place resonates with you. Something tells you this is the right place.",
+    "investigate": "Investigate",
+    "investigateBackToMap": "Investigate → Back to map",
+    "backToMap": "← Back to map"
+  },
+  "activityPicker": {
+    "todaysPlan": "Today's plan:",
+    "dayCompleted": "Day completed!",
+    "finishDay": "Finish day"
+  },
+  "map": {
+    "explore": "Explore",
+    "investigate": "Investigate →",
+    "visit": "Visit →",
+    "storyBadge": "Story",
+    "youAreHere": "You are here"
+  },
+  "recap": {
+    "yourProgress": "Your progress",
+    "yourJourney": "Your journey",
+    "placesVisited": "places visited",
+    "totalScore": "Total score",
+    "viewEpilogue": "View Epilogue",
+    "nextChapter": "Next Chapter"
+  },
+  "epilogue": {
+    "theEnd": "The End",
+    "journeyText": "The journey is never truly over. Someone else is just beginning theirs.",
+    "returnToTitle": "Return to Title"
+  },
+  "citySelect": {
+    "tagline": "Where does your story begin?",
+    "moreCitiesSoon": "More cities coming soon...",
+    "story": "story",
+    "stories": "stories",
+    "locations": "locations"
+  },
+  "title": {
+    "chooseCharacter": "Choose your character",
+    "businessman": "The businessman",
+    "sportsman": "The sportsman",
+    "builtWith": "Built with ❤️ for Barcelona"
+  },
+  "result": {
+    "success": "Success!",
+    "failed": "Failed",
+    "wonDesc": "You completed the activity and earned stat points.",
+    "lostDesc": "You didn't succeed this time. No stat points earned.",
+    "statsEarned": "Stats earned",
+    "tryAgainHint": "Try a different activity or come back later."
+  },
+  "minigames": {
+    "sideScroller": {
+      "arrived": "ARRIVED!",
+      "winReward": "+5 Vitality   +3 Knowledge",
+      "knockedOut": "KNOCKED OUT",
+      "loseReward": "-10 Vitality",
+      "jump": "↑ JUMP",
+      "shoot": "🔫 SHOOT"
+    },
+    "quickQuiz": {
+      "questionProgress": "Question {{current}} / {{total}}"
+    },
+    "brawl": {
+      "attackProgress": "Attack {{current}} / {{total}}",
+      "health": "Health:",
+      "brace": "Brace yourself...",
+      "incomingAttack": "Incoming attack!",
+      "parried": "Parried!",
+      "knockedOut": "Knocked out!",
+      "tookHit": "Took a hit!",
+      "youWin": "You win!",
+      "startFight": "Start Fight",
+      "instruction": "Tap the matching direction to parry · survive {{count}} attacks"
+    },
+    "chase": {
+      "clearedCount": "{{cleared}}/{{total}} cleared",
+      "lives": "Lives:",
+      "dodge": "Dodge the obstacles!",
+      "escaped": "🏆 Escaped!",
+      "caught": "💥 Caught!",
+      "run": "Run!",
+      "instruction": "Switch lanes to dodge obstacles · survive {{count}} obstacles to win"
+    },
+    "lockpick": {
+      "pins": "Pins:",
+      "pickTheLock": "Pick the lock",
+      "readyInstruction": "Tap when the needle is in the green arc · {{count}} misses allowed",
+      "pinOf": "Pin {{current}} of {{total}}",
+      "tapNow": "👆 Now! Tap to pick!",
+      "tapOrSpace": "Tap or press Space...",
+      "click": "✓ Click!",
+      "miss": "✗ Miss!",
+      "opened": "🔓 Opened!",
+      "jammed": "🔒 Jammed!"
+    },
+    "photograph": {
+      "shotOf": "Shot {{current}} / {{total}}",
+      "frameShot": "Frame the perfect shot",
+      "readyInstruction": "Tap when the subject is centred · {{count}}/{{total}} good shots to win",
+      "waitMoment": "Wait for the right moment...",
+      "tapNow": "📸 Now! Tap to shoot!",
+      "click": "📸 Click!",
+      "tooEarly": "❌ Too early!",
+      "greatShots": "🌟 Great shots!",
+      "tryAgain": "🎞️ Try again!"
+    },
+    "pickpocket": {
+      "roundOf": "Round {{current}} / {{total}}",
+      "alert": "Alert",
+      "stealInstruction": "Steal when the mark is distracted",
+      "readyInstruction": "Tap when they look away · {{count}}/{{total}} steals to win",
+      "waitMoment": "Wait for the right moment...",
+      "tapNow": "👆 NOW — tap to steal!",
+      "snatched": "💰 Snatched!",
+      "caughtFeedback": "🚨 Caught!",
+      "cleanEscape": "🥷 Clean escape!",
+      "busted": "🚔 Busted!"
+    },
+    "tapChallenge": {
+      "roundOf": "Round {{current}} / {{total}}",
+      "stopMarker": "Stop the marker inside the green zone",
+      "readyInstruction": "Tap or press Space · {{count}}/{{total}} hits to succeed",
+      "tapToStop": "Tap to stop!",
+      "hit": "✓ Hit!",
+      "miss": "✗ Miss",
+      "niceTiming": "Nice timing",
+      "justOutside": "Just outside the zone"
+    }
   }
 }

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { Stats } from '../../store/types';
 
 const STAT_ICONS: Record<keyof Stats, string> = {
@@ -7,15 +8,6 @@ const STAT_ICONS: Record<keyof Stats, string> = {
   social: '👥',
   career: '💼',
   fulfillment: '❤️',
-};
-
-const STAT_LABELS: Record<keyof Stats, string> = {
-  vitality: 'Vitality',
-  resources: 'Resources',
-  knowledge: 'Knowledge',
-  social: 'Social',
-  career: 'Career',
-  fulfillment: 'Fulfillment',
 };
 
 interface ResultSummaryProps {
@@ -31,6 +23,7 @@ interface ResultSummaryProps {
  * Replaces the game modal entirely so the user gets a clear "result page".
  */
 export default function ResultSummary({ won, effects, onClose }: ResultSummaryProps) {
+  const { t } = useTranslation();
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 backdrop-blur-md animate-fadeIn">
       <div className="w-full max-w-md mx-4 bg-[#1a1a1a] border border-gray-700 rounded-2xl shadow-2xl overflow-hidden">
@@ -52,27 +45,25 @@ export default function ResultSummary({ won, effects, onClose }: ResultSummaryPr
               won ? 'text-[#22c55e]' : 'text-[#e94560]'
             }`}
           >
-            {won ? 'Success!' : 'Failed'}
+            {won ? t('result.success') : t('result.failed')}
           </h2>
 
           <p className="text-gray-500 text-sm mb-6">
-            {won
-              ? 'You completed the activity and earned stat points.'
-              : 'You didn\'t succeed this time. No stat points earned.'}
+            {won ? t('result.wonDesc') : t('result.lostDesc')}
           </p>
 
           {/* ── Stat breakdown ── */}
           {won && (
             <div className="mb-6">
               <h3 className="text-gray-500 text-xs uppercase tracking-wider mb-3 text-left">
-                Stats earned
+                {t('result.statsEarned')}
               </h3>
               <div className="grid grid-cols-2 gap-2">
                 {Object.entries(effects).map(([key, val]) => {
                   if (val == null || val <= 0) return null;
                   const k = key as keyof Stats;
                   const icon = STAT_ICONS[k] ?? key;
-                  const label = STAT_LABELS[k] ?? key;
+                  const label = t(`ui.${k}`);
                   return (
                     <div
                       key={key}
@@ -94,7 +85,7 @@ export default function ResultSummary({ won, effects, onClose }: ResultSummaryPr
           {!won && (
             <div className="mb-6 py-4">
               <p className="text-gray-500 text-sm">
-                💡 Try a different activity or come back later.
+                💡 {t('result.tryAgainHint')}
               </p>
             </div>
           )}
@@ -104,7 +95,7 @@ export default function ResultSummary({ won, effects, onClose }: ResultSummaryPr
             onClick={onClose}
             className="w-full py-3 rounded-xl bg-[#22c55e] hover:bg-[#16a34a] text-white font-bold transition-all text-base"
           >
-            Continue
+            {t('ui.continue')}
           </button>
         </div>
       </div>

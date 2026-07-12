@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import GameLayout from '../components/GameLayout';
 import { useGameStore } from '../store/gameStore';
 import { getStoryById } from '../data/story/index';
+import { storyTitle, storyIntro } from '../i18n/helpers';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -10,18 +11,14 @@ interface IntroScreenProps {
 }
 
 export default function IntroScreen({ onContinue }: IntroScreenProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const chosenBook = useGameStore((s) => s.chosenBook);
 
   const story = chosenBook ? getStoryById(chosenBook) : null;
 
-  const bookTitle = story
-    ? (i18n.language === 'ca' ? story.titleCa : i18n.language === 'es' ? story.titleEs : story.title)
-    : '';
+  const bookTitle = story ? storyTitle(t, chosenBook ?? '') : '';
 
-  const introText = story
-    ? (i18n.language === 'ca' ? story.introCa : i18n.language === 'es' ? story.introEs : story.intro)
-    : '';
+  const introText = story ? storyIntro(t, chosenBook ?? '') : '';
 
   return (
     <GameLayout>
@@ -38,7 +35,7 @@ export default function IntroScreen({ onContinue }: IntroScreenProps) {
             <div className="dialogue-box p-4 sm:p-6 fade-in">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#e94560]/40 shrink-0 bg-[#252525]">
-                  <img src={`${BASE}characters/chuck.jpg`} alt="Narrator" className="w-full h-full object-cover" loading="lazy" />
+                  <img src={`${BASE}characters/chuck.jpg`} alt={t('characters.narrator')} className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <span className="text-[#e94560] font-bold text-sm">{t('characters.narrator')}</span>
               </div>

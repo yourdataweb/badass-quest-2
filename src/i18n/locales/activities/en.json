@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "read": {
+      "title": "Read / Study",
+      "description": "Hit the books. Knowledge is power."
+    },
+    "sport": {
+      "title": "Exercise",
+      "description": "Work out. Stay fit."
+    },
+    "socialize": {
+      "title": "Hang Out with Friends",
+      "description": "Coffee, drinks, laughs. Stay connected."
+    },
+    "sleep": {
+      "title": "Sleep In",
+      "description": "Extra sleep. Sometimes that is all you need."
+    }
+  }
+}

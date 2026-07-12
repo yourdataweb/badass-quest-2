@@ -4,6 +4,7 @@ import { useGameStore } from '../store/gameStore';
 import GameLayout from '../components/GameLayout';
 import ActivityCard from '../components/ActivityCard';
 import { DAILY_ACTIVITIES } from '../engine/economyEngine';
+import { dailyActivityTitle, dailyActivityDescription } from '../i18n/helpers';
 import type { DailyActivity } from '../store/types';
 
 interface ActivityPickerScreenProps {
@@ -15,7 +16,7 @@ interface ActivityPickerScreenProps {
 const DAY_END_HOUR = 23;
 
 export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: ActivityPickerScreenProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const updateStats = useGameStore((s) => s.updateStats);
   const advanceTime = useGameStore((s) => s.advanceTime);
   const time = useGameStore((s) => s.time);
@@ -25,17 +26,9 @@ export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: 
   const [selected, setSelected] = useState<DailyActivity[]>([]);
   const [confirmed, setConfirmed] = useState(false);
 
-  const getTitle = (act: DailyActivity): string => {
-    if (i18n.language === 'ca' && act.titleCa) return act.titleCa;
-    if (i18n.language === 'es' && act.titleEs) return act.titleEs;
-    return act.title;
-  };
+  const getTitle = (act: DailyActivity): string => dailyActivityTitle(t, act.id);
 
-  const getDesc = (act: DailyActivity): string => {
-    if (i18n.language === 'ca' && act.descriptionCa) return act.descriptionCa;
-    if (i18n.language === 'es' && act.descriptionEs) return act.descriptionEs;
-    return act.description;
-  };
+  const getDesc = (act: DailyActivity): string => dailyActivityDescription(t, act.id);
 
   const isSelected = (act: DailyActivity): boolean => {
     return selected.some((s) => s.id === act.id);
@@ -85,7 +78,7 @@ export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: 
             {selected.length > 0 && (
               <div className="dialogue-box p-3">
                 <p className="text-xs text-gray-500 mb-2">
-                  {i18n.language === 'ca' ? 'Resum del dia:' : i18n.language === 'es' ? 'Resumen del día:' : "Today's plan:"}
+                  {t('activityPicker.todaysPlan')}
                 </p>
                 <ul className="space-y-1 text-sm text-gray-300">
                   {selected.map((act) => (
@@ -133,8 +126,8 @@ export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: 
               }`}
             >
               {confirmed
-                ? (i18n.language === 'ca' ? '✅ Dia completat!' : i18n.language === 'es' ? '✅ ¡Día completado!' : '✅ Day completed!')
-                : (i18n.language === 'ca' ? 'Acabar el dia' : i18n.language === 'es' ? 'Terminar el día' : 'Finish day')}
+                ? `✅ ${t('activityPicker.dayCompleted')}`
+                : t('activityPicker.finishDay')}
             </button>
           </div>
         </div>

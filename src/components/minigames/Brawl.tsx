@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 
 type Dir = 'left' | 'up' | 'right';
 type Phase = 'ready' | 'attack' | 'parried' | 'hit' | 'done';
@@ -17,6 +18,7 @@ interface BrawlProps {
 }
 
 export default function Brawl({ onResult }: BrawlProps) {
+  const { t } = useTranslation();
   const [phase, setPhase] = useState<Phase>('ready');
   const [attackIndex, setAttackIndex] = useState(0);
   const [currentDir, setCurrentDir] = useState<Dir>('up');
@@ -120,9 +122,9 @@ export default function Brawl({ onResult }: BrawlProps) {
     <div className="w-full max-w-lg mx-auto flex flex-col gap-5 select-none">
       {/* HUD */}
       <div className="flex items-center justify-between text-xs text-gray-400">
-        <span>Attack {Math.min(attackIndex + 1, TOTAL_ATTACKS)} / {TOTAL_ATTACKS}</span>
+        <span>{t('minigames.brawl.attackProgress', { current: Math.min(attackIndex + 1, TOTAL_ATTACKS), total: TOTAL_ATTACKS })}</span>
         <div className="flex items-center gap-2">
-          <span className="text-gray-500">Health:</span>
+          <span className="text-gray-500">{t('minigames.brawl.health')}</span>
           {Array.from({ length: MAX_HITS }).map((_, i) => (
             <span key={i} className={`text-base ${i < hits ? 'opacity-25' : 'text-red-400'}`}>❤️</span>
           ))}
@@ -137,14 +139,14 @@ export default function Brawl({ onResult }: BrawlProps) {
       }`}>
 
         {phase === 'ready' && (
-          <p className="text-gray-500 text-sm">Brace yourself...</p>
+          <p className="text-gray-500 text-sm">{t('minigames.brawl.brace')}</p>
         )}
 
         {phase === 'attack' && (
           <div className="flex flex-col items-center gap-3 w-full px-6">
             {/* Opponent fist indicator */}
             <div className="text-5xl animate-bounce">{DIR_ARROW[currentDir]}</div>
-            <p className="text-gray-500 text-xs">Incoming attack!</p>
+            <p className="text-gray-500 text-xs">{t('minigames.brawl.incomingAttack')}</p>
             {/* Timer bar */}
             <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
               <div
@@ -158,14 +160,14 @@ export default function Brawl({ onResult }: BrawlProps) {
         {phase === 'parried' && (
           <div className="flex flex-col items-center gap-1">
             <span className="text-5xl">🛡️</span>
-            <span className="text-green-400 font-bold">Parried!</span>
+            <span className="text-green-400 font-bold">{t('minigames.brawl.parried')}</span>
           </div>
         )}
 
         {phase === 'hit' && (
           <div className="flex flex-col items-center gap-1">
             <span className="text-5xl">💥</span>
-            <span className="text-red-500 font-bold">{hits >= MAX_HITS ? 'Knocked out!' : 'Took a hit!'}</span>
+            <span className="text-red-500 font-bold">{hits >= MAX_HITS ? t('minigames.brawl.knockedOut') : t('minigames.brawl.tookHit')}</span>
           </div>
         )}
 
@@ -173,7 +175,7 @@ export default function Brawl({ onResult }: BrawlProps) {
           <div className="flex flex-col items-center gap-1">
             <span className="text-5xl">{hits < MAX_HITS ? '🏆' : '💀'}</span>
             <span className={`font-bold ${hits < MAX_HITS ? 'text-green-400' : 'text-red-500'}`}>
-              {hits < MAX_HITS ? 'You win!' : 'Knocked out!'}
+              {hits < MAX_HITS ? t('minigames.brawl.youWin') : t('minigames.brawl.knockedOut')}
             </span>
           </div>
         )}
@@ -185,7 +187,7 @@ export default function Brawl({ onResult }: BrawlProps) {
           onClick={() => launchAttack(0, 0)}
           className="w-full py-3 rounded-xl bg-gradient-to-r from-[#f59e0b] to-[#d97706] text-white font-bold text-sm shadow-lg shadow-[#f59e0b]/20"
         >
-          Start Fight
+          {t('minigames.brawl.startFight')}
         </button>
       ) : (
         <div className="grid grid-cols-3 gap-3">
@@ -206,7 +208,7 @@ export default function Brawl({ onResult }: BrawlProps) {
       )}
 
       <p className="text-center text-xs text-gray-400">
-        Tap the matching direction to parry · survive {TOTAL_ATTACKS} attacks
+        {t('minigames.brawl.instruction', { count: TOTAL_ATTACKS })}
       </p>
     </div>
   );

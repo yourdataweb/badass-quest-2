@@ -7,15 +7,9 @@ export interface Position {
 
 export interface LocationPOI {
   id: string;
-  name: string;
-  nameEs?: string;
-  nameCa?: string;
   type: LocationType;
   position: Position;
   address: string;
-  description: string;
-  descriptionEs?: string;
-  descriptionCa?: string;
   sprite?: string;
 }
 
@@ -46,9 +40,7 @@ export type CompletionCriteria =
 
 export interface StoryChapter {
   id: string;
-  title: string;
   role: 'story' | 'sandbox';
-  description: string;
   locationsToShow?: LocationType[];
   /** Location types that trigger the chapter dialogue when visited (story-critical location types). */
   requiredLocationTypes?: LocationType[];
@@ -60,18 +52,12 @@ export interface StoryChapter {
 export interface DialogueNode {
   id: string;
   speaker: string;
-  text: string;
-  textEs?: string;
-  textCa?: string;
   sprite?: string;
   options: DialogueOption[];
 }
 
 export interface DialogueOption {
   id: string;
-  text: string;
-  textEs?: string;
-  textCa?: string;
   requirements?: Partial<Stats>;
   effects: Partial<Stats>;
   nextNodeId?: string;
@@ -79,31 +65,19 @@ export interface DialogueOption {
 }
 
 export interface MomentLimit {
-  text: string;
-  textEs?: string;
-  textCa?: string;
   timeSeconds: number;
   options: MomentOption[];
 }
 
 export interface MomentOption {
   id: string;
-  text: string;
-  textEs?: string;
-  textCa?: string;
   requirements?: Partial<Stats>;
   effects: Partial<Stats>;
-  resultText: string;
-  resultTextEs?: string;
-  resultTextCa?: string;
   flags?: Record<string, boolean>;
 }
 
 export interface City {
   id: string;
-  name: string;
-  nameEs: string;
-  nameCa: string;
   country: string;
   position: Position;
   locations: LocationPOI[];
@@ -111,12 +85,6 @@ export interface City {
 
 export interface BookArchetype {
   id: string;
-  title: string;
-  titleEs: string;
-  titleCa: string;
-  intro: string;
-  introEs: string;
-  introCa: string;
   roles: StoryRole[];
   chapters: StoryChapter[];
 }
@@ -175,14 +143,8 @@ export interface GameTime {
 
 export interface DailyActivity {
   id: string;
-  title: string;
-  titleEs?: string;
-  titleCa?: string;
   durationHours: number;
   effects: Partial<Stats>;
-  description: string;
-  descriptionEs?: string;
-  descriptionCa?: string;
 }
 
 export interface PlayerDecision {

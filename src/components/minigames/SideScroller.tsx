@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import Phaser from 'phaser';
 import { useGameStore } from '../../store/gameStore';
 
@@ -382,6 +383,7 @@ interface Props {
 }
 
 export default function SideScroller({ travelSecs = DEFAULT_LEVEL_SECS, onComplete }: Props) {
+  const { t } = useTranslation();
   const containerRef = useRef<HTMLDivElement>(null);
   const gameRef = useRef<Phaser.Game | null>(null);
   const firedRef = useRef(false);
@@ -513,13 +515,13 @@ export default function SideScroller({ travelSecs = DEFAULT_LEVEL_SECS, onComple
         {uiPhase === 'win' && (
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black/70 gap-4">
             <span className="text-6xl">🏆</span>
-            <p className="pixel-text text-white text-2xl">ARRIVED!</p>
-            <p className="text-green-400 font-semibold">+5 Vitality &nbsp; +3 Knowledge</p>
+            <p className="pixel-text text-white text-2xl">{t('minigames.sideScroller.arrived')}</p>
+            <p className="text-green-400 font-semibold">{t('minigames.sideScroller.winReward')}</p>
             <button
               onClick={() => onComplete(resultRef.current)}
               className="mt-4 px-10 py-3 rounded-2xl bg-gradient-to-r from-[#22c55e] to-[#16a34a] text-white font-bold text-base active:scale-95 transition-all"
             >
-              Continue
+              {t('ui.continue')}
             </button>
           </div>
         )}
@@ -528,13 +530,13 @@ export default function SideScroller({ travelSecs = DEFAULT_LEVEL_SECS, onComple
         {uiPhase === 'lose' && (
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black/70 gap-4">
             <span className="text-6xl">💀</span>
-            <p className="pixel-text text-white text-2xl">KNOCKED OUT</p>
-            <p className="text-red-400 font-semibold">-10 Vitality</p>
+            <p className="pixel-text text-white text-2xl">{t('minigames.sideScroller.knockedOut')}</p>
+            <p className="text-red-400 font-semibold">{t('minigames.sideScroller.loseReward')}</p>
             <button
               onClick={() => onComplete(resultRef.current)}
               className="mt-4 px-10 py-3 rounded-2xl bg-gradient-to-r from-[#e94560] to-[#c0392b] text-white font-bold text-base active:scale-95 transition-all"
             >
-              Continue
+              {t('ui.continue')}
             </button>
           </div>
         )}
@@ -551,7 +553,7 @@ export default function SideScroller({ travelSecs = DEFAULT_LEVEL_SECS, onComple
             text-white font-bold text-xl active:scale-95 active:bg-[#f59e0b]/20
             transition-transform touch-none"
         >
-          ↑ JUMP
+          {t('minigames.sideScroller.jump')}
         </button>
         <button
           onPointerDown={() => { shootRef.current = true; }}
@@ -562,7 +564,7 @@ export default function SideScroller({ travelSecs = DEFAULT_LEVEL_SECS, onComple
             text-white font-bold text-xl active:scale-95 active:bg-[#e94560]/40
             transition-transform touch-none"
         >
-          🔫 SHOOT
+          {t('minigames.sideScroller.shoot')}
         </button>
       </div>
     </div>

@@ -88,7 +88,7 @@ export default function App() {
   const chosenBook = useGameStore((s) => s.chosenBook);
   const [travelSecs, setTravelSecs] = useState(25);
   const [travelHours, setTravelHours] = useState(0.25);
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const city = chosenCity ? getCityById(chosenCity) : null;
   const story = chosenBook ? getStoryById(chosenBook) : null;
@@ -278,9 +278,9 @@ export default function App() {
             <div className="flex flex-col items-center justify-center h-full w-full bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#0f3460] p-6">
               <div className="fade-in text-center max-w-md">
                 <div className="text-6xl mb-6">🏁</div>
-                <h1 className="pixel-text text-3xl text-[#e94560] mb-4">The End</h1>
+                <h1 className="pixel-text text-3xl text-[#e94560] mb-4">{t('epilogue.theEnd')}</h1>
                 <p className="text-gray-300 text-base mb-8 leading-relaxed">
-                  The journey is never truly over. Someone else is just beginning theirs.
+                  {t('epilogue.journeyText')}
                 </p>
                 <button
                   onClick={handleEpilogueDone}
@@ -289,7 +289,7 @@ export default function App() {
                     hover:shadow-[0_0_30px_rgba(34,197,94,0.35)]
                     active:scale-[0.98] text-white transition-all"
                 >
-                  Return to Title
+                  {t('epilogue.returnToTitle')}
                 </button>
               </div>
             </div>
