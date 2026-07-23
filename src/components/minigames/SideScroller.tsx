@@ -22,6 +22,8 @@ const PLAYER_DISPLAY = { trump: 80, ramos: 80 } as const;
 const DEFAULT_LEVEL_SECS = 3;
 const JUMP_VEL = -560;
 const GRAVITY = 1500;
+const BG_NATIVE_H = 1080; // native height of bg-street.png, used to scale the tile
+const BG_SCROLL_BASE = 70; // px/sec — matches the pace of the run animation
 
 type CharKey = 'trump' | 'ramos';
 
@@ -80,6 +82,7 @@ function makeSceneClass(opts: SceneOpts) {
   return class GameScene extends Phaser.Scene {
     // game objects
     player!: Phaser.Physics.Arcade.Sprite;
+    bg!: Phaser.GameObjects.TileSprite;
     enemies: EnemyObj[] = [];
     bullets: BulletObj[] = [];
 
@@ -105,6 +108,7 @@ function makeSceneClass(opts: SceneOpts) {
     preload() {
       // Plain image load — frames are defined manually in create() with exact boundaries.
       this.load.image('spr', `${BASE}walking/player-sprite-tile.png`);
+      this.load.image('bgStreet', `${BASE}minigames/bg-street.png`);
     }
 
     create() {
@@ -123,32 +127,17 @@ function makeSceneClass(opts: SceneOpts) {
 
       this.GW = this.scale.width;
       this.GH = this.scale.height;
-      this.GY = Math.round(this.GH * 0.77);
+      this.GY = Math.round(this.GH * 0.885);
 
       this.enemies = [];
       this.bullets = [];
       this.lives = maxLives;
       setLives(this.lives);
 
-      // ── Background ──────────────────────────────────────────────────────
-      this.add.rectangle(this.GW / 2, this.GH / 2, this.GW, this.GH, 0x1a1a3e);
-
-      // Simple city silhouette
-      for (let bx = 0; bx < this.GW; bx += 36) {
-        const bh = 14 + ((bx * 7 + 11) % 36);
-        this.add.rectangle(bx + 18, this.GY - bh / 2, 32, bh, 0x0d0d2e);
-      }
-
-      // Ground fill
-      this.add.rectangle(
-        this.GW / 2,
-        this.GY + (this.GH - this.GY) / 2,
-        this.GW,
-        this.GH - this.GY,
-        0x3d2200
-      );
-      // Ground edge line
-      this.add.rectangle(this.GW / 2, this.GY + 2, this.GW, 4, 0x5a3300);
+      // ── Background: scrolling city street ─────────────────────────────
+      this.bg = this.add.tileSprite(this.GW / 2, this.GH / 2, this.GW, this.GH, 'bgStreet');
+      const bgScale = this.GH / BG_NATIVE_H;
+      this.bg.setTileScale(bgScale, bgScale);
 
       // ── Ground platform (static physics body) ──────────────────────────
       // Rectangle origin defaults to 0.5,0.5 so x/y is center.
@@ -221,6 +210,9 @@ function makeSceneClass(opts: SceneOpts) {
       if (inFall) this.fallTimer -= dt;
 
       setProgress(progress);
+
+      // Scroll the street backdrop so the player appears to advance through the city
+      this.bg.tilePositionX += (BG_SCROLL_BASE + progress * 40) * dt;
 
       const body = this.player.body as Phaser.Physics.Arcade.Body;
       const onGround = body.blocked.down;
