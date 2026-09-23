@@ -1,7 +1,7 @@
 {
   "barcelona": {
     "name": "Barcelona",
-    "country": "Spain",
+    "country": "España",
     "locations": {
       "bcn-home": {
         "name": "Tu Piso (Gràcia)",
@@ -174,320 +174,320 @@
     "country": "China",
     "locations": {
       "bjg-home": {
-        "name": "Your apartment",
-        "description": "Your apartment in the city. A comfortable place you call home."
+        "name": "Tu piso",
+        "description": "Tu piso en la ciudad. Un lugar acogedor al que llamas hogar."
       },
       "bjg-airport-beijing-capital-internationa": {
-        "name": "Beijing Capital International Airport",
-        "description": "Beijing Capital International Airport. The city's gateway to the world — and to the journey."
+        "name": "Aeropuerto Internacional de Pekín-Capital",
+        "description": "Aeropuerto Internacional de Pekín-Capital. La puerta de la ciudad al mundo, y al viaje."
       },
       "bjg-airport-beijing-daxing-international": {
-        "name": "Beijing Daxing International Airport",
-        "description": "Beijing Daxing International Airport. The city's gateway to the world — and to the journey."
+        "name": "Aeropuerto Internacional de Pekín-Daxing",
+        "description": "Aeropuerto Internacional de Pekín-Daxing. La puerta de la ciudad al mundo, y al viaje."
       },
       "bjg-airport-nanyuan-air-base": {
-        "name": "Nanyuan Air Base",
-        "description": "Nanyuan Air Base. The city's gateway to the world — and to the journey."
+        "name": "Base aérea de Nanyuan",
+        "description": "Base aérea de Nanyuan. La puerta de la ciudad al mundo, y al viaje."
       },
       "bjg-airport-beijing-shahezhen-air-base": {
-        "name": "Beijing Shahezhen Air Base",
-        "description": "Beijing Shahezhen Air Base. The city's gateway to the world — and to the journey."
+        "name": "Base aérea de Shahezhen",
+        "description": "Base aérea de Shahezhen. La puerta de la ciudad al mundo, y al viaje."
       },
       "bjg-market-donghuamen-complex": {
-        "name": "Donghuamen Complex",
-        "description": "Donghuamen Complex. A bustling market full of colour, sound, and commerce."
+        "name": "Complejo Donghuamen",
+        "description": "Complejo Donghuamen. Un mercado bullicioso lleno de color, sonido y comercio."
       },
       "bjg-plaza-tian-anmen-square": {
-        "name": "Tian'anmen Square",
-        "description": "Tian'anmen Square. A lively public square where the city gathers."
+        "name": "Plaza de Tiananmén",
+        "description": "Plaza de Tiananmén. Una plaza animada donde se reúne la ciudad."
       },
       "bjg-plaza-alishan-square": {
-        "name": "Alishan Square",
-        "description": "Alishan Square. A lively public square where the city gathers."
+        "name": "Plaza Alishan",
+        "description": "Plaza Alishan. Una plaza animada donde se reúne la ciudad."
       },
       "bjg-plaza-model-worker-square": {
-        "name": "Model Worker Square",
-        "description": "Model Worker Square. A lively public square where the city gathers."
+        "name": "Plaza del Trabajador Modelo",
+        "description": "Plaza del Trabajador Modelo. Una plaza animada donde se reúne la ciudad."
       },
       "bjg-plaza-enjoying-snow-yard": {
-        "name": "Enjoying Snow Yard",
-        "description": "Enjoying Snow Yard. A lively public square where the city gathers."
+        "name": "Patio de Contemplar la Nieve",
+        "description": "Patio de Contemplar la Nieve. Una plaza animada donde se reúne la ciudad."
       },
       "bjg-library-national-library-of-china-an": {
-        "name": "National Library of China Ancient Books Library",
-        "description": "National Library of China Ancient Books Library. A quiet refuge of books and ideas."
+        "name": "Biblioteca de Libros Antiguos de la Biblioteca Nacional de China",
+        "description": "Biblioteca de Libros Antiguos de la Biblioteca Nacional de China. Un refugio tranquilo de libros e ideas."
       },
       "bjg-library-high-school-library": {
-        "name": "High school library",
-        "description": "High school library. A quiet refuge of books and ideas."
+        "name": "Biblioteca del instituto",
+        "description": "Biblioteca del instituto. Un refugio tranquilo de libros e ideas."
       },
       "bjg-library-chinese-academy-of-social-sc": {
-        "name": "Chinese Academy of Social Sciences Library",
-        "description": "Chinese Academy of Social Sciences Library. A quiet refuge of books and ideas."
+        "name": "Biblioteca de la Academia China de Ciencias Sociales",
+        "description": "Biblioteca de la Academia China de Ciencias Sociales. Un refugio tranquilo de libros e ideas."
       },
       "bjg-monument-former-french-legation": {
-        "name": "Former French Legation",
-        "description": "Former French Legation. A landmark that anchors the city's memory."
+        "name": "Antigua Legación de Francia",
+        "description": "Antigua Legación de Francia. Un lugar emblemático que ancla la memoria de la ciudad."
       },
       "bjg-monument-beijing-ancient-observatory": {
-        "name": "Beijing Ancient Observatory",
-        "description": "Beijing Ancient Observatory. A landmark that anchors the city's memory."
+        "name": "Antiguo Observatorio de Pekín",
+        "description": "Antiguo Observatorio de Pekín. Un lugar emblemático que ancla la memoria de la ciudad."
       },
       "bjg-monument-well-of-concubine-zhen": {
-        "name": "Well of Concubine Zhen",
-        "description": "Well of Concubine Zhen. A landmark that anchors the city's memory."
+        "name": "Pozo de la Concubina Zhen",
+        "description": "Pozo de la Concubina Zhen. Un lugar emblemático que ancla la memoria de la ciudad."
       },
       "bjg-monument-national-centre-for-the-perf": {
-        "name": "National Centre for the Performing Arts",
-        "description": "National Centre for the Performing Arts. A landmark that anchors the city's memory."
+        "name": "Centro Nacional de Artes Escénicas",
+        "description": "Centro Nacional de Artes Escénicas. Un lugar emblemático que ancla la memoria de la ciudad."
       },
       "bjg-park-ritan-park": {
-        "name": "Ritan Park",
-        "description": "Ritan Park. A green lung in the heart of the city."
+        "name": "Parque Ritan",
+        "description": "Parque Ritan. Un pulmón verde en el corazón de la ciudad."
       },
       "bjg-park-temple-of-heaven": {
-        "name": "Temple of Heaven",
-        "description": "Temple of Heaven. A green lung in the heart of the city."
+        "name": "Templo del Cielo",
+        "description": "Templo del Cielo. Un pulmón verde en el corazón de la ciudad."
       },
       "bjg-park-beihai-park": {
-        "name": "Beihai Park",
-        "description": "Beihai Park. A green lung in the heart of the city."
+        "name": "Parque Beihai",
+        "description": "Parque Beihai. Un pulmón verde en el corazón de la ciudad."
       },
       "bjg-park-yongdingmen-park": {
-        "name": "Yongdingmen Park",
-        "description": "Yongdingmen Park. A green lung in the heart of the city."
+        "name": "Parque Yongdingmen",
+        "description": "Parque Yongdingmen. Un pulmón verde en el corazón de la ciudad."
       },
       "bjg-church-dongyue-temple": {
-        "name": "Dongyue Temple",
-        "description": "Dongyue Temple. A place of history, silence, and ceremony."
+        "name": "Templo Dongyue",
+        "description": "Templo Dongyue. Un lugar de historia, silencio y ceremonia."
       },
       "bjg-church-temple-of-wisdom-attained-zh": {
-        "name": "Temple of Wisdom Attained (Zhìhuà sì)",
-        "description": "Temple of Wisdom Attained (Zhìhuà sì). A place of history, silence, and ceremony."
+        "name": "Templo de la Sabiduría Alcanzada (Zhìhuà sì)",
+        "description": "Templo de la Sabiduría Alcanzada (Zhìhuà sì). Un lugar de historia, silencio y ceremonia."
       },
       "bjg-church-church-of-zhushikou": {
-        "name": "Church of Zhushikou",
-        "description": "Church of Zhushikou. A place of history, silence, and ceremony."
+        "name": "Iglesia de Zhushikou",
+        "description": "Iglesia de Zhushikou. Un lugar de historia, silencio y ceremonia."
       },
       "bjg-church-altar-of-earth-and-harvests": {
-        "name": "Altar of Earth and Harvests",
-        "description": "Altar of Earth and Harvests. A place of history, silence, and ceremony."
+        "name": "Altar de la Tierra y las Cosechas",
+        "description": "Altar de la Tierra y las Cosechas. Un lugar de historia, silencio y ceremonia."
       },
       "bjg-theatre-deyunshe": {
         "name": "Deyunshe",
-        "description": "Deyunshe. Where stories are told under lights every night."
+        "description": "Deyunshe. Donde cada noche se cuentan historias bajo los focos."
       },
       "bjg-theatre-sanqingyuan-theatre": {
-        "name": "Sanqingyuan Theatre",
-        "description": "Sanqingyuan Theatre. Where stories are told under lights every night."
+        "name": "Teatro Sanqingyuan",
+        "description": "Teatro Sanqingyuan. Donde cada noche se cuentan historias bajo los focos."
       },
       "bjg-theatre-changan-grand-theatre": {
-        "name": "Chang'an Grand Theatre",
-        "description": "Chang'an Grand Theatre. Where stories are told under lights every night."
+        "name": "Gran Teatro Chang'an",
+        "description": "Gran Teatro Chang'an. Donde cada noche se cuentan historias bajo los focos."
       },
       "bjg-theatre-zhongshan-park-concert-hall": {
-        "name": "Zhongshan Park Concert Hall",
-        "description": "Zhongshan Park Concert Hall. Where stories are told under lights every night."
+        "name": "Sala de Conciertos del Parque Zhongshan",
+        "description": "Sala de Conciertos del Parque Zhongshan. Donde cada noche se cuentan historias bajo los focos."
       },
       "bjg-office-organization-department-of-t": {
-        "name": "Organization Department of the CPC Central Committee",
-        "description": "Organization Department of the CPC Central Committee. A hive of industry in the city's working district."
+        "name": "Departamento de Organización del Comité Central del PCCh",
+        "description": "Departamento de Organización del Comité Central del PCCh. Un hervidero de actividad en el distrito de negocios de la ciudad."
       },
       "bjg-office-the-tower-apartments-at-orie": {
-        "name": "The Tower Apartments at Oriental Plaza",
-        "description": "The Tower Apartments at Oriental Plaza. A hive of industry in the city's working district."
+        "name": "Torres de Oriental Plaza",
+        "description": "Torres de Oriental Plaza. Un hervidero de actividad en el distrito de negocios de la ciudad."
       },
       "bjg-office-sinopec-tower": {
-        "name": "Sinopec Tower",
-        "description": "Sinopec Tower. A hive of industry in the city's working district."
+        "name": "Torre Sinopec",
+        "description": "Torre Sinopec. Un hervidero de actividad en el distrito de negocios de la ciudad."
       },
       "bjg-office-huasheng-international": {
         "name": "Huasheng International",
-        "description": "Huasheng International. A hive of industry in the city's working district."
+        "description": "Huasheng International. Un hervidero de actividad en el distrito de negocios de la ciudad."
       },
       "bjg-cafe-sculpting-in-time": {
         "name": "Sculpting in Time Café",
-        "description": "Sculpting in Time Café. Espresso, conversation, and the passing day."
+        "description": "Sculpting in Time Café. Café, conversación y el día que pasa."
       },
       "bjg-cafe-the-bookworm": {
         "name": "The Bookworm",
-        "description": "The Bookworm. Espresso, conversation, and the passing day."
+        "description": "The Bookworm. Café, conversación y el día que pasa."
       },
       "bjg-cafe-metal-hands-coffee": {
         "name": "Metal Hands Coffee",
-        "description": "Metal Hands Coffee. Espresso, conversation, and the passing day."
+        "description": "Metal Hands Coffee. Café, conversación y el día que pasa."
       }
     }
   },
   "new-york": {
     "name": "New York",
-    "country": "USA",
+    "country": "EE. UU.",
     "locations": {
       "nyc-home": {
-        "name": "Your apartment",
-        "description": "Your apartment in the city. A comfortable place you call home."
+        "name": "Tu piso",
+        "description": "Tu piso en la ciudad. Un lugar acogedor al que llamas hogar."
       },
       "nyc-plaza-albee-square": {
         "name": "Albee Square",
-        "description": "Albee Square. A lively public square where the city gathers."
+        "description": "Albee Square. Una plaza animada donde se reúne la ciudad."
       },
       "nyc-plaza-beastie-boys-square": {
         "name": "Beastie Boys Square",
-        "description": "Beastie Boys Square. A lively public square where the city gathers."
+        "description": "Beastie Boys Square. Una plaza animada donde se reúne la ciudad."
       },
       "nyc-plaza-urban-plaza": {
         "name": "Urban Plaza",
-        "description": "Urban Plaza. A lively public square where the city gathers."
+        "description": "Urban Plaza. Una plaza animada donde se reúne la ciudad."
       },
       "nyc-airport-john-f-kennedy-international": {
-        "name": "John F. Kennedy International Airport",
-        "description": "John F. Kennedy International Airport. The city's gateway to the world — and to the journey."
+        "name": "Aeropuerto Internacional John F. Kennedy",
+        "description": "Aeropuerto Internacional John F. Kennedy. La puerta de la ciudad al mundo, y al viaje."
       },
       "nyc-airport-westchester-county-airport": {
-        "name": "Westchester County Airport",
-        "description": "Westchester County Airport. The city's gateway to the world — and to the journey."
+        "name": "Aeropuerto del Condado de Westchester",
+        "description": "Aeropuerto del Condado de Westchester. La puerta de la ciudad al mundo, y al viaje."
       },
       "nyc-airport-somerset-airport": {
-        "name": "Somerset Airport",
-        "description": "Somerset Airport. The city's gateway to the world — and to the journey."
+        "name": "Aeropuerto de Somerset",
+        "description": "Aeropuerto de Somerset. La puerta de la ciudad al mundo, y al viaje."
       },
       "nyc-airport-newark-liberty-international": {
-        "name": "Newark Liberty International Airport",
-        "description": "Newark Liberty International Airport. The city's gateway to the world — and to the journey."
+        "name": "Aeropuerto Internacional Libertad de Newark",
+        "description": "Aeropuerto Internacional Libertad de Newark. La puerta de la ciudad al mundo, y al viaje."
       },
       "nyc-market-union-square-green-market": {
-        "name": "Union Square Green Market",
-        "description": "Union Square Green Market. A bustling market full of colour, sound, and commerce."
+        "name": "Mercado agrícola de Union Square",
+        "description": "Mercado agrícola de Union Square. Un mercado bullicioso lleno de color, sonido y comercio."
       },
       "nyc-market-the-market-line": {
         "name": "The Market Line",
-        "description": "The Market Line. A bustling market full of colour, sound, and commerce."
+        "description": "The Market Line. Un mercado bullicioso lleno de color, sonido y comercio."
       },
       "nyc-market-ludlow-flea-market": {
-        "name": "Ludlow Flea Market",
-        "description": "Ludlow Flea Market. A bustling market full of colour, sound, and commerce."
+        "name": "Mercadillo de Ludlow",
+        "description": "Mercadillo de Ludlow. Un mercado bullicioso lleno de color, sonido y comercio."
       },
       "nyc-market-canal-street-market": {
         "name": "Canal Street Market",
-        "description": "Canal Street Market. A bustling market full of colour, sound, and commerce."
+        "description": "Canal Street Market. Un mercado bullicioso lleno de color, sonido y comercio."
       },
       "nyc-library-ottendorfer-library": {
-        "name": "Ottendorfer Library",
-        "description": "Ottendorfer Library. A quiet refuge of books and ideas."
+        "name": "Biblioteca Ottendorfer",
+        "description": "Biblioteca Ottendorfer. Un refugio tranquilo de libros e ideas."
       },
       "nyc-library-elmer-holmes-bobst-library": {
-        "name": "Elmer Holmes Bobst Library",
-        "description": "Elmer Holmes Bobst Library. A quiet refuge of books and ideas."
+        "name": "Biblioteca Elmer Holmes Bobst",
+        "description": "Biblioteca Elmer Holmes Bobst. Un refugio tranquilo de libros e ideas."
       },
       "nyc-library-jefferson-market-library": {
-        "name": "Jefferson Market Library",
-        "description": "Jefferson Market Library. A quiet refuge of books and ideas."
+        "name": "Biblioteca Jefferson Market",
+        "description": "Biblioteca Jefferson Market. Un refugio tranquilo de libros e ideas."
       },
       "nyc-library-chatham-square-library": {
-        "name": "Chatham Square Library",
-        "description": "Chatham Square Library. A quiet refuge of books and ideas."
+        "name": "Biblioteca de Chatham Square",
+        "description": "Biblioteca de Chatham Square. Un refugio tranquilo de libros e ideas."
       },
       "nyc-monument-stonewall-inn": {
         "name": "Stonewall Inn",
-        "description": "Stonewall Inn. A landmark that anchors the city's memory."
+        "description": "Stonewall Inn. Un lugar emblemático que ancla la memoria de la ciudad."
       },
       "nyc-monument-brooklyn-bridge": {
-        "name": "Brooklyn Bridge",
-        "description": "The Brooklyn Bridge is a hybrid cable-stayed/suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn. Opened on May 24, 1883, the Brooklyn Bridge was the first fixed crossing of the East River."
+        "name": "Puente de Brooklyn",
+        "description": "El puente de Brooklyn es un puente híbrido atirantado y colgante de Nueva York que cruza el East River entre los distritos de Manhattan y Brooklyn. Inaugurado el 24 de mayo de 1883, fue el primer cruce fijo del East River."
       },
       "nyc-monument-one-world-trade-center": {
         "name": "One World Trade Center",
-        "description": "One World Trade Center. A landmark that anchors the city's memory."
+        "description": "One World Trade Center. Un lugar emblemático que ancla la memoria de la ciudad."
       },
       "nyc-monument-manhattan-bridge": {
-        "name": "Manhattan Bridge",
-        "description": "The Manhattan Bridge is a suspension bridge that crosses the East River in New York City, connecting Lower Manhattan at Canal Street with Downtown Brooklyn. With a length of 6,855 ft it was designed by Leon Moisseiff."
+        "name": "Puente de Manhattan",
+        "description": "El puente de Manhattan es un puente colgante que cruza el East River en Nueva York y une el Lower Manhattan, a la altura de Canal Street, con el Downtown Brooklyn. Con una longitud de 2089 m, fue diseñado por Leon Moisseiff."
       },
       "nyc-church-brooklyn-friends-meetinghous": {
-        "name": "Brooklyn Friends Meetinghouse",
-        "description": "Brooklyn Friends Meetinghouse. A place of history, silence, and ceremony."
+        "name": "Casa de reuniones cuáquera de Brooklyn",
+        "description": "Casa de reuniones cuáquera de Brooklyn. Un lugar de historia, silencio y ceremonia."
       },
       "nyc-church-hare-krishna-temple": {
-        "name": "Hare Krishna Temple",
-        "description": "Hare Krishna Temple. A place of history, silence, and ceremony."
+        "name": "Templo Hare Krishna",
+        "description": "Templo Hare Krishna. Un lugar de historia, silencio y ceremonia."
       },
       "nyc-church-grace-church": {
         "name": "Grace Church",
-        "description": "Grace Church. A place of history, silence, and ceremony."
+        "description": "Grace Church. Un lugar de historia, silencio y ceremonia."
       },
       "nyc-church-saint-mark-s-in-the-bowery": {
         "name": "Saint Mark's in-the-Bowery",
-        "description": "Saint Mark's in-the-Bowery. A place of history, silence, and ceremony."
+        "description": "Saint Mark's in-the-Bowery. Un lugar de historia, silencio y ceremonia."
       },
       "nyc-park-union-square-park": {
-        "name": "Union Square Park",
-        "description": "1"
+        "name": "Parque Union Square",
+        "description": "Parque Union Square. Un pulmón verde en el corazón de la ciudad."
       },
       "nyc-park-brooklyn-bridge-park": {
-        "name": "Brooklyn Bridge Park",
-        "description": "Brooklyn Bridge Park. A green lung in the heart of the city."
+        "name": "Parque del Puente de Brooklyn",
+        "description": "Parque del Puente de Brooklyn. Un pulmón verde en el corazón de la ciudad."
       },
       "nyc-park-john-v-lindsay-east-river-pa": {
-        "name": "John V. Lindsay East River Park",
-        "description": "John V. Lindsay East River Park. A green lung in the heart of the city."
+        "name": "Parque John V. Lindsay East River",
+        "description": "Parque John V. Lindsay East River. Un pulmón verde en el corazón de la ciudad."
       },
       "nyc-park-the-queen-elizabeth-ii-septe": {
-        "name": "The Queen Elizabeth II September 11th Garden",
-        "description": "The Queen Elizabeth II September 11th Garden. A green lung in the heart of the city."
+        "name": "Jardín del 11 de Septiembre Reina Isabel II",
+        "description": "Jardín del 11 de Septiembre Reina Isabel II. Un pulmón verde en el corazón de la ciudad."
       },
       "nyc-theatre-anthology-film-archives": {
         "name": "Anthology Film Archives",
-        "description": "Anthology Film Archives. Where stories are told under lights every night."
+        "description": "Anthology Film Archives. Donde cada noche se cuentan historias bajo los focos."
       },
       "nyc-theatre-classic-stage-company": {
         "name": "Classic Stage Company",
-        "description": "Classic Stage Company. Where stories are told under lights every night."
+        "description": "Classic Stage Company. Donde cada noche se cuentan historias bajo los focos."
       },
       "nyc-theatre-performance-space-122": {
         "name": "Performance Space 122",
-        "description": "Performance Space 122. Where stories are told under lights every night."
+        "description": "Performance Space 122. Donde cada noche se cuentan historias bajo los focos."
       },
       "nyc-theatre-public-theater": {
         "name": "Public Theater",
-        "description": "Public Theater. Where stories are told under lights every night."
+        "description": "Public Theater. Donde cada noche se cuentan historias bajo los focos."
       },
       "nyc-cafe-yonah-shimmel-knish-bakery": {
         "name": "Yonah Shimmel Knish Bakery",
-        "description": "Yonah Shimmel Knish Bakery. Espresso, conversation, and the passing day."
+        "description": "Yonah Shimmel Knish Bakery. Café, conversación y el día que pasa."
       },
       "nyc-cafe-the-uncommons": {
         "name": "The Uncommons",
-        "description": "The Uncommons. Espresso, conversation, and the passing day."
+        "description": "The Uncommons. Café, conversación y el día que pasa."
       },
       "nyc-cafe-caffe-reggio": {
         "name": "Caffe Reggio",
-        "description": "Caffe Reggio. Espresso, conversation, and the passing day."
+        "description": "Caffe Reggio. Café, conversación y el día que pasa."
       },
       "nyc-cafe-ferrara": {
         "name": "Ferrara",
-        "description": "Ferrara. Espresso, conversation, and the passing day."
+        "description": "Ferrara. Café, conversación y el día que pasa."
       },
       "nyc-office-ocme-dna-forensic-biology-la": {
-        "name": "OCME DNA Forensic Biology Laboratory Building",
-        "description": "OCME DNA Forensic Biology Laboratory Building. A hive of industry in the city's working district."
+        "name": "Laboratorio de Biología Forense y ADN de la OCME",
+        "description": "Laboratorio de Biología Forense y ADN de la OCME. Un hervidero de actividad en el distrito de negocios de la ciudad."
       },
       "nyc-office-28-liberty": {
         "name": "28 Liberty",
-        "description": "28 Liberty. A hive of industry in the city's working district."
+        "description": "28 Liberty. Un hervidero de actividad en el distrito de negocios de la ciudad."
       },
       "nyc-office-one-new-york-plaza": {
         "name": "One New York Plaza",
-        "description": "One New York Plaza. A hive of industry in the city's working district."
+        "description": "One New York Plaza. Un hervidero de actividad en el distrito de negocios de la ciudad."
       },
       "nyc-office-51-astor-place": {
         "name": "51 Astor Place",
-        "description": "51 Astor Place. A hive of industry in the city's working district."
+        "description": "51 Astor Place. Un hervidero de actividad en el distrito de negocios de la ciudad."
       }
     }
   },
   "paris": {
     "name": "París",
-    "country": "France",
+    "country": "Francia",
     "locations": {
       "paris-home": {
         "name": "Tu Piso (Le Marais)",
@@ -617,7 +617,7 @@
   },
   "seville": {
     "name": "Sevilla",
-    "country": "Spain",
+    "country": "España",
     "locations": {
       "seville-home": {
         "name": "Tu Piso (Triana)",
@@ -735,171 +735,171 @@
   },
   "tokyo": {
     "name": "Tokyo",
-    "country": "Japan",
+    "country": "Japón",
     "locations": {
       "tky-home": {
-        "name": "Your apartment",
-        "description": "Your apartment in the city. A comfortable place you call home."
+        "name": "Tu piso",
+        "description": "Tu piso en la ciudad. Un lugar acogedor al que llamas hogar."
       },
       "tky-airport-narita-international-airport": {
-        "name": "Narita International Airport",
-        "description": "Narita International Airport. The city's gateway to the world — and to the journey."
+        "name": "Aeropuerto Internacional de Narita",
+        "description": "Aeropuerto Internacional de Narita. La puerta de la ciudad al mundo, y al viaje."
       },
       "tky-airport-tokyo-international-airport": {
-        "name": "Tokyo International Airport",
-        "description": "Tokyo International Airport. The city's gateway to the world — and to the journey."
+        "name": "Aeropuerto Internacional de Tokio",
+        "description": "Aeropuerto Internacional de Tokio. La puerta de la ciudad al mundo, y al viaje."
       },
       "tky-airport-yokota-air-base": {
-        "name": "Yokota Air Base",
-        "description": "Yokota Air Base. The city's gateway to the world — and to the journey."
+        "name": "Base aérea de Yokota",
+        "description": "Base aérea de Yokota. La puerta de la ciudad al mundo, y al viaje."
       },
       "tky-airport-iruma-air-base": {
-        "name": "Iruma Air Base",
-        "description": "Iruma Air Base. The city's gateway to the world — and to the journey."
+        "name": "Base aérea de Iruma",
+        "description": "Base aérea de Iruma. La puerta de la ciudad al mundo, y al viaje."
       },
       "tky-market-tsukiji-outer-market": {
-        "name": "Tsukiji Outer Market",
-        "description": "Tsukiji Outer Market. A bustling market full of colour, sound, and commerce."
+        "name": "Mercado exterior de Tsukiji",
+        "description": "Mercado exterior de Tsukiji. Un mercado bullicioso lleno de color, sonido y comercio."
       },
       "tky-market-ameya-yokocho": {
         "name": "Ameya-Yokochō",
-        "description": "Ameya-Yokochō. A bustling market full of colour, sound, and commerce."
+        "description": "Ameya-Yokochō. Un mercado bullicioso lleno de color, sonido y comercio."
       },
       "tky-market-tsukishima-second-children-s": {
-        "name": "Tsukishima Second Children's Park Farmers Market",
-        "description": "Tsukishima Second Children's Park Farmers Market. A bustling market full of colour, sound, and commerce."
+        "name": "Mercado de agricultores del Segundo Parque Infantil de Tsukishima",
+        "description": "Mercado de agricultores del Segundo Parque Infantil de Tsukishima. Un mercado bullicioso lleno de color, sonido y comercio."
       },
       "tky-market-aomori-antenna-shop": {
-        "name": "Aomori Antenna Shop",
-        "description": "Aomori Antenna Shop. A bustling market full of colour, sound, and commerce."
+        "name": "Tienda de productos de Aomori",
+        "description": "Tienda de productos de Aomori. Un mercado bullicioso lleno de color, sonido y comercio."
       },
       "tky-plaza-silver-bell-square-b1": {
-        "name": "Silver Bell Square B1",
-        "description": "Silver Bell Square B1. A lively public square where the city gathers."
+        "name": "Plaza Silver Bell B1",
+        "description": "Plaza Silver Bell B1. Una plaza animada donde se reúne la ciudad."
       },
       "tky-plaza-iidabashi-3-chrome-square": {
-        "name": "Iidabashi 3-chrome Square",
-        "description": "Iidabashi 3-chrome Square. A lively public square where the city gathers."
+        "name": "Plaza de Iidabashi 3-chōme",
+        "description": "Plaza de Iidabashi 3-chōme. Una plaza animada donde se reúne la ciudad."
       },
       "tky-plaza-dorin-square-b1-c62-steam-lo": {
-        "name": "Dōrin Square B1 (C62 Steam Locomotive)",
-        "description": "Dōrin Square B1 (C62 Steam Locomotive). A lively public square where the city gathers."
+        "name": "Plaza Dōrin B1 (locomotora de vapor C62)",
+        "description": "Plaza Dōrin B1 (locomotora de vapor C62). Una plaza animada donde se reúne la ciudad."
       },
       "tky-plaza-group-meeting-point-for-stud": {
-        "name": "Group Meeting Point (for Students)",
-        "description": "Group Meeting Point (for Students). A lively public square where the city gathers."
+        "name": "Punto de encuentro de grupos (estudiantes)",
+        "description": "Punto de encuentro de grupos (estudiantes). Una plaza animada donde se reúne la ciudad."
       },
       "tky-library-national-archives-of-japan": {
-        "name": "National Archives of Japan",
-        "description": "National Archives of Japan. A quiet refuge of books and ideas."
+        "name": "Archivos Nacionales de Japón",
+        "description": "Archivos Nacionales de Japón. Un refugio tranquilo de libros e ideas."
       },
       "tky-library-national-diet-library-tokyo": {
-        "name": "National Diet Library - Tokyo Main",
-        "description": "National Diet Library - Tokyo Main. A quiet refuge of books and ideas."
+        "name": "Biblioteca Nacional de la Dieta - Sede de Tokio",
+        "description": "Biblioteca Nacional de la Dieta - Sede de Tokio. Un refugio tranquilo de libros e ideas."
       },
       "tky-library-university-of-tokyo-general": {
-        "name": "University of Tokyo General Library",
-        "description": "University of Tokyo General Library. A quiet refuge of books and ideas."
+        "name": "Biblioteca General de la Universidad de Tokio",
+        "description": "Biblioteca General de la Universidad de Tokio. Un refugio tranquilo de libros e ideas."
       },
       "tky-library-yoshihiro-yonezawa-memorial": {
-        "name": "Yoshihiro Yonezawa Memorial Library of Manga and Subculture",
-        "description": "Yoshihiro Yonezawa Memorial Library of Manga and Subculture. A quiet refuge of books and ideas."
+        "name": "Biblioteca Conmemorativa Yoshihiro Yonezawa de Manga y Subcultura",
+        "description": "Biblioteca Conmemorativa Yoshihiro Yonezawa de Manga y Subcultura. Un refugio tranquilo de libros e ideas."
       },
       "tky-church-ichigaya-kamegaoka-hachiman": {
         "name": "Ichigaya-Kamegaoka-Hachiman-gū",
-        "description": "Ichigaya-Kamegaoka-Hachiman-gū. A place of history, silence, and ceremony."
+        "description": "Ichigaya-Kamegaoka-Hachiman-gū. Un lugar de historia, silencio y ceremonia."
       },
       "tky-church-fukagawa-shimmei-shrine": {
-        "name": "Fukagawa Shimmei Shrine",
-        "description": "Fukagawa Shimmei Shrine. A place of history, silence, and ceremony."
+        "name": "Santuario Fukagawa Shinmei",
+        "description": "Santuario Fukagawa Shinmei. Un lugar de historia, silencio y ceremonia."
       },
       "tky-church-shofukuin": {
         "name": "Shōfukuin",
-        "description": "Shōfukuin. A place of history, silence, and ceremony."
+        "description": "Shōfukuin. Un lugar de historia, silencio y ceremonia."
       },
       "tky-church-genkakuji-temple": {
-        "name": "Genkakuji Temple",
-        "description": "Genkakuji Temple. A place of history, silence, and ceremony."
+        "name": "Templo Genkakuji",
+        "description": "Templo Genkakuji. Un lugar de historia, silencio y ceremonia."
       },
       "tky-monument-tokyo-ramen-street": {
-        "name": "Tokyo Ramen Street",
-        "description": "Tokyo Ramen Street. A landmark that anchors the city's memory."
+        "name": "Calle del Ramen de Tokio",
+        "description": "Calle del Ramen de Tokio. Un lugar emblemático que ancla la memoria de la ciudad."
       },
       "tky-monument-akasaka-sacas": {
         "name": "Akasaka Sacas",
-        "description": "Akasaka Sacas. A landmark that anchors the city's memory."
+        "description": "Akasaka Sacas. Un lugar emblemático que ancla la memoria de la ciudad."
       },
       "tky-monument-kaminarimon": {
         "name": "Kaminarimon",
-        "description": "Kaminarimon. A landmark that anchors the city's memory."
+        "description": "Kaminarimon. Un lugar emblemático que ancla la memoria de la ciudad."
       },
       "tky-monument-kanda-book-town": {
-        "name": "Kanda Book Town",
-        "description": "Kanda Book Town. A landmark that anchors the city's memory."
+        "name": "Barrio de las librerías de Kanda",
+        "description": "Barrio de las librerías de Kanda. Un lugar emblemático que ancla la memoria de la ciudad."
       },
       "tky-park-hongo-water-station-park": {
-        "name": "Hongo Water Station Park",
-        "description": "Hongo Water Station Park. A green lung in the heart of the city."
+        "name": "Parque de la Estación de Aguas de Hongo",
+        "description": "Parque de la Estación de Aguas de Hongo. Un pulmón verde en el corazón de la ciudad."
       },
       "tky-park-hama-rikyu-gardens": {
-        "name": "Hama-rikyū Gardens",
-        "description": "Hama-rikyū Gardens. A green lung in the heart of the city."
+        "name": "Jardines Hama-rikyū",
+        "description": "Jardines Hama-rikyū. Un pulmón verde en el corazón de la ciudad."
       },
       "tky-park-koishikawa-korakuen-gardens": {
-        "name": "Koishikawa Kōrakuen Gardens",
-        "description": "Koishikawa Kōrakuen Gardens. A green lung in the heart of the city."
+        "name": "Jardines Koishikawa Kōrakuen",
+        "description": "Jardines Koishikawa Kōrakuen. Un pulmón verde en el corazón de la ciudad."
       },
       "tky-park-kiyosumi-gardens": {
-        "name": "Kiyosumi Gardens",
-        "description": "Kiyosumi Gardens. A green lung in the heart of the city."
+        "name": "Jardines Kiyosumi",
+        "description": "Jardines Kiyosumi. Un pulmón verde en el corazón de la ciudad."
       },
       "tky-theatre-tokyo-takarazuka-theater": {
-        "name": "Tokyo Takarazuka Theater",
-        "description": "Tokyo Takarazuka Theater. Where stories are told under lights every night."
+        "name": "Teatro Takarazuka de Tokio",
+        "description": "Teatro Takarazuka de Tokio. Donde cada noche se cuentan historias bajo los focos."
       },
       "tky-theatre-suzumoto-entertainment-hall": {
-        "name": "Suzumoto Entertainment Hall",
-        "description": "Suzumoto Entertainment Hall. Where stories are told under lights every night."
+        "name": "Sala de espectáculos Suzumoto",
+        "description": "Sala de espectáculos Suzumoto. Donde cada noche se cuentan historias bajo los focos."
       },
       "tky-theatre-meijiza": {
         "name": "Meijiza",
-        "description": "Meijiza. Where stories are told under lights every night."
+        "description": "Meijiza. Donde cada noche se cuentan historias bajo los focos."
       },
       "tky-theatre-mitsukoshi-theater": {
-        "name": "Mitsukoshi Theater",
-        "description": "Mitsukoshi Theater. Where stories are told under lights every night."
+        "name": "Teatro Mitsukoshi",
+        "description": "Teatro Mitsukoshi. Donde cada noche se cuentan historias bajo los focos."
       },
       "tky-cafe-tully-s-coffee": {
         "name": "Tully's Coffee",
-        "description": "Tully's Coffee. Espresso, conversation, and the passing day."
+        "description": "Tully's Coffee. Café, conversación y el día que pasa."
       },
       "tky-cafe-ryogoku-terrace": {
         "name": "Ryogoku Terrace",
-        "description": "Ryogoku Terrace. Espresso, conversation, and the passing day."
+        "description": "Ryogoku Terrace. Café, conversación y el día que pasa."
       },
       "tky-cafe-home-cafe": {
         "name": "@home cafe",
-        "description": "@home cafe. Espresso, conversation, and the passing day."
+        "description": "@home cafe. Café, conversación y el día que pasa."
       },
       "tky-cafe-r25-cafe": {
         "name": "R25 café",
-        "description": "R25 café. Espresso, conversation, and the passing day."
+        "description": "R25 café. Café, conversación y el día que pasa."
       },
       "tky-office-new-otani-garden-court": {
         "name": "New Otani Garden Court",
-        "description": "New Otani Garden Court. A hive of industry in the city's working district."
+        "description": "New Otani Garden Court. Un hervidero de actividad en el distrito de negocios de la ciudad."
       },
       "tky-office-grantokyo-south-tower": {
-        "name": "GranTokyo South Tower",
-        "description": "GranTokyo South Tower. A hive of industry in the city's working district."
+        "name": "Torre Sur GranTokyo",
+        "description": "Torre Sur GranTokyo. Un hervidero de actividad en el distrito de negocios de la ciudad."
       },
       "tky-office-midtown-tower": {
-        "name": "Midtown Tower",
-        "description": "Midtown Tower. A hive of industry in the city's working district."
+        "name": "Torre Midtown",
+        "description": "Torre Midtown. Un hervidero de actividad en el distrito de negocios de la ciudad."
       },
       "tky-office-sanno-park-tower": {
-        "name": "Sanno Park Tower",
-        "description": "Sanno Park Tower. A hive of industry in the city's working district."
+        "name": "Torre Sanno Park",
+        "description": "Torre Sanno Park. Un hervidero de actividad en el distrito de negocios de la ciudad."
       }
     }
   }

@@ -51,3 +51,28 @@ export const dailyActivityTitle = (t: TFunction, activityId: string): string =>
 
 export const dailyActivityDescription = (t: TFunction, activityId: string): string =>
   t(`activities:daily.${activityId}.description`);
+
+export const locationActivityFluff = (t: TFunction, activityId: string): string =>
+  t(`activities:location.${activityId}.fluff`, {
+    defaultValue: t('activities:location.default.fluff'),
+  });
+
+export interface QuizQuestion {
+  q: string;
+  options: string[];
+  correct: number;
+}
+
+export const locationActivityQuiz = (
+  t: TFunction,
+  activityId: string,
+  answers: number[],
+): QuizQuestion[] => {
+  const items = t(`activities:location.${activityId}.quiz`, { returnObjects: true }) as unknown;
+  if (!Array.isArray(items)) return [];
+  return items.map((item: { q: string; options: string[] }, i) => ({
+    q: item.q,
+    options: item.options,
+    correct: answers[i] ?? 0,
+  }));
+};

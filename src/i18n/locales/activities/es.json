@@ -16,5 +16,776 @@
       "title": "Dormir Más",
       "description": "Dormir más. A veces es lo único que necesitas."
     }
+  },
+  "location": {
+    "library_read": {
+      "fluff": "Descifra manuscritos antiguos y desvela conocimientos ocultos.",
+      "quiz": [
+        {
+          "q": "Un manuscrito usa el símbolo ☿. En alquimia representa:",
+          "options": [
+            "Oro",
+            "Mercurio",
+            "Sal",
+            "Plata"
+          ]
+        },
+        {
+          "q": "Encuentras dos versiones del mismo texto: una de 1670 y otra de 1890. ¿Cuál es la fuente primaria más fiable?",
+          "options": [
+            "La copia de 1890",
+            "El original de 1670",
+            "Ninguna, son equivalentes",
+            "Una traducción moderna"
+          ]
+        },
+        {
+          "q": "En los textos alquímicos, la «Prima Materia» se refiere a:",
+          "options": [
+            "Un filósofo romano",
+            "La sustancia base de toda la materia",
+            "Una ciudad sagrada",
+            "El primer capítulo de un pergamino"
+          ]
+        },
+        {
+          "q": "La expresión «como es arriba, es abajo» procede de:",
+          "options": [
+            "La Biblia",
+            "La Tabla Esmeralda",
+            "La República de Platón",
+            "La Metafísica de Aristóteles"
+          ]
+        },
+        {
+          "q": "El uróboros —una serpiente que se muerde la cola— simboliza:",
+          "options": [
+            "Destrucción y caos",
+            "Renovación eterna y ciclicidad",
+            "Veneno y peligro",
+            "El sistema solar"
+          ]
+        },
+        {
+          "q": "Un manuscrito iluminado se distingue por:",
+          "options": [
+            "La impresión con tipos móviles",
+            "Pan de oro decorativo e imágenes pintadas a mano",
+            "Estar escrito solo en latín",
+            "Su formato de bolsillo"
+          ]
+        },
+        {
+          "q": "En la tradición alquímica, los cuatro elementos clásicos son:",
+          "options": [
+            "Tierra, viento, fuego, rayo",
+            "Tierra, agua, fuego, aire",
+            "Piedra, agua, llama, cielo",
+            "Azufre, mercurio, sal, tierra"
+          ]
+        }
+      ]
+    },
+    "library_research": {
+      "fluff": "Recorre el catálogo y encuentra fuentes raras antes del cierre.",
+      "quiz": [
+        {
+          "q": "Necesitas una fuente académica fiable. ¿Cuál eliges?",
+          "options": [
+            "Una entrada de blog anónima",
+            "Una revista con revisión por pares",
+            "Un hilo en redes sociales",
+            "El resumen de una revista"
+          ]
+        },
+        {
+          "q": "En la Clasificación Decimal Dewey, los libros de filosofía están en los:",
+          "options": [
+            "000",
+            "100",
+            "300",
+            "500"
+          ]
+        },
+        {
+          "q": "Tienes 2 horas y 8 libros. ¿La mejor estrategia?",
+          "options": [
+            "Leer cada página de todos",
+            "Leer solo el primer capítulo",
+            "Repasar índices y capítulos clave",
+            "Elegir uno y leerlo entero"
+          ]
+        },
+        {
+          "q": "Una bibliografía enumera las fuentes:",
+          "options": [
+            "Por orden de importancia",
+            "Al final de un texto para reconocerlas",
+            "Solo de la última década",
+            "Solo libros, nunca artículos"
+          ]
+        },
+        {
+          "q": "«Ibid.» en una nota al pie académica significa:",
+          "options": [
+            "Véase también",
+            "La misma fuente que la inmediatamente anterior",
+            "En comparación",
+            "Autor desconocido"
+          ]
+        },
+        {
+          "q": "La mejor forma de evaluar la credibilidad de una fuente es comprobar:",
+          "options": [
+            "Su número de páginas",
+            "Las credenciales del autor y si tiene revisión por pares",
+            "Cuántos «me gusta» tiene en internet",
+            "Si confirma tu hipótesis"
+          ]
+        },
+        {
+          "q": "Una fuente primaria es:",
+          "options": [
+            "Un manual que resume un tema",
+            "Un documento original o un testimonio de primera mano",
+            "Un artículo de Wikipedia",
+            "Un documental"
+          ]
+        }
+      ]
+    },
+    "park_exercise": {
+      "fluff": "Esquiva corredores, palomas y turistas en un sprint de parkour a toda velocidad."
+    },
+    "park_meditate": {
+      "fluff": "Quédate quieto y deja que la ciudad se desvanezca a tu alrededor.",
+      "quiz": [
+        {
+          "q": "Tu mente se va a las preocupaciones de mañana. La respuesta correcta es:",
+          "options": [
+            "Obligarte a dejar de pensar",
+            "Devolver suavemente la atención a la respiración",
+            "Abrir los ojos y rendirte",
+            "Pensar en la preocupación hasta que desaparezca"
+          ]
+        },
+        {
+          "q": "¿Qué patrón sigue la respiración cuadrada?",
+          "options": [
+            "Inhalar 4 — retener 4 — exhalar 4 — retener 4",
+            "Inhalar 8 — exhalar 8",
+            "Inhalar 2 — exhalar 10",
+            "Inhalar 1 — retener 5 — exhalar 1"
+          ]
+        },
+        {
+          "q": "Una paloma se posa a un metro. Tú:",
+          "options": [
+            "La espantas",
+            "La observas con calma sin moverte",
+            "Miras el móvil",
+            "Empiezas de nuevo"
+          ]
+        },
+        {
+          "q": "En la práctica de mindfulness, lo mejor es tratar los pensamientos como:",
+          "options": [
+            "Problemas que resolver de inmediato",
+            "Nubes que pasan: se observan, no se atrapan",
+            "Enemigos que reprimir",
+            "Señales de que estás fallando"
+          ]
+        },
+        {
+          "q": "La técnica del escaneo corporal consiste en:",
+          "options": [
+            "Revisar las notificaciones del móvil",
+            "Dirigir lentamente la atención por cada parte del cuerpo",
+            "Medir tu frecuencia cardíaca",
+            "Ejercitar cada grupo muscular por orden"
+          ]
+        },
+        {
+          "q": "Se ha demostrado de forma más consistente que la meditación regular reduce:",
+          "options": [
+            "La inteligencia",
+            "Los niveles de cortisol (hormona del estrés)",
+            "La memoria a largo plazo",
+            "La fuerza física"
+          ]
+        },
+        {
+          "q": "La «red neuronal por defecto» está más activa cuando:",
+          "options": [
+            "Resuelves un problema de matemáticas",
+            "Divagas o sueñas despierto",
+            "Corres a toda velocidad",
+            "Escuchas música con atención"
+          ]
+        }
+      ]
+    },
+    "cafe_discussion": {
+      "fluff": "Un debate acalorado se pone físico: para los golpes para ganarte el respeto."
+    },
+    "cafe_write": {
+      "fluff": "Plasma tus ideas entre sorbo y sorbo de café.",
+      "quiz": [
+        {
+          "q": "Quieres escribir algo con sentido. El mejor primer paso:",
+          "options": [
+            "Corregir sobre la marcha",
+            "Escribir libremente sin juzgar",
+            "Esperar las condiciones perfectas",
+            "Planificar cada frase antes"
+          ]
+        },
+        {
+          "q": "El bloqueo del escritor te asalta a media frase. Tú:",
+          "options": [
+            "Borras todo y empiezas de cero",
+            "Das un paseo corto para despejarte",
+            "Fuerzas cada palabra hasta terminar",
+            "Lo dejas por hoy"
+          ]
+        },
+        {
+          "q": "Quieres que el lector sienta el ambiente de una mañana en Barcelona. La mejor técnica:",
+          "options": [
+            "Enumerar los hechos con claridad",
+            "Usar detalles sensoriales concretos",
+            "Mantenerlo abstracto",
+            "Citar a un autor famoso"
+          ]
+        },
+        {
+          "q": "La «teoría del iceberg» de Hemingway sostiene que:",
+          "options": [
+            "Las historias deben ser frías y distantes",
+            "La mayor parte del significado debe quedar bajo la superficie, implícita",
+            "Todas las frases deben ser cortas",
+            "Las historias deben empezar en invierno"
+          ]
+        },
+        {
+          "q": "¿Qué frase «muestra» en lugar de «contar»?",
+          "options": [
+            "«Estaba nerviosa.»",
+            "«Sus manos no dejaban de temblar.»",
+            "«Se sentía mal.»",
+            "«Fue un momento difícil.»"
+          ]
+        },
+        {
+          "q": "«In medias res» significa empezar una historia:",
+          "options": [
+            "Con un prólogo",
+            "En mitad de la acción",
+            "En orden cronológico",
+            "Con un flashback"
+          ]
+        },
+        {
+          "q": "La cualidad más importante de una buena frase inicial es:",
+          "options": [
+            "Contener el nombre del protagonista",
+            "Plantear una pregunta que el lector quiera resolver",
+            "Tener menos de 10 palabras",
+            "Usar un vocabulario elevado"
+          ]
+        }
+      ]
+    },
+    "market_haggle": {
+      "fluff": "Hay mucha gente: cierra el trato antes de que el vendedor se dé la vuelta."
+    },
+    "market_taste": {
+      "fluff": "Identifica lo que pruebas antes de que el vendedor te diga el precio.",
+      "quiz": [
+        {
+          "q": "Una fruta es ácida, tropical y ligeramente floral. Lo más probable es que sea:",
+          "options": [
+            "Manzana",
+            "Fruta de la pasión (maracuyá)",
+            "Pera",
+            "Limón"
+          ]
+        },
+        {
+          "q": "Una especia huele a tierra, cálida y algo amarga. Probablemente sea:",
+          "options": [
+            "Canela",
+            "Comino",
+            "Azúcar",
+            "Vainilla"
+          ]
+        },
+        {
+          "q": "El vendedor dice que el jamón tiene «Denominación de Origen». Esto significa que:",
+          "options": [
+            "Está congelado",
+            "Procede de una región certificada",
+            "Está de oferta",
+            "Es sintético"
+          ]
+        },
+        {
+          "q": "El umami se describe mejor como:",
+          "options": [
+            "Ácido e intenso",
+            "Sabroso, con profundidad cárnica",
+            "Dulce y floral",
+            "Amargo y seco"
+          ]
+        },
+        {
+          "q": "Los cinco sabores básicos son:",
+          "options": [
+            "Dulce, ácido, salado, picante, umami",
+            "Dulce, ácido, salado, amargo, umami",
+            "Dulce, salado, amargo, agrio, picante",
+            "Dulce, ácido, salado, amargo, ahumado"
+          ]
+        },
+        {
+          "q": "En La Boqueria, una «flauta» es:",
+          "options": [
+            "Un flautista",
+            "Un bocadillo largo y fino",
+            "Un tipo de pescado curado",
+            "Un pastel frito"
+          ]
+        },
+        {
+          "q": "El azafrán es tan caro porque:",
+          "options": [
+            "Solo crece en la Antártida",
+            "Cada flor da solo tres estigmas recogidos a mano",
+            "Tarda 10 años en cosecharse",
+            "Está coloreado artificialmente"
+          ]
+        }
+      ]
+    },
+    "plaza_street": {
+      "fluff": "Las Ramblas son famosas por ello: trabájate al público mientras mira el espectáculo."
+    },
+    "plaza_people": {
+      "fluff": "Lee a la multitud: cada cara cuenta una historia.",
+      "quiz": [
+        {
+          "q": "Un hombre mira el reloj cada 30 segundos. Lo más probable es que esté:",
+          "options": [
+            "Aburrido",
+            "Esperando a alguien",
+            "Siendo relojero",
+            "Perdido"
+          ]
+        },
+        {
+          "q": "Dos personas se saludan con dos besos en la mejilla. Es una costumbre habitual en:",
+          "options": [
+            "Japón",
+            "Cataluña",
+            "Inglaterra",
+            "Alemania"
+          ]
+        },
+        {
+          "q": "A un niño se le cae el helado y se ríe. Un observador aprende:",
+          "options": [
+            "Nada útil",
+            "Algo sobre su resiliencia",
+            "El precio del helado",
+            "Su sabor favorito"
+          ]
+        },
+        {
+          "q": "Imitar inconscientemente la postura de alguien suele indicar:",
+          "options": [
+            "Desacuerdo",
+            "Sintonía y conexión",
+            "Aburrimiento",
+            "Engaño"
+          ]
+        },
+        {
+          "q": "El «efecto de mera exposición» significa que la gente tiende a preferir:",
+          "options": [
+            "Lo nuevo y desconocido",
+            "Lo que ha visto con más frecuencia",
+            "Los artículos caros",
+            "Los objetos raros"
+          ]
+        },
+        {
+          "q": "Un grupo de desconocidos forma una cola ordenada sin que nadie se lo pida. Esto ilustra:",
+          "options": [
+            "Miedo a la autoridad",
+            "Normas sociales y coordinación implícita",
+            "Mentalidad de rebaño",
+            "Pura casualidad"
+          ]
+        },
+        {
+          "q": "Sostener la mirada demasiado tiempo en una conversación suele indicar:",
+          "options": [
+            "Amistad",
+            "Dominancia o agresividad",
+            "Timidez",
+            "Acuerdo"
+          ]
+        }
+      ]
+    },
+    "church_contemplate": {
+      "fluff": "Encuentra la paz en el silencio de los arcos de piedra.",
+      "quiz": [
+        {
+          "q": "Sentado en silencio, tu ritmo cardíaco baja. Este estado fisiológico se llama:",
+          "options": [
+            "Hiperventilación",
+            "Respuesta de relajación",
+            "Pico de ansiedad",
+            "Activación simpática"
+          ]
+        },
+        {
+          "q": "Las vidrieras de las iglesias góticas tenían originalmente el propósito de:",
+          "options": [
+            "Dejar entrar la máxima luz",
+            "Contar historias bíblicas a quienes no sabían leer",
+            "Exhibir la riqueza del mecenas",
+            "Refrescar el interior"
+          ]
+        },
+        {
+          "q": "El término griego «ataraxia» significa:",
+          "options": [
+            "Duelo",
+            "Ambición inquieta",
+            "Paz mental serena",
+            "Alegría intensa"
+          ]
+        },
+        {
+          "q": "La expresión latina «memento mori» se traduce como:",
+          "options": [
+            "«Recuerda amar»",
+            "«Recuerda que morirás»",
+            "«Olvida tus preocupaciones»",
+            "«En memoria de»"
+          ]
+        },
+        {
+          "q": "En el pensamiento budista, la causa raíz del sufrimiento es:",
+          "options": [
+            "La pobreza",
+            "El apego y el deseo",
+            "La ignorancia científica",
+            "Solo el dolor físico"
+          ]
+        },
+        {
+          "q": "La práctica estoica de la «visualización negativa» consiste en:",
+          "options": [
+            "Imaginar lo peor para apreciar lo que tienes",
+            "Evitar todo pensamiento negativo",
+            "Anotar los fracasos diarios",
+            "Meditar a oscuras"
+          ]
+        },
+        {
+          "q": "Pascal escribió: «Todos los problemas de la humanidad provienen de la incapacidad del hombre para quedarse quieto y solo en una habitación». Defendía el valor de:",
+          "options": [
+            "El aislamiento social",
+            "La quietud y la introspección",
+            "La devoción religiosa",
+            "El trabajo físico duro"
+          ]
+        }
+      ]
+    },
+    "church_inspect": {
+      "fluff": "Descifra los símbolos tallados en la piedra y el vidrio.",
+      "quiz": [
+        {
+          "q": "Dos peces nadando en círculo son el símbolo de:",
+          "options": [
+            "Cáncer",
+            "Piscis",
+            "Acuario",
+            "Géminis"
+          ]
+        },
+        {
+          "q": "Las iglesias cristianas suelen orientarse hacia el este porque:",
+          "options": [
+            "Hay mejor luz por la mañana",
+            "Miran hacia Jerusalén",
+            "Se protegen de los vientos dominantes",
+            "Es una tradición sin significado simbólico"
+          ]
+        },
+        {
+          "q": "Los arbotantes de las catedrales góticas sirven principalmente para:",
+          "options": [
+            "Añadir decoración",
+            "Transferir el empuje del tejado hacia pilares exteriores",
+            "Sostener los campanarios",
+            "Enmarcar las vidrieras"
+          ]
+        },
+        {
+          "q": "En el arte cristiano, la mandorla (aureola en forma de almendra) suele rodear a:",
+          "options": [
+            "Los ángeles",
+            "Cristo o la Virgen María en escenas de gloria",
+            "Santos que empuñan espadas",
+            "El Espíritu Santo en forma de paloma"
+          ]
+        },
+        {
+          "q": "Las gárgolas de las iglesias medievales tenían un doble propósito: decorar y:",
+          "options": [
+            "Tocar las campanas",
+            "Alejar el agua de lluvia de los muros",
+            "Dar nido a las palomas",
+            "Marcar los puntos cardinales"
+          ]
+        },
+        {
+          "q": "La arquitectura románica (anterior al gótico) se caracteriza por:",
+          "options": [
+            "Arcos apuntados y arbotantes",
+            "Muros gruesos, ventanas pequeñas y arcos de medio punto",
+            "Estructuras de acero y fachadas de cristal",
+            "Minaretes y grandes cúpulas"
+          ]
+        },
+        {
+          "q": "Los primeros cristianos usaban el ichthys (símbolo del pez) como:",
+          "options": [
+            "Un motivo decorativo",
+            "Una señal secreta de reconocimiento durante la persecución",
+            "Un símbolo exclusivo del bautismo",
+            "Un emblema del clero"
+          ]
+        }
+      ]
+    },
+    "theatre_watch": {
+      "fluff": "Sigue la función y fíjate en las decisiones del director.",
+      "quiz": [
+        {
+          "q": "Un personaje habla solo en escena revelando sus pensamientos. Esta técnica se llama:",
+          "options": [
+            "Deus ex machina",
+            "Soliloquio",
+            "Aparte",
+            "Prólogo"
+          ]
+        },
+        {
+          "q": "La iluminación se vuelve roja durante un enfrentamiento. Convencionalmente representa:",
+          "options": [
+            "El amanecer",
+            "La paz",
+            "Peligro o pasión",
+            "Un error de iluminación"
+          ]
+        },
+        {
+          "q": "La obra termina sin resolver el conflicto principal. Este tipo de final se llama:",
+          "options": [
+            "Desenlace",
+            "Final abierto",
+            "Clímax",
+            "Catarsis"
+          ]
+        },
+        {
+          "q": "La «catarsis», tal como la usó Aristóteles en el teatro, se refiere a:",
+          "options": [
+            "Un giro argumental",
+            "La purga emocional que siente el público",
+            "El último acto de una obra",
+            "La caída del villano"
+          ]
+        },
+        {
+          "q": "Romper la «cuarta pared» significa:",
+          "options": [
+            "Destrozar el decorado",
+            "Que un personaje se dirija directamente al público",
+            "El clímax de la función",
+            "Un cambio de escena con apagón"
+          ]
+        },
+        {
+          "q": "La «pistola de Chéjov» es un principio que establece que:",
+          "options": [
+            "Toda obra necesita un arma",
+            "Todo elemento introducido debe acabar usándose",
+            "Los finales siempre deben sorprender",
+            "El teatro ruso es superior"
+          ]
+        },
+        {
+          "q": "Un final «deus ex machina» se critica porque:",
+          "options": [
+            "Es demasiado lento",
+            "Resuelve el conflicto de forma artificial, sin ganarse la solución",
+            "Requiere una maquinaria escénica cara",
+            "Es demasiado violento"
+          ]
+        }
+      ]
+    },
+    "office_network": {
+      "fluff": "La competición de pitches se pone agresiva: bloquea cada objeción que te lancen."
+    },
+    "office_upskill": {
+      "fluff": "Métete un curso online a toda prisa en la pausa del almuerzo.",
+      "quiz": [
+        {
+          "q": "La forma más eficaz de retener una habilidad nueva es:",
+          "options": [
+            "Leer sobre ella una vez con atención",
+            "Ver un vídeo dos veces",
+            "Practicarla justo después de aprenderla",
+            "Explicársela a alguien más adelante"
+          ]
+        },
+        {
+          "q": "Terminas un módulo pero no lo entiendes. Tú:",
+          "options": [
+            "Sigues adelante y esperas que se quede",
+            "Lo repasas y buscas otra explicación",
+            "Te saltas toda la habilidad",
+            "Lo marcas como completado igualmente"
+          ]
+        },
+        {
+          "q": "Tienes 2 horas para aprender una herramienta nueva desde cero. El mejor enfoque:",
+          "options": [
+            "Leer toda la documentación primero",
+            "Seguir un tutorial estructurado",
+            "Experimentar al azar",
+            "Pedirle a un compañero que lo haga"
+          ]
+        },
+        {
+          "q": "La «técnica Pomodoro» consiste en trabajar en bloques concentrados de:",
+          "options": [
+            "10 minutos",
+            "25 minutos con descansos cortos",
+            "1 hora ininterrumpida",
+            "Ciclos de 45 minutos"
+          ]
+        },
+        {
+          "q": "La repetición espaciada es eficaz porque:",
+          "options": [
+            "Reduce el estudio a una sola sesión",
+            "Repasar el material a intervalos crecientes refuerza la memoria a largo plazo",
+            "Solo funciona para habilidades físicas",
+            "No requiere recuerdo activo"
+          ]
+        },
+        {
+          "q": "La mejor forma de comprobar que de verdad has aprendido algo es:",
+          "options": [
+            "Sentirte seguro al respecto",
+            "Ser capaz de enseñarlo o explicárselo a otra persona",
+            "Terminar todo el material del curso",
+            "Aprobar un test de opción múltiple"
+          ]
+        },
+        {
+          "q": "La práctica deliberada se diferencia de la práctica normal en que:",
+          "options": [
+            "Lleva más tiempo",
+            "Se centra en debilidades concretas con feedback inmediato",
+            "Es más divertida",
+            "Requiere un entrenador en todo momento"
+          ]
+        }
+      ]
+    },
+    "monument_photo": {
+      "fluff": "La luz es perfecta ahora mismo: espera el momento justo y captura la foto."
+    },
+    "monument_study": {
+      "fluff": "Lee la historia tallada en cada piedra.",
+      "quiz": [
+        {
+          "q": "La Sagrada Família fue diseñada por:",
+          "options": [
+            "Le Corbusier",
+            "Antoni Gaudí",
+            "Picasso",
+            "Santiago Calatrava"
+          ]
+        },
+        {
+          "q": "El Arco de Triunfo de Barcelona se construyó para:",
+          "options": [
+            "Una victoria napoleónica",
+            "La Exposición Universal de 1888",
+            "Los Juegos Olímpicos de 1992",
+            "El rey Felipe II"
+          ]
+        },
+        {
+          "q": "La arquitectura gótica se reconoce sobre todo por sus:",
+          "options": [
+            "Tejados planos de hormigón",
+            "Arcos apuntados y bóvedas de crucería",
+            "Cúpulas redondas y columnas",
+            "Fachadas minimalistas de acero"
+          ]
+        },
+        {
+          "q": "El Palau de la Música Catalana fue diseñado por:",
+          "options": [
+            "Antoni Gaudí",
+            "Lluís Domènech i Montaner",
+            "Josep Puig i Cadafalch",
+            "Santiago Calatrava"
+          ]
+        },
+        {
+          "q": "El Modernismo catalán (Art Nouveau) floreció principalmente entre:",
+          "options": [
+            "1750–1800",
+            "1880–1920",
+            "1940–1960",
+            "1960–1990"
+          ]
+        },
+        {
+          "q": "¿Qué barrio transformaron más los Juegos Olímpicos de Barcelona 1992?",
+          "options": [
+            "El Born",
+            "Gràcia",
+            "La Barceloneta y el Poblenou",
+            "Les Corts"
+          ]
+        },
+        {
+          "q": "Las características esquinas achaflanadas de la cuadrícula del Eixample fueron diseñadas por:",
+          "options": [
+            "Antoni Gaudí",
+            "Ildefons Cerdà",
+            "Enric Sagnier",
+            "Josep Fontserè"
+          ]
+        }
+      ]
+    },
+    "default": {
+      "fluff": "Explora la zona y descubre algo nuevo."
+    }
   }
 }

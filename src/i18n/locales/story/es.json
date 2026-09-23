@@ -4,28 +4,28 @@
     "intro": "Tienes 26 años y una vida normal. Un piso en la ciudad. Un trabajo. Unos amigos. Pero llevas días soñando la misma escena cada noche: una plaza llena de palomas que se alzan a la vez, y una figura que señala al norte.\n\nCada mañana te despiertas con la sensación de que el sueño significa algo. Hoy, algo te dice que deberías seguirlo.",
     "chapters": {
       "ch1": {
-        "title": "The Signal",
-        "description": "An old man on a bench. Two coins. A direction."
+        "title": "La Señal",
+        "description": "Un anciano en un banco. Dos monedas. Una dirección."
       },
       "ch2-sandbox": {
-        "title": "The Merchant of Glass",
-        "description": "You need to earn money and find your footing before pursuing the next clue. Merce needs help at the market."
+        "title": "El Mercader de Cristal",
+        "description": "Necesitas ganar dinero y encontrar tu sitio antes de seguir la próxima pista. Mercè necesita ayuda en el mercado."
       },
       "ch3": {
-        "title": "The Englishman",
-        "description": "The Englishman studies symbols in the park. He has a map of the city with a secret code."
+        "title": "El Inglés",
+        "description": "El inglés estudia símbolos en el parque. Tiene un mapa de la ciudad con un código secreto."
       },
       "ch4-sandbox": {
-        "title": "The Desert Crossing",
-        "description": "Visit the three locations. Find the clues. Life keeps happening around you."
+        "title": "La Travesía del Desierto",
+        "description": "Visita los tres lugares. Encuentra las pistas. La vida sigue a tu alrededor."
       },
       "ch5": {
-        "title": "The Trial",
-        "description": "A fountain in a square awaits. Someone has been watching your journey."
+        "title": "La Prueba",
+        "description": "Una fuente en una plaza te espera. Alguien ha estado observando tu viaje."
       },
       "epilogue": {
-        "title": "The Return",
-        "description": "A year later. A café across the city. Someone looks lost with a map."
+        "title": "El Regreso",
+        "description": "Un año después. Un café al otro lado de la ciudad. Alguien parece perdido con un mapa."
       }
     },
     "dialogue": {

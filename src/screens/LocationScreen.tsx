@@ -15,7 +15,7 @@ import Chase from '../components/minigames/Chase';
 import Lockpick from '../components/minigames/Lockpick';
 import Photograph from '../components/minigames/Photograph';
 import { getActivitiesForType, type ActivityDef } from '../data/locationActivities';
-import { locationName, locationDescription } from '../i18n/helpers';
+import { locationName, locationDescription, locationActivityFluff, locationActivityQuiz } from '../i18n/helpers';
 import type { LocationPOI, Stats } from '../store/types';
 
 interface LocationScreenProps {
@@ -215,13 +215,13 @@ export default function LocationScreen({
       {view.kind === 'game' && (
         <MiniGameModal
           title={(t as any)(`activitiesSide.${view.act.i18nKey}`, { defaultValue: view.act.i18nKey })}
-          subtitle={`${MG_ICON[view.act.miniGame] ?? '🎮'} ${view.act.fluff}`}
+          subtitle={`${MG_ICON[view.act.miniGame] ?? '🎮'} ${locationActivityFluff(t, view.act.id)}`}
           onClose={() => setView({ kind: 'idle' })}
           backgroundImage={MG_BACKGROUND[view.act.miniGame]}
         >
           {view.act.miniGame === 'quick_quiz' && (
             <QuickQuiz
-              questions={view.act.quizData ?? []}
+              questions={locationActivityQuiz(t, view.act.id, view.act.quizAnswers ?? [])}
               onResult={handleGameResult(view.act)}
             />
           )}

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { QuizQuestion } from '../../data/locationActivities';
+import type { QuizQuestion } from '../../i18n/helpers';
 
 const QUESTIONS_PER_GAME = 3;
 const SECONDS_PER_QUESTION = 8;

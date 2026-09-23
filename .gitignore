@@ -7,15 +7,15 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dev & caches
 node_modules
 /dist
 /docs
 /screenshots
 dist-ssr
 *.local
-
-# Vite dev cache
 node_modules/.vite/
+__pycache__
 
 # Generated version file (CI generates this)
 /src/generated-version.ts

@@ -19,6 +19,19 @@ const SPRITE_YS = [0, 289, 579, 867, 1152, 1440, 1717, 1992, 2261, 2528, 2784] a
 // Ramos so both characters render at the same visual height (~65-66px).
 const PLAYER_DISPLAY = { trump: 80, ramos: 80 } as const;
 
+// NPC (enemy) sprite sheet: 4 cols × 4 rows, each cell 688×384 px.
+// Exact pixel boundaries from scripts/process_npc_sprite.py
+// Row 0: NPC1 (knife) run   — frames 0-3
+// Row 1: NPC1 (knife) fall  — frames 4-7  (unused)
+// Row 2: NPC2 (bat) run     — frames 8-11
+// Row 3: NPC2 (bat) fall    — frames 12-15 (unused)
+const NPC_FRAME_W = 688;
+const NPC_FRAME_H = 384;
+const NPC_XS = [0, 688, 1376, 2064, 2752] as const;
+const NPC_YS = [0, 384, 768, 1152, 1536] as const;
+const NPC_DISPLAY_MIN = 50;
+const NPC_DISPLAY_MAX = 72;
+
 const DEFAULT_LEVEL_SECS = 3;
 const JUMP_VEL = -560;
 const GRAVITY = 1500;
@@ -48,11 +61,11 @@ const ANIM_DEFS = {
 // ─── Shared object types ──────────────────────────────────────────────────
 
 interface EnemyObj {
-  go: Phaser.GameObjects.Rectangle;
-  left: number;  // x of left edge
+  go: Phaser.GameObjects.Sprite;
+  left: number;  // x of left edge (hitbox)
   cy: number;    // y of center
-  w: number;
-  h: number;
+  w: number;     // hitbox width
+  h: number;     // hitbox height
 }
 
 interface BulletObj {
@@ -108,6 +121,7 @@ function makeSceneClass(opts: SceneOpts) {
     preload() {
       // Plain image load — frames are defined manually in create() with exact boundaries.
       this.load.image('spr', `${BASE}walking/player-sprite-tile.png`);
+      this.load.image('npcSpr', `${BASE}walking/npc-sprite-tile.png`);
       this.load.image('bgStreet', `${BASE}minigames/bg-street.png`);
     }
 
@@ -122,6 +136,19 @@ function makeSceneClass(opts: SceneOpts) {
           SPRITE_XS[col], SPRITE_YS[row],
           SPRITE_XS[col + 1] - SPRITE_XS[col],
           SPRITE_YS[row + 1] - SPRITE_YS[row],
+        );
+      }
+
+      // ── Define exact NPC (enemy) sprite frames ──────────────────────────
+      const npcTex = this.textures.get('npcSpr');
+      for (let i = 0; i < 16; i++) {
+        const row = Math.floor(i / 4);
+        const col = i % 4;
+        npcTex.add(
+          i, 0,
+          NPC_XS[col], NPC_YS[row],
+          NPC_XS[col + 1] - NPC_XS[col],
+          NPC_YS[row + 1] - NPC_YS[row],
         );
       }
 
@@ -194,6 +221,24 @@ function makeSceneClass(opts: SceneOpts) {
       }
 
       this.player.play(`${charKey}_run`);
+
+      // NPC run animations (2 character variants)
+      if (!this.anims.exists('npc1_run')) {
+        this.anims.create({
+          key: 'npc1_run',
+          frames: this.anims.generateFrameNumbers('npcSpr', { start: 0, end: 3 }),
+          frameRate: 8,
+          repeat: -1,
+        });
+      }
+      if (!this.anims.exists('npc2_run')) {
+        this.anims.create({
+          key: 'npc2_run',
+          frames: this.anims.generateFrameNumbers('npcSpr', { start: 8, end: 11 }),
+          frameRate: 8,
+          repeat: -1,
+        });
+      }
     }
 
     update(_time: number, delta: number) {
@@ -267,7 +312,7 @@ function makeSceneClass(opts: SceneOpts) {
       const enemySpeed = 190 + progress * 100;
       this.enemies = this.enemies.filter(e => {
         e.left -= enemySpeed * dt;
-        e.go.x = e.left + e.w / 2; // Rectangle x = center
+        e.go.x = e.left + e.w / 2; // sprite x = center
         if (e.left + e.w < -80) {
           e.go.destroy();
           return false;
@@ -336,7 +381,7 @@ function makeSceneClass(opts: SceneOpts) {
 
     fireBullet() {
       const bx = this.player.x + 45;
-      const by = this.player.y - 14;
+      const by = this.player.y - 3;
       const go = this.add.circle(bx, by, 7, 0xfbbf24);
       go.setDepth(8);
       this.bullets.push({ go, x: bx, cy: by });
@@ -344,22 +389,32 @@ function makeSceneClass(opts: SceneOpts) {
 
     spawnEnemy(progress: number) {
       const flying = Math.random() < 0.3;
-      const w = Math.round(24 + Math.random() * 18);
-      const h = Math.round(flying ? 18 + Math.random() * 12 : 30 + Math.random() * 18);
+      const npcId: 1 | 2 = Math.random() < 0.5 ? 1 : 2;
+
+      // Display height varies for a bit of size variety; width follows from
+      // the sprite's native aspect ratio so the art never looks stretched.
+      const display = Math.round(NPC_DISPLAY_MIN + Math.random() * (NPC_DISPLAY_MAX - NPC_DISPLAY_MIN));
+      const scale = display / NPC_FRAME_H;
+      const dispW = NPC_FRAME_W * scale;
+
+      // Hitbox is tighter than the full sprite frame (which has transparent
+      // padding around the character), matching the tightened player hitbox.
+      const w = Math.round(dispW * 0.46);
+      const h = Math.round(display * 0.82);
       const cy = flying
-        ? this.GY - 58       // flying: mid-air
-        : this.GY - h / 2;  // ground: feet on GY
+        ? this.GY - 58            // flying: mid-air
+        : this.GY - display / 2;  // ground: feet on GY
 
-      const color = flying ? 0xe94560 : 0xd97706;
-      // Rectangle x/y = center; spawn with left edge at GW+40
-      const go = this.add.rectangle(this.GW + 40 + w / 2, cy, w, h, color);
+      const left = this.GW + 40;
+      const go = this.add.sprite(left + w / 2, cy, 'npcSpr', npcId === 1 ? 0 : 8);
+      go.setScale(scale);
       go.setDepth(5);
+      // Sprite art faces right (running toward positive x); enemies move
+      // leftward toward the player, so flip to face the direction of travel.
+      go.setFlipX(true);
+      go.play(`npc${npcId}_run`);
 
-      // Simple "eyes"
-      this.add.rectangle(go.x - w * 0.18, cy - h * 0.22, Math.max(3, w * 0.18), Math.max(3, h * 0.2), 0xffffff).setDepth(6);
-      this.add.rectangle(go.x + w * 0.18, cy - h * 0.22, Math.max(3, w * 0.18), Math.max(3, h * 0.2), 0xffffff).setDepth(6);
-
-      this.enemies.push({ go, left: this.GW + 40, cy, w, h });
+      this.enemies.push({ go, left, cy, w, h });
 
       const interval = Math.max(0.5, 1.3 - progress * 0.6 + (Math.random() - 0.5) * 0.5);
       this.nextEnemyAt = this.elapsed + interval;

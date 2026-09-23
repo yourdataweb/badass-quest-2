@@ -1,0 +1,13 @@
+# NPC image generation prompt
+
+I need a sprite tiles for 2 characters in a web video game, the game will be expanded with a 2d retro-style side-scroller cartoon mini game.
+- I want the body to be the classic in retro 2d games, small body in comparison with big head and I want the character to be dressed like a thief: 
+- The character 1 in the sprite tile should be a caucasian man with overweight 30yo male, mid size dark hair with sunglasses and starched-back hair, no quiff, no beard, no mustache. Wearing black sport pants and a black t-shirt. The character should have a knive pointing forward
+- The character 2 in sprite tile file should be more athletic about 25yo, no sunglasses. This character will have beard and brown hair. Wearing sport pands and a colourful sports t-shirt. The character should wave a baseball bat
+
+I want you to create an image strictly following these principles:
+- Create a grid 6 rows and 4 columns of bounding boxes of the same size where the character images you will generate fit in and are centered in the middle
+- Use the top 3 rows for character 1 and the bottom 3 row for character 2
+- For each character and each of the 3 following actions, fill a row in the grid: run, jump, fall to the ground
+- All the character images in the output image must be centered
+- Transparent background

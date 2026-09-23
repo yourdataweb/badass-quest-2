@@ -31,18 +31,4 @@ I want you to create a new json file with the coordinates of each of the images 
 - We will talk later about the background image and the platform / NPCs in the game
 - Store any scripts you need to create to process the sprite tile in scripts/ If it results to be very challenging to process the sprite tile file inform me of how could I help you
 
-Can you come up with something playable with the sprite tile? 
-
-# NPC image generation prompt
-
-I need a sprite tiles for 2 characters in a web video game, the game will be expanded with a 2d retro-style side-scroller cartoon mini game.
-- I want the body to be the classic in retro 2d games, small body in comparison with big head and I want the character to be dressed like a thief: 
-- The character 1 in the sprite tile should be a caucasian man with overweight 30yo male, mid size dark hair with sunglasses and starched-back hair, no quiff, no beard, no mustache. Wearing jeans and a black t-shirt. The character should have a knive pointing forward
-- The character 2 in sprite tile file should be more athletic about 25yo, no sunglasses. This character will have beard and brown hair. Wearing jeans and a colourful sports t-shirt. The character should wave a baseball bat
-
-I want you to create an image strictly following these principles:
-- Create a grid 6 rows and 4 columns of bounding boxes of the same size where the character images you will generate fit in and are centered in the middle
-- Use the top row for character 1 and the bottom row for character 2
-- For each character and each of the 3 following actions, fill a row in the grid: run, jump, fall to the ground
-- All the character images in the output image must be centered
-- Transparent background
+Can you come up with something playable with the sprite tile?

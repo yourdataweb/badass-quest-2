@@ -71,7 +71,7 @@ export default function RecapScreen({ chapterIndex, onNext, isLastChapter }: Rec
                           }}
                         />
                       </div>
-                      <span className="text-gray-500 text-[10px]">{t(`stats.${key}`)}</span>
+                      <span className="text-gray-500 text-[10px]">{t(`ui.${key}`)}</span>
                     </div>
                   );
                 })}
