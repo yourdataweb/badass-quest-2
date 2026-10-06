@@ -45,6 +45,7 @@ import StatsBar from './components/StatsBar';
 import { formatTime } from './engine/timeEngine';
 import { assertStoryForCity } from './engine/validateStory';
 import { useTranslation } from 'react-i18next';
+import { trackEvent } from './analytics';
 
 if (import.meta.env.DEV) {
   for (const story of getAllStories()) {
@@ -206,6 +207,7 @@ export default function App() {
               <SideScroller
                 travelSecs={travelSecs}
                 onComplete={(deltas) => {
+                  trackEvent('walk_complete', { vitality: deltas.vitality, knowledge: deltas.knowledge ?? 0 });
                   updateStats(deltas);
                   advanceTime(travelHours);
                   setPhase('location');

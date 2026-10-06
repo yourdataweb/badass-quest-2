@@ -6,6 +6,7 @@ import ActivityCard from '../components/ActivityCard';
 import { DAILY_ACTIVITIES } from '../engine/economyEngine';
 import { dailyActivityTitle, dailyActivityDescription } from '../i18n/helpers';
 import type { DailyActivity } from '../store/types';
+import { trackEvent } from '../analytics';
 
 interface ActivityPickerScreenProps {
   onComplete: () => void;
@@ -49,6 +50,10 @@ export default function ActivityPickerScreen({ onComplete, maxActivities = 3 }: 
   };
 
   const handleConfirm = () => {
+    trackEvent('evening_activities', {
+      count: selected.length,
+      activity_ids: selected.map((a) => a.id).join(','),
+    });
     selected.forEach((act) => {
       updateStats(act.effects);
       advanceTime(act.durationHours);

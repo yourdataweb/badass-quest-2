@@ -17,6 +17,7 @@ import Photograph from '../components/minigames/Photograph';
 import { getActivitiesForType, type ActivityDef } from '../data/locationActivities';
 import { locationName, locationDescription, locationActivityFluff, locationActivityQuiz } from '../i18n/helpers';
 import type { LocationPOI, Stats } from '../store/types';
+import { trackEvent } from '../analytics';
 
 interface LocationScreenProps {
   location: LocationPOI;
@@ -94,6 +95,14 @@ export default function LocationScreen({
       advanceTime(activity.durationHours);
       if (won) updateStats(activity.effects);
       markLocationActivityComplete(location.id, activity.id);
+      trackEvent('minigame_result', {
+        city: chosenCity ?? undefined,
+        location_id: location.id,
+        location_type: location.type,
+        activity_id: activity.id,
+        minigame: activity.miniGame,
+        won,
+      });
     });
   };
 
